@@ -18,10 +18,17 @@
     @apply bg-white text-neutral-900 antialiased;
     @apply dark:bg-neutral-950 dark:text-neutral-100;
     font-feature-settings: 'kern';
+    text-rendering: optimizeLegibility;
   }
 
   ::selection {
     @apply bg-acento-500/20;
+  }
+
+  /* Foco visible y consistente para navegación con teclado. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-acento-500 ring-offset-2 ring-offset-white dark:ring-offset-neutral-950;
+    border-radius: 4px;
   }
 }
 

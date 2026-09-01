@@ -22,7 +22,7 @@ export default {
       },
       fontFamily: {
         sans: ['"Inter"', 'system-ui', 'sans-serif'],
-        serif: ['"Georgia"', 'ui-serif', 'serif'],
+        serif: ['"Fraunces"', 'Georgia', 'ui-serif', 'serif'],
       },
       keyframes: {
         shimmer: {
