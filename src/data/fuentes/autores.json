@@ -1,0 +1,44 @@
+[
+  {
+    "id": "aut-01",
+    "nombre": "Mariana Robles",
+    "rol": "Corresponsal política en la CDMX",
+    "avatarUrl": "https://i.pravatar.cc/120?img=47"
+  },
+  {
+    "id": "aut-02",
+    "nombre": "Diego Alcántara",
+    "rol": "Editor de Economía",
+    "avatarUrl": "https://i.pravatar.cc/120?img=12"
+  },
+  {
+    "id": "aut-03",
+    "nombre": "Renata Vázquez",
+    "rol": "Reportera de Tecnología",
+    "avatarUrl": "https://i.pravatar.cc/120?img=32"
+  },
+  {
+    "id": "aut-04",
+    "nombre": "Emiliano Cárdenas",
+    "rol": "Cronista deportivo",
+    "avatarUrl": "https://i.pravatar.cc/120?img=15"
+  },
+  {
+    "id": "aut-05",
+    "nombre": "Ximena Fuentes",
+    "rol": "Editora de Cultura",
+    "avatarUrl": "https://i.pravatar.cc/120?img=45"
+  },
+  {
+    "id": "aut-06",
+    "nombre": "Andrés Beltrán",
+    "rol": "Reportero de temas nacionales",
+    "avatarUrl": "https://i.pravatar.cc/120?img=68"
+  },
+  {
+    "id": "aut-07",
+    "nombre": "Lucía Montero",
+    "rol": "Analista de mercados",
+    "avatarUrl": "https://i.pravatar.cc/120?img=20"
+  }
+]

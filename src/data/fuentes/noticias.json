@@ -1,0 +1,429 @@
+[
+  {
+    "id": "nac-01",
+    "titulo": "El Congreso aprueba la reforma al sistema de agua potable tras diez horas de debate",
+    "entradilla": "La iniciativa obliga a los municipios a reportar pérdidas en la red y destina recursos para modernizar la infraestructura hidráulica del país.",
+    "seccion": "nacional",
+    "autorId": "aut-01",
+    "fechaISO": "2026-09-01T13:10:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-nac01/1280/860",
+    "imagenAlt": "Vista del pleno del Congreso durante una sesión",
+    "minutosLectura": 6,
+    "destacada": true,
+    "cuerpo": [
+      "Después de una sesión que se extendió por más de diez horas, el pleno aprobó la reforma a la Ley General de Aguas con 312 votos a favor, 118 en contra y 9 abstenciones. La discusión, que arrancó al mediodía, se prolongó hasta la madrugada entre reservas de los distintos grupos parlamentarios.",
+      "El punto más álgido fue el artículo que obliga a los organismos operadores municipales a publicar cada trimestre el porcentaje de agua que se pierde por fugas en la red. Legisladores de oposición advirtieron que la medida carece de sanciones claras para quienes incumplan.",
+      "La reforma contempla un fondo de 18 mil millones de pesos para sustituir tuberías con más de treinta años de antigüedad, prioritariamente en las zonas metropolitanas del Valle de México, Guadalajara y Monterrey.",
+      "Organizaciones civiles que participaron en las mesas de trabajo celebraron la aprobación, aunque señalaron que la fiscalización dependerá de la voluntad de cada estado. \"El texto es un avance, pero sin dientes puede quedarse en el papel\", advirtió una de las voceras.",
+      "La reforma pasa ahora al Senado, donde se prevé que se discuta durante el siguiente periodo ordinario. De aprobarse sin cambios, entraría en vigor a partir del primer día de 2027."
+    ]
+  },
+  {
+    "id": "nac-02",
+    "titulo": "Lluvias atípicas dejan sin clases a más de 400 escuelas en el sureste",
+    "entradilla": "Las autoridades de Protección Civil mantienen alerta en Tabasco y Chiapas por el desbordamiento de tres ríos.",
+    "seccion": "nacional",
+    "autorId": "aut-06",
+    "fechaISO": "2026-09-01T09:40:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-nac02/1280/860",
+    "imagenAlt": "Calle inundada tras fuertes lluvias",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Las precipitaciones que caen sin tregua desde el pasado fin de semana obligaron a suspender clases en más de 400 planteles de Tabasco y Chiapas, informó la coordinación regional de Protección Civil.",
+      "Los ríos Grijalva, Usumacinta y Carrizal registran niveles por encima de lo habitual para la temporada, lo que ha provocado encharcamientos en al menos doce municipios.",
+      "Las autoridades habilitaron 27 refugios temporales y pidieron a la población de zonas bajas mantenerse atenta a los avisos oficiales. Hasta el momento no se reportan personas lesionadas.",
+      "El servicio meteorológico anticipa que las lluvias continuarán durante las próximas 48 horas antes de que el frente se desplace hacia el Golfo."
+    ]
+  },
+  {
+    "id": "nac-03",
+    "titulo": "Arranca la vacunación contra la influenza estacional en centros de salud del país",
+    "entradilla": "La Secretaría de Salud dispone de 34 millones de dosis y prioriza a adultos mayores, embarazadas y personal médico.",
+    "seccion": "nacional",
+    "autorId": "aut-01",
+    "fechaISO": "2026-08-31T11:00:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-nac03/1280/860",
+    "imagenAlt": "Personal de salud preparando una vacuna",
+    "minutosLectura": 3,
+    "cuerpo": [
+      "La campaña nacional de vacunación contra la influenza estacional comenzó este lunes en los centros de salud de las 32 entidades del país. La dependencia federal informó que cuenta con 34 millones de dosis para la temporada.",
+      "En esta primera etapa se dará prioridad a personas mayores de 60 años, mujeres embarazadas, niñas y niños menores de cinco años, así como al personal de los servicios de salud.",
+      "Las autoridades recordaron que la vacuna es gratuita y que no es necesario agendar cita en la mayoría de las unidades. La meta es alcanzar una cobertura del 70 por ciento antes de que inicie el pico de la temporada invernal."
+    ]
+  },
+  {
+    "id": "nac-04",
+    "titulo": "Inauguran el tramo final del tren interurbano que conecta Toluca con la capital",
+    "entradilla": "El recorrido completo reduce a 40 minutos un trayecto que por carretera puede tomar más de dos horas en hora pico.",
+    "seccion": "nacional",
+    "autorId": "aut-06",
+    "fechaISO": "2026-08-30T18:20:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-nac04/1280/860",
+    "imagenAlt": "Convoy de tren interurbano en una estación",
+    "minutosLectura": 5,
+    "cuerpo": [
+      "Tras varios años de retrasos y ajustes presupuestales, quedó inaugurado el tramo final del tren interurbano que une la ciudad de Toluca con el poniente de la capital.",
+      "Con la apertura de las últimas tres estaciones, el sistema opera ya en su totalidad. El trayecto completo, de punta a punta, se cubre en aproximadamente 40 minutos.",
+      "Autoridades de movilidad estimaron que el tren podrá transportar hasta 230 mil pasajeros diarios una vez que alcance su operación plena, lo que ayudaría a descongestionar la carretera federal.",
+      "Durante la primera semana el servicio será gratuito. Después, la tarifa quedará escalonada según la distancia recorrida, con un tope para el trayecto completo."
+    ]
+  },
+  {
+    "id": "nac-05",
+    "titulo": "Universidades públicas registran cifra récord de aspirantes para el ciclo escolar",
+    "entradilla": "Más de 1.2 millones de jóvenes presentaron examen de admisión, la mayor cantidad de la última década.",
+    "seccion": "nacional",
+    "autorId": "aut-01",
+    "fechaISO": "2026-08-29T10:15:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-nac05/1280/860",
+    "imagenAlt": "Estudiantes en el campus de una universidad",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Las principales universidades públicas del país reportaron un récord de aspirantes para el próximo ciclo escolar, con más de 1.2 millones de jóvenes que presentaron examen de admisión.",
+      "El incremento, de casi 15 por ciento respecto al año anterior, reaviva el debate sobre la capacidad de las instituciones para absorber la creciente demanda de educación superior.",
+      "Rectores de varias casas de estudio pidieron mayor presupuesto para ampliar la oferta de lugares, mientras que colectivos estudiantiles insistieron en que miles de jóvenes quedan fuera cada año.",
+      "Las autoridades educativas adelantaron que se abrirán nuevas modalidades a distancia para atender a parte de la demanda que no logra un lugar en el sistema presencial."
+    ]
+  },
+  {
+    "id": "nac-06",
+    "titulo": "Comunidades del norte firman acuerdo para reforestar 5 mil hectáreas de bosque",
+    "entradilla": "El proyecto involucra a ejidatarios, universidades y gobiernos municipales en una de las zonas más afectadas por incendios.",
+    "seccion": "nacional",
+    "autorId": "aut-06",
+    "fechaISO": "2026-08-28T16:05:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-nac06/1280/860",
+    "imagenAlt": "Personas plantando árboles en una ladera",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Un grupo de comunidades del norte del país firmó un acuerdo para reforestar 5 mil hectáreas de bosque que quedaron devastadas por los incendios de los últimos dos veranos.",
+      "El convenio reúne a ejidatarios, dos universidades regionales y varios gobiernos municipales, que aportarán viveros, mano de obra y monitoreo satelital del avance.",
+      "Los promotores explicaron que se privilegiarán especies nativas resistentes a la sequía y que el seguimiento de cada polígono se extenderá por al menos cinco años.",
+      "\"No se trata de plantar por plantar; el reto es que los árboles sobrevivan\", explicó una de las investigadoras que coordina el proyecto."
+    ]
+  },
+  {
+    "id": "eco-01",
+    "titulo": "El peso cierra la semana con su mejor racha frente al dólar en cuatro meses",
+    "entradilla": "La moneda mexicana se apreció por quinta jornada consecutiva ante señales de estabilidad en las tasas de interés.",
+    "seccion": "economia",
+    "autorId": "aut-07",
+    "fechaISO": "2026-09-01T15:30:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-eco01/1280/860",
+    "imagenAlt": "Tablero con la cotización del tipo de cambio",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "El peso cerró la semana con su mejor racha en cuatro meses tras apreciarse por quinta jornada consecutiva frente al dólar, en un entorno de mayor calma en los mercados internacionales.",
+      "Analistas atribuyeron el comportamiento a las señales de estabilidad en las tasas de interés y a la entrada de capitales que buscan mejores rendimientos en instrumentos locales.",
+      "Pese al optimismo, casas de bolsa advirtieron que la volatilidad podría regresar en las próximas semanas si se publican datos de inflación por encima de lo esperado.",
+      "El tipo de cambio se ubicó en niveles que no se veían desde principios de mayo, lo que da un respiro a las empresas importadoras."
+    ]
+  },
+  {
+    "id": "eco-02",
+    "titulo": "La inflación se modera y hila tres meses a la baja, según el reporte quincenal",
+    "entradilla": "El indicador se acerca al rango objetivo del banco central, aunque los precios de los alimentos siguen presionando el gasto familiar.",
+    "seccion": "economia",
+    "autorId": "aut-02",
+    "fechaISO": "2026-09-01T08:05:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-eco02/1280/860",
+    "imagenAlt": "Persona revisando precios en un mercado",
+    "minutosLectura": 5,
+    "cuerpo": [
+      "La inflación general hiló tres meses a la baja, de acuerdo con el reporte quincenal más reciente, lo que acerca al indicador al rango objetivo fijado por el banco central.",
+      "El dato fue recibido con cautela por los especialistas, que subrayaron que el componente de alimentos sigue creciendo por encima del promedio y presiona el gasto de los hogares.",
+      "El jitomate, el limón y la carne de res fueron los productos que más subieron en la quincena, mientras que las tarifas de energía eléctrica de verano ayudaron a contener el índice.",
+      "Economistas consultados anticipan que el banco central mantendrá su postura prudente y que cualquier recorte de tasas dependerá de que la tendencia a la baja se consolide.",
+      "El organismo publicará su próxima decisión de política monetaria a finales de mes, en una reunión que el mercado seguirá con atención."
+    ]
+  },
+  {
+    "id": "eco-03",
+    "titulo": "Empresas de manufactura reportan aumento de pedidos por la relocalización",
+    "entradilla": "El fenómeno del nearshoring impulsa la ocupación de parques industriales en el Bajío y el noreste del país.",
+    "seccion": "economia",
+    "autorId": "aut-02",
+    "fechaISO": "2026-08-31T14:45:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-eco03/1280/860",
+    "imagenAlt": "Interior de una planta de manufactura",
+    "minutosLectura": 5,
+    "cuerpo": [
+      "Empresas del sector manufacturero reportaron un aumento sostenido de pedidos durante el último trimestre, impulsado por la relocalización de cadenas de suministro conocida como nearshoring.",
+      "La ocupación de parques industriales en el Bajío y el noreste alcanzó niveles cercanos al 95 por ciento, según cámaras del sector, que anticipan la llegada de nuevas inversiones.",
+      "El fenómeno, sin embargo, tensiona la disponibilidad de agua, energía y personal calificado, tres cuellos de botella que las empresas mencionan de forma recurrente.",
+      "Especialistas advierten que aprovechar la oportunidad dependerá de resolver esos rezagos y de dar certidumbre a los inversionistas de largo plazo."
+    ]
+  },
+  {
+    "id": "eco-04",
+    "titulo": "El salario mínimo será tema central en la mesa de negociación de fin de año",
+    "entradilla": "Sindicatos y patrones inician conversaciones para definir el incremento que regirá a partir de enero.",
+    "seccion": "economia",
+    "autorId": "aut-07",
+    "fechaISO": "2026-08-30T12:00:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-eco04/1280/860",
+    "imagenAlt": "Trabajadores saliendo de una fábrica",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Representantes de los sindicatos y del sector empresarial iniciaron las conversaciones para definir el incremento al salario mínimo que entrará en vigor a partir de enero.",
+      "Las centrales obreras plantean un aumento que permita recuperar poder adquisitivo, mientras que las cámaras patronales piden considerar el impacto en las pequeñas empresas.",
+      "El organismo encargado de fijar el salario insistió en que cualquier ajuste debe cuidar que no se traslade a los precios y no genere presiones inflacionarias.",
+      "Las partes se reunirán en varias sesiones durante las próximas semanas antes de anunciar el porcentaje definitivo."
+    ]
+  },
+  {
+    "id": "eco-05",
+    "titulo": "El turismo de playa cierra la temporada con ocupación por encima del 80 por ciento",
+    "entradilla": "Destinos del Caribe y el Pacífico reportan una de las mejores temporadas de verano de los últimos años.",
+    "seccion": "economia",
+    "autorId": "aut-02",
+    "fechaISO": "2026-08-29T17:30:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-eco05/1280/860",
+    "imagenAlt": "Playa concurrida durante la temporada alta",
+    "minutosLectura": 3,
+    "cuerpo": [
+      "Los principales destinos de playa cerraron la temporada de verano con una ocupación hotelera por encima del 80 por ciento, una de las cifras más altas de los últimos años.",
+      "El Caribe y el Pacífico encabezaron la lista, favorecidos por el turismo nacional y por la recuperación de vuelos internacionales.",
+      "El sector estima que la derrama económica del verano superó las expectativas y confía en mantener el ritmo durante el puente de mediados de septiembre."
+    ]
+  },
+  {
+    "id": "tec-01",
+    "titulo": "Startups mexicanas de inteligencia artificial captan inversión récord en el semestre",
+    "entradilla": "Fondos nacionales y extranjeros apuestan por soluciones de automatización dirigidas a pequeñas y medianas empresas.",
+    "seccion": "tecnologia",
+    "autorId": "aut-03",
+    "fechaISO": "2026-09-01T12:25:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-tec01/1280/860",
+    "imagenAlt": "Equipo de una startup trabajando en una oficina",
+    "minutosLectura": 5,
+    "cuerpo": [
+      "Las startups mexicanas dedicadas a la inteligencia artificial captaron una cifra récord de inversión durante el primer semestre del año, según un reporte del ecosistema emprendedor.",
+      "Los fondos, tanto nacionales como extranjeros, se concentraron en soluciones de automatización pensadas para pequeñas y medianas empresas, un mercado poco atendido hasta ahora.",
+      "Los fundadores coinciden en que el reto ya no es conseguir capital semilla, sino encontrar talento especializado que hoy se disputan las grandes tecnológicas.",
+      "Analistas del sector advierten que el entusiasmo debe acompañarse de casos de uso rentables para evitar una burbuja como la que se vivió en otras olas tecnológicas.",
+      "Varias de estas empresas ya exportan sus servicios a Colombia, Chile y España, lo que las convierte en referentes de la región."
+    ]
+  },
+  {
+    "id": "tec-02",
+    "titulo": "Un apagón de fibra óptica deja sin internet a tres estados durante seis horas",
+    "entradilla": "El corte, provocado por una falla en un ducto principal, afectó a bancos, comercios y servicios gubernamentales.",
+    "seccion": "tecnologia",
+    "autorId": "aut-03",
+    "fechaISO": "2026-08-31T09:10:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-tec02/1280/860",
+    "imagenAlt": "Cables de fibra óptica en un centro de datos",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Un corte en un ducto principal de fibra óptica dejó sin servicio de internet a tres estados durante casi seis horas, lo que afectó a bancos, comercios y trámites gubernamentales.",
+      "La empresa operadora informó que la falla se originó por trabajos de obra pública que dañaron la infraestructura enterrada, y descartó un ciberataque.",
+      "El incidente reavivó el debate sobre la falta de rutas alternas que permitan mantener la conectividad cuando una línea principal falla.",
+      "Especialistas pidieron acelerar la redundancia de la red, sobre todo en regiones que dependen de un solo proveedor."
+    ]
+  },
+  {
+    "id": "tec-03",
+    "titulo": "Investigadores del país desarrollan un sensor de bajo costo para medir calidad del aire",
+    "entradilla": "El dispositivo, del tamaño de una caja de cerillos, transmite datos en tiempo real a una aplicación abierta.",
+    "seccion": "tecnologia",
+    "autorId": "aut-03",
+    "fechaISO": "2026-08-30T13:50:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-tec03/1280/860",
+    "imagenAlt": "Prototipo de sensor electrónico sobre una mesa",
+    "minutosLectura": 5,
+    "cuerpo": [
+      "Un grupo de investigadores desarrolló un sensor de bajo costo capaz de medir la calidad del aire y transmitir los datos en tiempo real a una aplicación de acceso abierto.",
+      "El dispositivo, del tamaño de una caja de cerillos, cuesta una fracción de lo que valen los equipos profesionales y puede instalarse en escuelas, hogares y oficinas.",
+      "El objetivo, explican sus creadores, es que la ciudadanía cuente con información granular sobre la contaminación en su propia colonia, más allá de las estaciones oficiales.",
+      "El proyecto liberará los planos y el código para que cualquier persona pueda armar su propio sensor y sumarlo a la red comunitaria.",
+      "La primera fase de pruebas se realizará en una decena de escuelas de la zona metropolitana antes de fin de año."
+    ]
+  },
+  {
+    "id": "tec-04",
+    "titulo": "Crece el uso de pagos con código QR en pequeños comercios del país",
+    "entradilla": "La adopción de esta forma de cobro se disparó entre tianguis, fondas y locales de barrio.",
+    "seccion": "tecnologia",
+    "autorId": "aut-03",
+    "fechaISO": "2026-08-28T11:35:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-tec04/1280/860",
+    "imagenAlt": "Cliente escaneando un código QR para pagar",
+    "minutosLectura": 3,
+    "cuerpo": [
+      "El uso de pagos con código QR se disparó entre los pequeños comercios del país, desde tianguis y fondas hasta locales de barrio que antes solo aceptaban efectivo.",
+      "El impulso viene de aplicaciones que permiten cobrar sin necesidad de una terminal bancaria tradicional y con comisiones más bajas.",
+      "Comerciantes consultados destacan la rapidez del cobro y la reducción del manejo de efectivo, aunque persisten dudas sobre la conectividad en zonas rurales."
+    ]
+  },
+  {
+    "id": "tec-05",
+    "titulo": "Una misión universitaria pondrá en órbita el primer nanosatélite estudiantil del país",
+    "entradilla": "El proyecto, construido por alumnos de ingeniería, tomará imágenes para monitorear cultivos y cuerpos de agua.",
+    "seccion": "tecnologia",
+    "autorId": "aut-03",
+    "fechaISO": "2026-08-27T10:20:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-tec05/1280/860",
+    "imagenAlt": "Estudiantes ensamblando un pequeño satélite",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Un equipo de estudiantes de ingeniería ultima los detalles del primer nanosatélite estudiantil del país, que será puesto en órbita en una misión programada para los próximos meses.",
+      "El aparato, del tamaño de una hogaza de pan, tomará imágenes que servirán para monitorear cultivos, cuerpos de agua y zonas afectadas por incendios.",
+      "El proyecto tomó más de tres años de trabajo y combinó recursos de la universidad con el apoyo de agencias espaciales de la región.",
+      "Los responsables aseguran que la experiencia formó a una generación de ingenieros con conocimientos que antes solo se conseguían en el extranjero."
+    ]
+  },
+  {
+    "id": "cul-01",
+    "titulo": "La Feria del Libro abre sus puertas con más de 800 presentaciones y autores invitados",
+    "entradilla": "El encuentro literario más grande del país dedica su edición a la poesía en lenguas originarias.",
+    "seccion": "cultura",
+    "autorId": "aut-05",
+    "fechaISO": "2026-09-01T10:50:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cul01/1280/860",
+    "imagenAlt": "Visitantes recorriendo los pasillos de una feria del libro",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "La Feria del Libro más grande del país abrió sus puertas con un programa de más de 800 presentaciones, mesas de diálogo y firmas de autores nacionales e internacionales.",
+      "Esta edición está dedicada a la poesía en lenguas originarias, con un pabellón especial y traducciones simultáneas para acercar estas obras a nuevos lectores.",
+      "Los organizadores esperan superar el medio millón de visitantes a lo largo de los diez días que dura el encuentro.",
+      "Además de las presentaciones, habrá talleres para infancias, conciertos al aire libre y una sección dedicada a la ilustración y la novela gráfica."
+    ]
+  },
+  {
+    "id": "cul-02",
+    "titulo": "Restauran un mural olvidado durante décadas en el vestíbulo de un antiguo cine",
+    "entradilla": "La obra, de casi doce metros, fue recuperada por un equipo de especialistas tras hallarse bajo varias capas de pintura.",
+    "seccion": "cultura",
+    "autorId": "aut-05",
+    "fechaISO": "2026-08-31T16:40:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cul02/1280/860",
+    "imagenAlt": "Especialista restaurando un mural antiguo",
+    "minutosLectura": 5,
+    "cuerpo": [
+      "Un mural que permaneció oculto durante décadas bajo varias capas de pintura fue recuperado en el vestíbulo de un antiguo cine del centro histórico.",
+      "La obra, de casi doce metros de largo, retrata escenas de la vida cotidiana de mediados del siglo pasado y se atribuye a un artista de la escuela muralista.",
+      "El proceso de restauración tomó ocho meses y requirió técnicas de limpieza milimétricas para no dañar los pigmentos originales.",
+      "El inmueble, que estuvo a punto de ser demolido, será reabierto como centro cultural con entrada libre para el público.",
+      "Especialistas destacaron el hallazgo como una oportunidad para revalorar el patrimonio artístico que se esconde en edificios en desuso."
+    ]
+  },
+  {
+    "id": "cul-03",
+    "titulo": "Una película mexicana gana el premio principal en un festival internacional",
+    "entradilla": "El largometraje, filmado en una comunidad de la sierra, fue reconocido por su retrato íntimo de la vida rural.",
+    "seccion": "cultura",
+    "autorId": "aut-05",
+    "fechaISO": "2026-08-30T20:10:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cul03/1280/860",
+    "imagenAlt": "Sala de cine durante una proyección",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Una película mexicana se alzó con el premio principal de un reconocido festival internacional de cine, un galardón que celebra tanto la crítica como la industria.",
+      "El largometraje, filmado íntegramente en una comunidad de la sierra y con actores no profesionales, fue reconocido por su retrato íntimo de la vida rural.",
+      "La directora dedicó el premio a las mujeres del pueblo donde se rodó la cinta y aseguró que el reconocimiento abre puertas para el cine hecho fuera de los grandes circuitos.",
+      "La película llegará a las salas comerciales del país en las próximas semanas antes de su estreno en plataformas."
+    ]
+  },
+  {
+    "id": "cul-04",
+    "titulo": "Museos de la capital estrenan recorridos nocturnos gratuitos los últimos viernes del mes",
+    "entradilla": "La iniciativa busca acercar el arte a públicos que no pueden visitar los recintos en horario habitual.",
+    "seccion": "cultura",
+    "autorId": "aut-05",
+    "fechaISO": "2026-08-28T18:00:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cul04/1280/860",
+    "imagenAlt": "Visitantes en una sala de museo iluminada de noche",
+    "minutosLectura": 3,
+    "cuerpo": [
+      "Una decena de museos de la capital estrenó recorridos nocturnos gratuitos que se realizarán los últimos viernes de cada mes.",
+      "La iniciativa busca acercar el arte a públicos que, por sus horarios de trabajo o estudio, no pueden visitar los recintos durante el día.",
+      "Además de las salas abiertas hasta la medianoche, habrá visitas guiadas, música en vivo y actividades para las familias que acudan con niñas y niños."
+    ]
+  },
+  {
+    "id": "dep-01",
+    "titulo": "El campeón defensor rescata un empate agónico en el último minuto",
+    "entradilla": "Un gol de cabeza en tiempo de compensación evitó la primera derrota del equipo en el torneo.",
+    "seccion": "deportes",
+    "autorId": "aut-04",
+    "fechaISO": "2026-09-01T22:15:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-dep01/1280/860",
+    "imagenAlt": "Jugadores celebrando un gol en el estadio",
+    "minutosLectura": 5,
+    "cuerpo": [
+      "El campeón defensor rescató un empate agónico gracias a un gol de cabeza en el minuto 92, cuando el partido parecía perdido ante su afición.",
+      "El conjunto local se fue al frente en el marcador desde la primera media hora y aguantó la ventaja durante casi todo el encuentro.",
+      "El técnico del campeón reconoció que su equipo no jugó su mejor partido, pero destacó el carácter para no rendirse hasta el silbatazo final.",
+      "Con este resultado, el campeón mantiene su racha sin derrotas, aunque cede terreno frente a los punteros del torneo.",
+      "El próximo compromiso será de visita, en una cancha donde no gana desde hace tres temporadas."
+    ]
+  },
+  {
+    "id": "dep-02",
+    "titulo": "La selección nacional anuncia su lista de convocados para la gira de preparación",
+    "entradilla": "El cuerpo técnico incluye a tres debutantes de cara a los amistosos del próximo mes.",
+    "seccion": "deportes",
+    "autorId": "aut-04",
+    "fechaISO": "2026-09-01T18:30:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-dep02/1280/860",
+    "imagenAlt": "Entrenamiento de una selección de futbol",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "La selección nacional dio a conocer su lista de convocados para la gira de preparación que incluye dos partidos amistosos el próximo mes.",
+      "La principal novedad es el llamado de tres futbolistas que debutarían con el representativo, todos ellos con buen arranque de temporada en sus clubes.",
+      "El director técnico explicó que la gira servirá para probar variantes tácticas antes de los compromisos oficiales de fin de año.",
+      "Quedaron fuera de la lista dos jugadores habituales por decisión técnica, lo que abre el debate entre la afición."
+    ]
+  },
+  {
+    "id": "dep-03",
+    "titulo": "Una velocista mexicana rompe el récord nacional de los 200 metros",
+    "entradilla": "La atleta firmó una marca histórica en una competencia internacional y apunta a los próximos juegos.",
+    "seccion": "deportes",
+    "autorId": "aut-04",
+    "fechaISO": "2026-08-31T15:20:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-dep03/1280/860",
+    "imagenAlt": "Atleta corriendo en una pista de tartán",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Una velocista mexicana rompió el récord nacional de los 200 metros planos con una marca que la coloca entre las mejores del continente.",
+      "La atleta, de 23 años, mejoró en más de dos décimas la plusmarca que resistía desde hacía más de una década.",
+      "Tras la carrera, aseguró que el objetivo es clasificar a los próximos juegos y pelear por un lugar en la final.",
+      "Su entrenador destacó el trabajo de los últimos meses y adelantó que competirá en un par de citas más antes de cerrar la temporada."
+    ]
+  },
+  {
+    "id": "dep-04",
+    "titulo": "El torneo de basquetbol estrena formato con más equipos y una fase final a visita",
+    "entradilla": "La liga anunció cambios para hacer más atractiva la recta decisiva de la temporada.",
+    "seccion": "deportes",
+    "autorId": "aut-04",
+    "fechaISO": "2026-08-30T14:00:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-dep04/1280/860",
+    "imagenAlt": "Cancha de basquetbol durante un partido",
+    "minutosLectura": 3,
+    "cuerpo": [
+      "La liga de basquetbol anunció un nuevo formato para la próxima temporada que suma dos equipos y modifica la fase final.",
+      "El cambio más relevante es que las series decisivas se jugarán a visita recíproca, lo que promete duelos más equilibrados.",
+      "Los directivos aseguran que el nuevo esquema busca hacer más atractiva la recta final y atraer a más aficionados a los estadios."
+    ]
+  },
+  {
+    "id": "dep-05",
+    "titulo": "Un joven pilotó mexicano firma su primer podio en la categoría de monoplazas",
+    "entradilla": "El piloto de 19 años terminó tercero en una carrera marcada por la lluvia y los abandonos.",
+    "seccion": "deportes",
+    "autorId": "aut-04",
+    "fechaISO": "2026-08-29T13:15:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-dep05/1280/860",
+    "imagenAlt": "Monoplaza de carreras en la pista",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Un joven piloto mexicano de 19 años firmó su primer podio en la categoría de monoplazas al terminar tercero en una carrera marcada por la lluvia y varios abandonos.",
+      "El piloto arrancó desde la séptima posición y fue escalando lugares a medida que la pista se complicaba por el mal clima.",
+      "Tras bajarse del auto, dedicó el resultado a su familia y al equipo que lo respalda desde las categorías inferiores.",
+      "Con este resultado se ubica en zona de puntos en la clasificación general, un hecho poco común para un debutante."
+    ]
+  }
+]

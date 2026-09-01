@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+  :root.dark {
+    color-scheme: dark;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white text-neutral-900 antialiased;
+    @apply dark:bg-neutral-950 dark:text-neutral-100;
+    font-feature-settings: 'kern';
+  }
+
+  ::selection {
+    @apply bg-acento-500/20;
+  }
+}
+
+/*
+  Respeto global a prefers-reduced-motion: se desactiva todo movimiento no
+  esencial. Las animaciones de Framer Motion se controlan además por hook
+  (useReducedMotion), pero esta regla protege cualquier transición/keyframe CSS.
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
