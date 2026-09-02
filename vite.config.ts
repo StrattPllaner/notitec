@@ -4,6 +4,8 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // El sitio se publica en https://strattpllaner.github.io/notitec/
+  base: '/notitec/',
   plugins: [react()],
   resolve: {
     alias: {
