@@ -9,9 +9,9 @@
 
 /** Secciones editoriales del sitio. El valor es a la vez id y slug de ruta. */
 export type Seccion =
-  | 'nacional'
-  | 'economia'
-  | 'tecnologia'
+  | 'campus'
+  | 'academico'
+  | 'estudiantil'
   | 'cultura'
   | 'deportes'
 

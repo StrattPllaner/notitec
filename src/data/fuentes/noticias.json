@@ -1,429 +1,424 @@
 [
   {
-    "id": "nac-01",
-    "titulo": "El Congreso aprueba la reforma al sistema de agua potable tras diez horas de debate",
-    "entradilla": "La iniciativa obliga a los municipios a reportar pérdidas en la red y destina recursos para modernizar la infraestructura hidráulica del país.",
-    "seccion": "nacional",
-    "autorId": "aut-01",
-    "fechaISO": "2026-09-01T13:10:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-nac01/1280/860",
-    "imagenAlt": "Vista del pleno del Congreso durante una sesión",
-    "minutosLectura": 6,
+    "id": "cam-01",
+    "titulo": "El Campus Cuernavaca arranca el semestre agosto-diciembre con récord de nuevo ingreso",
+    "entradilla": "Más de 900 estudiantes de primer semestre se suman a la comunidad Borrego en la bienvenida al periodo AD26.",
+    "seccion": "campus",
+    "autorId": "aut-06",
+    "fechaISO": "2026-09-01T09:30:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cam01/1280/860",
+    "imagenAlt": "Estudiantes reunidos en la explanada principal del campus",
+    "minutosLectura": 5,
     "destacada": true,
     "cuerpo": [
-      "Después de una sesión que se extendió por más de diez horas, el pleno aprobó la reforma a la Ley General de Aguas con 312 votos a favor, 118 en contra y 9 abstenciones. La discusión, que arrancó al mediodía, se prolongó hasta la madrugada entre reservas de los distintos grupos parlamentarios.",
-      "El punto más álgido fue el artículo que obliga a los organismos operadores municipales a publicar cada trimestre el porcentaje de agua que se pierde por fugas en la red. Legisladores de oposición advirtieron que la medida carece de sanciones claras para quienes incumplan.",
-      "La reforma contempla un fondo de 18 mil millones de pesos para sustituir tuberías con más de treinta años de antigüedad, prioritariamente en las zonas metropolitanas del Valle de México, Guadalajara y Monterrey.",
-      "Organizaciones civiles que participaron en las mesas de trabajo celebraron la aprobación, aunque señalaron que la fiscalización dependerá de la voluntad de cada estado. \"El texto es un avance, pero sin dientes puede quedarse en el papel\", advirtió una de las voceras.",
-      "La reforma pasa ahora al Senado, donde se prevé que se discuta durante el siguiente periodo ordinario. De aprobarse sin cambios, entraría en vigor a partir del primer día de 2027."
+      "El Tec de Monterrey Campus Cuernavaca dio inicio al semestre agosto-diciembre con una de las generaciones de nuevo ingreso más numerosas de los últimos años: más de 900 estudiantes de primer semestre se integraron a la comunidad durante la semana de bienvenida.",
+      "Las actividades incluyeron recorridos por el campus, dinámicas de integración de los grupos estudiantiles y sesiones informativas sobre el Modelo Tec21, en las que los alumnos conocieron cómo se organizan los bloques y las unidades de formación.",
+      "La Dirección del campus destacó que este periodo se refuerza el acompañamiento de mentores y consejeros para los estudiantes de primer año, con especial atención al bienestar emocional y a la vida en el campus.",
+      "Durante la ceremonia de bienvenida, autoridades recordaron a la comunidad los valores del propósito del Tec y animaron a los nuevos Borregos a sumarse desde el primer día a los grupos estudiantiles y a las actividades LiFE.",
+      "Las clases del periodo AD26 comenzaron de manera formal este lunes en las modalidades presencial y híbrida, según la unidad de formación."
     ]
   },
   {
-    "id": "nac-02",
-    "titulo": "Lluvias atípicas dejan sin clases a más de 400 escuelas en el sureste",
-    "entradilla": "Las autoridades de Protección Civil mantienen alerta en Tabasco y Chiapas por el desbordamiento de tres ríos.",
-    "seccion": "nacional",
-    "autorId": "aut-06",
-    "fechaISO": "2026-09-01T09:40:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-nac02/1280/860",
-    "imagenAlt": "Calle inundada tras fuertes lluvias",
+    "id": "cam-02",
+    "titulo": "Inauguran nuevo laboratorio de manufactura avanzada en el Campus Cuernavaca",
+    "entradilla": "El espacio equipa a los estudiantes de ingeniería con impresoras 3D industriales y estaciones de robótica colaborativa.",
+    "seccion": "campus",
+    "autorId": "aut-02",
+    "fechaISO": "2026-08-31T12:15:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cam02/1280/860",
+    "imagenAlt": "Laboratorio con impresoras 3D y equipo de robótica",
     "minutosLectura": 4,
     "cuerpo": [
-      "Las precipitaciones que caen sin tregua desde el pasado fin de semana obligaron a suspender clases en más de 400 planteles de Tabasco y Chiapas, informó la coordinación regional de Protección Civil.",
-      "Los ríos Grijalva, Usumacinta y Carrizal registran niveles por encima de lo habitual para la temporada, lo que ha provocado encharcamientos en al menos doce municipios.",
-      "Las autoridades habilitaron 27 refugios temporales y pidieron a la población de zonas bajas mantenerse atenta a los avisos oficiales. Hasta el momento no se reportan personas lesionadas.",
-      "El servicio meteorológico anticipa que las lluvias continuarán durante las próximas 48 horas antes de que el frente se desplace hacia el Golfo."
+      "El campus inauguró un nuevo laboratorio de manufactura avanzada que dará servicio a los estudiantes de las carreras de ingeniería. El espacio cuenta con impresoras 3D de nivel industrial, estaciones de robótica colaborativa y equipo de prototipado rápido.",
+      "El laboratorio nació de una alianza con socios formadores de la región, que además ofrecerán retos reales para que los estudiantes apliquen lo aprendido en proyectos con impacto en la industria local.",
+      "Profesores del área explicaron que el equipo permitirá integrar la fabricación digital desde los primeros semestres y no solo en las etapas finales de las carreras.",
+      "El nuevo espacio se suma a los laboratorios de electrónica y de energía que el campus ha renovado en los últimos periodos."
     ]
   },
   {
-    "id": "nac-03",
-    "titulo": "Arranca la vacunación contra la influenza estacional en centros de salud del país",
-    "entradilla": "La Secretaría de Salud dispone de 34 millones de dosis y prioriza a adultos mayores, embarazadas y personal médico.",
-    "seccion": "nacional",
+    "id": "cam-03",
+    "titulo": "La Semana Tec del campus reunirá más de 40 retos con socios formadores",
+    "entradilla": "Del 15 al 19 de septiembre, los estudiantes pausarán sus clases regulares para vivir experiencias de aprendizaje vivencial.",
+    "seccion": "campus",
+    "autorId": "aut-06",
+    "fechaISO": "2026-08-30T10:00:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cam03/1280/860",
+    "imagenAlt": "Estudiantes trabajando en equipo durante un taller",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "El Campus Cuernavaca anunció la programación de su Semana Tec, que se realizará del 15 al 19 de septiembre con más de 40 retos y experiencias diseñadas junto con socios formadores.",
+      "Durante esa semana, los estudiantes pausan sus clases regulares para participar en actividades de aprendizaje vivencial que van desde retos de sostenibilidad hasta proyectos de emprendimiento social en comunidades de Morelos.",
+      "La oferta incluye salidas de campo, talleres intensivos y retos internos del campus. Los alumnos se inscriben según sus intereses y el número de lugares disponibles en cada experiencia.",
+      "La coordinación académica recordó que la inscripción a las experiencias permanecerá abierta hasta agotar cupo a través de la plataforma del campus."
+    ]
+  },
+  {
+    "id": "cam-04",
+    "titulo": "El campus instala paneles solares que cubrirán una parte de su consumo eléctrico",
+    "entradilla": "El proyecto de sostenibilidad busca reducir la huella de carbono de las instalaciones en Xochitepec.",
+    "seccion": "campus",
+    "autorId": "aut-06",
+    "fechaISO": "2026-08-29T14:40:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cam04/1280/860",
+    "imagenAlt": "Paneles solares instalados sobre el techo de un edificio",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Como parte de su estrategia de sostenibilidad, el Campus Cuernavaca instaló un sistema de paneles solares que cubrirá una parte del consumo eléctrico de sus instalaciones.",
+      "El proyecto se suma a las acciones de separación de residuos, ahorro de agua y movilidad sustentable que el campus ha impulsado con la participación de grupos estudiantiles ambientales.",
+      "Autoridades del campus señalaron que el objetivo es reducir de manera gradual la huella de carbono y convertir las instalaciones en un espacio de aprendizaje sobre energías limpias.",
+      "Los estudiantes de ingeniería podrán consultar los datos de generación del sistema para proyectos académicos relacionados con energía."
+    ]
+  },
+  {
+    "id": "cam-05",
+    "titulo": "Estudiantes del campus regresan de intercambio en Europa y Asia",
+    "entradilla": "Cerca de 60 Borregos cursaron un periodo académico en universidades socias durante el semestre pasado.",
+    "seccion": "campus",
     "autorId": "aut-01",
-    "fechaISO": "2026-08-31T11:00:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-nac03/1280/860",
-    "imagenAlt": "Personal de salud preparando una vacuna",
+    "fechaISO": "2026-08-28T11:20:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cam05/1280/860",
+    "imagenAlt": "Estudiante con maleta frente a un edificio universitario",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Cerca de 60 estudiantes del Campus Cuernavaca regresaron de programas de intercambio académico que cursaron durante el semestre pasado en universidades socias de Europa, Asia y América.",
+      "La oficina de programas internacionales del campus destacó que la movilidad estudiantil se recuperó por completo tras los años de pausa, con destinos en España, Alemania, Corea del Sur y Canadá, entre otros.",
+      "Varios de los estudiantes compartieron su experiencia en una sesión con alumnos interesados en postularse para el próximo periodo, en la que resolvieron dudas sobre becas y requisitos.",
+      "Las convocatorias para movilidad del próximo año se abrirán durante las siguientes semanas."
+    ]
+  },
+  {
+    "id": "cam-06",
+    "titulo": "El Campus Cuernavaca renueva su acreditación de calidad educativa",
+    "entradilla": "Un organismo internacional reconoció los procesos académicos y de mejora continua del campus.",
+    "seccion": "campus",
+    "autorId": "aut-06",
+    "fechaISO": "2026-08-27T16:00:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-cam06/1280/860",
+    "imagenAlt": "Fachada institucional del campus",
     "minutosLectura": 3,
     "cuerpo": [
-      "La campaña nacional de vacunación contra la influenza estacional comenzó este lunes en los centros de salud de las 32 entidades del país. La dependencia federal informó que cuenta con 34 millones de dosis para la temporada.",
-      "En esta primera etapa se dará prioridad a personas mayores de 60 años, mujeres embarazadas, niñas y niños menores de cinco años, así como al personal de los servicios de salud.",
-      "Las autoridades recordaron que la vacuna es gratuita y que no es necesario agendar cita en la mayoría de las unidades. La meta es alcanzar una cobertura del 70 por ciento antes de que inicie el pico de la temporada invernal."
+      "El Campus Cuernavaca renovó una acreditación internacional que reconoce la calidad de sus procesos académicos y su cultura de mejora continua.",
+      "La evaluación incluyó revisión documental, entrevistas con estudiantes y profesores, y la verificación de los indicadores de aprendizaje del Modelo Tec21.",
+      "La Dirección del campus agradeció a la comunidad y subrayó que la acreditación es resultado del trabajo conjunto de profesores, personal y estudiantes."
     ]
   },
   {
-    "id": "nac-04",
-    "titulo": "Inauguran el tramo final del tren interurbano que conecta Toluca con la capital",
-    "entradilla": "El recorrido completo reduce a 40 minutos un trayecto que por carretera puede tomar más de dos horas en hora pico.",
-    "seccion": "nacional",
-    "autorId": "aut-06",
-    "fechaISO": "2026-08-30T18:20:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-nac04/1280/860",
-    "imagenAlt": "Convoy de tren interurbano en una estación",
+    "id": "aca-01",
+    "titulo": "Un equipo del campus gana el primer lugar en un hackathon nacional universitario",
+    "entradilla": "Cuatro estudiantes de ingeniería desarrollaron una app para optimizar el uso de agua en zonas rurales de Morelos.",
+    "seccion": "academico",
+    "autorId": "aut-03",
+    "fechaISO": "2026-09-01T13:45:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-aca01/1280/860",
+    "imagenAlt": "Estudiantes celebrando frente a sus computadoras",
     "minutosLectura": 5,
     "cuerpo": [
-      "Tras varios años de retrasos y ajustes presupuestales, quedó inaugurado el tramo final del tren interurbano que une la ciudad de Toluca con el poniente de la capital.",
-      "Con la apertura de las últimas tres estaciones, el sistema opera ya en su totalidad. El trayecto completo, de punta a punta, se cubre en aproximadamente 40 minutos.",
-      "Autoridades de movilidad estimaron que el tren podrá transportar hasta 230 mil pasajeros diarios una vez que alcance su operación plena, lo que ayudaría a descongestionar la carretera federal.",
-      "Durante la primera semana el servicio será gratuito. Después, la tarifa quedará escalonada según la distancia recorrida, con un tope para el trayecto completo."
+      "Un equipo de cuatro estudiantes de ingeniería del Campus Cuernavaca obtuvo el primer lugar en un hackathon nacional universitario, tras desarrollar una aplicación para optimizar el uso de agua en comunidades rurales de Morelos.",
+      "La solución, creada en menos de 48 horas, utiliza sensores de bajo costo y un panel sencillo para que las familias monitoreen fugas y consumo, y fue reconocida por su viabilidad y su impacto social.",
+      "Los estudiantes contaron que la idea surgió de un reto de una Semana Tec anterior, en la que trabajaron con una comunidad de la región.",
+      "El equipo representará a la zona en la siguiente etapa del certamen, que se realizará el próximo mes.",
+      "La coordinación académica felicitó a los alumnos y llamó a más estudiantes a participar en este tipo de competencias."
     ]
   },
   {
-    "id": "nac-05",
-    "titulo": "Universidades públicas registran cifra récord de aspirantes para el ciclo escolar",
-    "entradilla": "Más de 1.2 millones de jóvenes presentaron examen de admisión, la mayor cantidad de la última década.",
-    "seccion": "nacional",
+    "id": "aca-02",
+    "titulo": "Profesoras del campus publican investigación sobre biodiversidad en Morelos",
+    "entradilla": "El estudio documenta especies de polinizadores clave para los cultivos de la región.",
+    "seccion": "academico",
+    "autorId": "aut-03",
+    "fechaISO": "2026-08-31T10:30:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-aca02/1280/860",
+    "imagenAlt": "Investigadora observando muestras en un laboratorio",
+    "minutosLectura": 5,
+    "cuerpo": [
+      "Un grupo de profesoras del Campus Cuernavaca publicó una investigación sobre la biodiversidad de polinizadores en Morelos, un trabajo que documenta especies clave para los cultivos de la región.",
+      "El estudio, realizado con la participación de estudiantes de licenciatura, combinó trabajo de campo en distintos municipios con análisis en el laboratorio del campus.",
+      "Las autoras señalaron que los resultados pueden apoyar a productores locales y a las autoridades ambientales en la toma de decisiones sobre el uso del suelo.",
+      "La investigación abre la puerta a nuevos proyectos en los que los alumnos podrán integrarse como asistentes.",
+      "El artículo está disponible en una revista científica de acceso abierto."
+    ]
+  },
+  {
+    "id": "aca-03",
+    "titulo": "El campus abre una nueva concentración enfocada en inteligencia artificial aplicada",
+    "entradilla": "Los estudiantes de varias carreras podrán cursarla a partir del próximo periodo académico.",
+    "seccion": "academico",
+    "autorId": "aut-02",
+    "fechaISO": "2026-08-30T15:10:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-aca03/1280/860",
+    "imagenAlt": "Estudiantes en un aula con pantallas de código",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "El Campus Cuernavaca abrió una nueva concentración enfocada en inteligencia artificial aplicada, que estará disponible para estudiantes de distintas carreras a partir del próximo periodo académico.",
+      "La concentración combina fundamentos de datos y aprendizaje automático con retos prácticos planteados por socios formadores, de modo que los alumnos trabajen con casos reales.",
+      "Profesores del área explicaron que el objetivo es que los estudiantes egresen con un portafolio de proyectos y no solo con conocimientos teóricos.",
+      "Las sesiones informativas para inscribirse se realizarán durante las próximas semanas."
+    ]
+  },
+  {
+    "id": "aca-04",
+    "titulo": "Una conferencia magistral abre el ciclo de charlas de emprendimiento del semestre",
+    "entradilla": "Una egresada del Tec compartió con la comunidad su camino al frente de una empresa de tecnología.",
+    "seccion": "academico",
     "autorId": "aut-01",
-    "fechaISO": "2026-08-29T10:15:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-nac05/1280/860",
-    "imagenAlt": "Estudiantes en el campus de una universidad",
-    "minutosLectura": 4,
-    "cuerpo": [
-      "Las principales universidades públicas del país reportaron un récord de aspirantes para el próximo ciclo escolar, con más de 1.2 millones de jóvenes que presentaron examen de admisión.",
-      "El incremento, de casi 15 por ciento respecto al año anterior, reaviva el debate sobre la capacidad de las instituciones para absorber la creciente demanda de educación superior.",
-      "Rectores de varias casas de estudio pidieron mayor presupuesto para ampliar la oferta de lugares, mientras que colectivos estudiantiles insistieron en que miles de jóvenes quedan fuera cada año.",
-      "Las autoridades educativas adelantaron que se abrirán nuevas modalidades a distancia para atender a parte de la demanda que no logra un lugar en el sistema presencial."
-    ]
-  },
-  {
-    "id": "nac-06",
-    "titulo": "Comunidades del norte firman acuerdo para reforestar 5 mil hectáreas de bosque",
-    "entradilla": "El proyecto involucra a ejidatarios, universidades y gobiernos municipales en una de las zonas más afectadas por incendios.",
-    "seccion": "nacional",
-    "autorId": "aut-06",
-    "fechaISO": "2026-08-28T16:05:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-nac06/1280/860",
-    "imagenAlt": "Personas plantando árboles en una ladera",
-    "minutosLectura": 4,
-    "cuerpo": [
-      "Un grupo de comunidades del norte del país firmó un acuerdo para reforestar 5 mil hectáreas de bosque que quedaron devastadas por los incendios de los últimos dos veranos.",
-      "El convenio reúne a ejidatarios, dos universidades regionales y varios gobiernos municipales, que aportarán viveros, mano de obra y monitoreo satelital del avance.",
-      "Los promotores explicaron que se privilegiarán especies nativas resistentes a la sequía y que el seguimiento de cada polígono se extenderá por al menos cinco años.",
-      "\"No se trata de plantar por plantar; el reto es que los árboles sobrevivan\", explicó una de las investigadoras que coordina el proyecto."
-    ]
-  },
-  {
-    "id": "eco-01",
-    "titulo": "El peso cierra la semana con su mejor racha frente al dólar en cuatro meses",
-    "entradilla": "La moneda mexicana se apreció por quinta jornada consecutiva ante señales de estabilidad en las tasas de interés.",
-    "seccion": "economia",
-    "autorId": "aut-07",
-    "fechaISO": "2026-09-01T15:30:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-eco01/1280/860",
-    "imagenAlt": "Tablero con la cotización del tipo de cambio",
-    "minutosLectura": 4,
-    "cuerpo": [
-      "El peso cerró la semana con su mejor racha en cuatro meses tras apreciarse por quinta jornada consecutiva frente al dólar, en un entorno de mayor calma en los mercados internacionales.",
-      "Analistas atribuyeron el comportamiento a las señales de estabilidad en las tasas de interés y a la entrada de capitales que buscan mejores rendimientos en instrumentos locales.",
-      "Pese al optimismo, casas de bolsa advirtieron que la volatilidad podría regresar en las próximas semanas si se publican datos de inflación por encima de lo esperado.",
-      "El tipo de cambio se ubicó en niveles que no se veían desde principios de mayo, lo que da un respiro a las empresas importadoras."
-    ]
-  },
-  {
-    "id": "eco-02",
-    "titulo": "La inflación se modera y hila tres meses a la baja, según el reporte quincenal",
-    "entradilla": "El indicador se acerca al rango objetivo del banco central, aunque los precios de los alimentos siguen presionando el gasto familiar.",
-    "seccion": "economia",
-    "autorId": "aut-02",
-    "fechaISO": "2026-09-01T08:05:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-eco02/1280/860",
-    "imagenAlt": "Persona revisando precios en un mercado",
-    "minutosLectura": 5,
-    "cuerpo": [
-      "La inflación general hiló tres meses a la baja, de acuerdo con el reporte quincenal más reciente, lo que acerca al indicador al rango objetivo fijado por el banco central.",
-      "El dato fue recibido con cautela por los especialistas, que subrayaron que el componente de alimentos sigue creciendo por encima del promedio y presiona el gasto de los hogares.",
-      "El jitomate, el limón y la carne de res fueron los productos que más subieron en la quincena, mientras que las tarifas de energía eléctrica de verano ayudaron a contener el índice.",
-      "Economistas consultados anticipan que el banco central mantendrá su postura prudente y que cualquier recorte de tasas dependerá de que la tendencia a la baja se consolide.",
-      "El organismo publicará su próxima decisión de política monetaria a finales de mes, en una reunión que el mercado seguirá con atención."
-    ]
-  },
-  {
-    "id": "eco-03",
-    "titulo": "Empresas de manufactura reportan aumento de pedidos por la relocalización",
-    "entradilla": "El fenómeno del nearshoring impulsa la ocupación de parques industriales en el Bajío y el noreste del país.",
-    "seccion": "economia",
-    "autorId": "aut-02",
-    "fechaISO": "2026-08-31T14:45:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-eco03/1280/860",
-    "imagenAlt": "Interior de una planta de manufactura",
-    "minutosLectura": 5,
-    "cuerpo": [
-      "Empresas del sector manufacturero reportaron un aumento sostenido de pedidos durante el último trimestre, impulsado por la relocalización de cadenas de suministro conocida como nearshoring.",
-      "La ocupación de parques industriales en el Bajío y el noreste alcanzó niveles cercanos al 95 por ciento, según cámaras del sector, que anticipan la llegada de nuevas inversiones.",
-      "El fenómeno, sin embargo, tensiona la disponibilidad de agua, energía y personal calificado, tres cuellos de botella que las empresas mencionan de forma recurrente.",
-      "Especialistas advierten que aprovechar la oportunidad dependerá de resolver esos rezagos y de dar certidumbre a los inversionistas de largo plazo."
-    ]
-  },
-  {
-    "id": "eco-04",
-    "titulo": "El salario mínimo será tema central en la mesa de negociación de fin de año",
-    "entradilla": "Sindicatos y patrones inician conversaciones para definir el incremento que regirá a partir de enero.",
-    "seccion": "economia",
-    "autorId": "aut-07",
-    "fechaISO": "2026-08-30T12:00:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-eco04/1280/860",
-    "imagenAlt": "Trabajadores saliendo de una fábrica",
-    "minutosLectura": 4,
-    "cuerpo": [
-      "Representantes de los sindicatos y del sector empresarial iniciaron las conversaciones para definir el incremento al salario mínimo que entrará en vigor a partir de enero.",
-      "Las centrales obreras plantean un aumento que permita recuperar poder adquisitivo, mientras que las cámaras patronales piden considerar el impacto en las pequeñas empresas.",
-      "El organismo encargado de fijar el salario insistió en que cualquier ajuste debe cuidar que no se traslade a los precios y no genere presiones inflacionarias.",
-      "Las partes se reunirán en varias sesiones durante las próximas semanas antes de anunciar el porcentaje definitivo."
-    ]
-  },
-  {
-    "id": "eco-05",
-    "titulo": "El turismo de playa cierra la temporada con ocupación por encima del 80 por ciento",
-    "entradilla": "Destinos del Caribe y el Pacífico reportan una de las mejores temporadas de verano de los últimos años.",
-    "seccion": "economia",
-    "autorId": "aut-02",
-    "fechaISO": "2026-08-29T17:30:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-eco05/1280/860",
-    "imagenAlt": "Playa concurrida durante la temporada alta",
+    "fechaISO": "2026-08-29T18:00:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-aca04/1280/860",
+    "imagenAlt": "Ponente en un auditorio frente a estudiantes",
     "minutosLectura": 3,
     "cuerpo": [
-      "Los principales destinos de playa cerraron la temporada de verano con una ocupación hotelera por encima del 80 por ciento, una de las cifras más altas de los últimos años.",
-      "El Caribe y el Pacífico encabezaron la lista, favorecidos por el turismo nacional y por la recuperación de vuelos internacionales.",
-      "El sector estima que la derrama económica del verano superó las expectativas y confía en mantener el ritmo durante el puente de mediados de septiembre."
+      "El campus abrió su ciclo de charlas de emprendimiento del semestre con una conferencia magistral a cargo de una egresada del Tec que hoy dirige una empresa de tecnología.",
+      "Ante un auditorio lleno, la ponente compartió los aciertos y errores de su camino y respondió preguntas de estudiantes interesados en emprender.",
+      "El ciclo continuará durante el semestre con invitados de distintos sectores, en sesiones abiertas a toda la comunidad del campus."
     ]
   },
   {
-    "id": "tec-01",
-    "titulo": "Startups mexicanas de inteligencia artificial captan inversión récord en el semestre",
-    "entradilla": "Fondos nacionales y extranjeros apuestan por soluciones de automatización dirigidas a pequeñas y medianas empresas.",
-    "seccion": "tecnologia",
+    "id": "aca-05",
+    "titulo": "Estudiantes de arquitectura presentan proyectos para espacios públicos de Cuernavaca",
+    "entradilla": "Las propuestas plantean rehabilitar plazas y parques con criterios de accesibilidad y áreas verdes.",
+    "seccion": "academico",
     "autorId": "aut-03",
-    "fechaISO": "2026-09-01T12:25:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-tec01/1280/860",
-    "imagenAlt": "Equipo de una startup trabajando en una oficina",
-    "minutosLectura": 5,
-    "cuerpo": [
-      "Las startups mexicanas dedicadas a la inteligencia artificial captaron una cifra récord de inversión durante el primer semestre del año, según un reporte del ecosistema emprendedor.",
-      "Los fondos, tanto nacionales como extranjeros, se concentraron en soluciones de automatización pensadas para pequeñas y medianas empresas, un mercado poco atendido hasta ahora.",
-      "Los fundadores coinciden en que el reto ya no es conseguir capital semilla, sino encontrar talento especializado que hoy se disputan las grandes tecnológicas.",
-      "Analistas del sector advierten que el entusiasmo debe acompañarse de casos de uso rentables para evitar una burbuja como la que se vivió en otras olas tecnológicas.",
-      "Varias de estas empresas ya exportan sus servicios a Colombia, Chile y España, lo que las convierte en referentes de la región."
-    ]
-  },
-  {
-    "id": "tec-02",
-    "titulo": "Un apagón de fibra óptica deja sin internet a tres estados durante seis horas",
-    "entradilla": "El corte, provocado por una falla en un ducto principal, afectó a bancos, comercios y servicios gubernamentales.",
-    "seccion": "tecnologia",
-    "autorId": "aut-03",
-    "fechaISO": "2026-08-31T09:10:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-tec02/1280/860",
-    "imagenAlt": "Cables de fibra óptica en un centro de datos",
+    "fechaISO": "2026-08-28T13:30:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-aca05/1280/860",
+    "imagenAlt": "Maquetas de proyectos arquitectónicos sobre una mesa",
     "minutosLectura": 4,
     "cuerpo": [
-      "Un corte en un ducto principal de fibra óptica dejó sin servicio de internet a tres estados durante casi seis horas, lo que afectó a bancos, comercios y trámites gubernamentales.",
-      "La empresa operadora informó que la falla se originó por trabajos de obra pública que dañaron la infraestructura enterrada, y descartó un ciberataque.",
-      "El incidente reavivó el debate sobre la falta de rutas alternas que permitan mantener la conectividad cuando una línea principal falla.",
-      "Especialistas pidieron acelerar la redundancia de la red, sobre todo en regiones que dependen de un solo proveedor."
+      "Estudiantes de arquitectura del Campus Cuernavaca presentaron sus proyectos finales para la rehabilitación de espacios públicos de la ciudad, como plazas y parques.",
+      "Las propuestas, desarrolladas durante el bloque anterior, incorporan criterios de accesibilidad universal, aumento de áreas verdes y uso de materiales de la región.",
+      "Un panel de profesores y profesionales invitados evaluó los proyectos y ofreció retroalimentación a cada equipo.",
+      "Los mejores trabajos se exhibirán en una muestra abierta en el campus durante las próximas semanas."
     ]
   },
   {
-    "id": "tec-03",
-    "titulo": "Investigadores del país desarrollan un sensor de bajo costo para medir calidad del aire",
-    "entradilla": "El dispositivo, del tamaño de una caja de cerillos, transmite datos en tiempo real a una aplicación abierta.",
-    "seccion": "tecnologia",
-    "autorId": "aut-03",
-    "fechaISO": "2026-08-30T13:50:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-tec03/1280/860",
-    "imagenAlt": "Prototipo de sensor electrónico sobre una mesa",
-    "minutosLectura": 5,
+    "id": "est-01",
+    "titulo": "La comunidad estudiantil elige a la nueva mesa directiva de su sociedad de alumnos",
+    "entradilla": "La planilla ganadora propone más apoyo a los grupos estudiantiles y actividades de bienestar.",
+    "seccion": "estudiantil",
+    "autorId": "aut-07",
+    "fechaISO": "2026-09-01T17:20:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-est01/1280/860",
+    "imagenAlt": "Estudiantes votando en una urna en el campus",
+    "minutosLectura": 4,
     "cuerpo": [
-      "Un grupo de investigadores desarrolló un sensor de bajo costo capaz de medir la calidad del aire y transmitir los datos en tiempo real a una aplicación de acceso abierto.",
-      "El dispositivo, del tamaño de una caja de cerillos, cuesta una fracción de lo que valen los equipos profesionales y puede instalarse en escuelas, hogares y oficinas.",
-      "El objetivo, explican sus creadores, es que la ciudadanía cuente con información granular sobre la contaminación en su propia colonia, más allá de las estaciones oficiales.",
-      "El proyecto liberará los planos y el código para que cualquier persona pueda armar su propio sensor y sumarlo a la red comunitaria.",
-      "La primera fase de pruebas se realizará en una decena de escuelas de la zona metropolitana antes de fin de año."
+      "La comunidad estudiantil del Campus Cuernavaca eligió a la nueva mesa directiva de su sociedad de alumnos en una jornada de votación electrónica que registró una participación histórica.",
+      "La planilla ganadora propuso durante su campaña más apoyo económico y logístico a los grupos estudiantiles, así como una agenda de actividades de bienestar y salud mental.",
+      "Los resultados se dieron a conocer la misma tarde de la votación y la nueva mesa asumirá funciones en las próximas semanas.",
+      "Las planillas participantes agradecieron a la comunidad y llamaron a mantener el diálogo con las autoridades del campus."
     ]
   },
   {
-    "id": "tec-04",
-    "titulo": "Crece el uso de pagos con código QR en pequeños comercios del país",
-    "entradilla": "La adopción de esta forma de cobro se disparó entre tianguis, fondas y locales de barrio.",
-    "seccion": "tecnologia",
-    "autorId": "aut-03",
-    "fechaISO": "2026-08-28T11:35:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-tec04/1280/860",
-    "imagenAlt": "Cliente escaneando un código QR para pagar",
+    "id": "est-02",
+    "titulo": "La feria de grupos estudiantiles reúne a más de 30 organizaciones del campus",
+    "entradilla": "Los alumnos de nuevo ingreso conocieron clubes de tecnología, arte, deporte y servicio social.",
+    "seccion": "estudiantil",
+    "autorId": "aut-07",
+    "fechaISO": "2026-08-31T14:00:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-est02/1280/860",
+    "imagenAlt": "Estudiantes en stands de una feria de grupos estudiantiles",
     "minutosLectura": 3,
     "cuerpo": [
-      "El uso de pagos con código QR se disparó entre los pequeños comercios del país, desde tianguis y fondas hasta locales de barrio que antes solo aceptaban efectivo.",
-      "El impulso viene de aplicaciones que permiten cobrar sin necesidad de una terminal bancaria tradicional y con comisiones más bajas.",
-      "Comerciantes consultados destacan la rapidez del cobro y la reducción del manejo de efectivo, aunque persisten dudas sobre la conectividad en zonas rurales."
+      "La explanada del Campus Cuernavaca se llenó durante la feria de grupos estudiantiles, que reunió a más de 30 organizaciones que buscan sumar a los alumnos de nuevo ingreso.",
+      "En los stands, los estudiantes conocieron clubes de tecnología, arte, deporte, debate y servicio social, y se inscribieron a las actividades de su interés.",
+      "Los líderes de los grupos coincidieron en que la vida estudiantil es una parte esencial de la experiencia en el campus y una forma de hacer comunidad."
     ]
   },
   {
-    "id": "tec-05",
-    "titulo": "Una misión universitaria pondrá en órbita el primer nanosatélite estudiantil del país",
-    "entradilla": "El proyecto, construido por alumnos de ingeniería, tomará imágenes para monitorear cultivos y cuerpos de agua.",
-    "seccion": "tecnologia",
-    "autorId": "aut-03",
-    "fechaISO": "2026-08-27T10:20:00-06:00",
-    "imagenUrl": "https://picsum.photos/seed/notitec-tec05/1280/860",
-    "imagenAlt": "Estudiantes ensamblando un pequeño satélite",
+    "id": "est-03",
+    "titulo": "Un grupo estudiantil lanza una campaña de acopio para comunidades de Morelos",
+    "entradilla": "La iniciativa reúne víveres y material escolar para familias de municipios cercanos.",
+    "seccion": "estudiantil",
+    "autorId": "aut-07",
+    "fechaISO": "2026-08-30T11:45:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-est03/1280/860",
+    "imagenAlt": "Estudiantes organizando cajas de víveres",
+    "minutosLectura": 3,
+    "cuerpo": [
+      "Un grupo estudiantil de servicio social del campus lanzó una campaña de acopio de víveres y material escolar para familias de municipios cercanos de Morelos.",
+      "Los centros de acopio estarán instalados en distintos puntos del campus durante las próximas dos semanas, y la entrega se hará en coordinación con organizaciones de la región.",
+      "Los organizadores invitaron a toda la comunidad a sumarse con donativos y como voluntarios para la clasificación y el reparto."
+    ]
+  },
+  {
+    "id": "est-04",
+    "titulo": "Estudiantes del campus participan en un programa de liderazgo y servicio",
+    "entradilla": "El grupo trabajará durante el semestre en proyectos con impacto en la comunidad local.",
+    "seccion": "estudiantil",
+    "autorId": "aut-01",
+    "fechaISO": "2026-08-29T09:50:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-est04/1280/860",
+    "imagenAlt": "Jóvenes en una dinámica de liderazgo al aire libre",
     "minutosLectura": 4,
     "cuerpo": [
-      "Un equipo de estudiantes de ingeniería ultima los detalles del primer nanosatélite estudiantil del país, que será puesto en órbita en una misión programada para los próximos meses.",
-      "El aparato, del tamaño de una hogaza de pan, tomará imágenes que servirán para monitorear cultivos, cuerpos de agua y zonas afectadas por incendios.",
-      "El proyecto tomó más de tres años de trabajo y combinó recursos de la universidad con el apoyo de agencias espaciales de la región.",
-      "Los responsables aseguran que la experiencia formó a una generación de ingenieros con conocimientos que antes solo se conseguían en el extranjero."
+      "Un grupo de estudiantes del Campus Cuernavaca inició su participación en un programa de liderazgo y servicio que los acompañará durante todo el semestre.",
+      "Los participantes trabajarán en proyectos con impacto en la comunidad local, con el acompañamiento de mentores y de organizaciones aliadas del campus.",
+      "El programa combina sesiones de formación en liderazgo con trabajo de campo, y busca que los estudiantes desarrollen un sentido de responsabilidad social.",
+      "Al final del semestre, los equipos presentarán los resultados de sus proyectos ante la comunidad."
+    ]
+  },
+  {
+    "id": "est-05",
+    "titulo": "Emprendedores estudiantiles presentan sus proyectos ante inversionistas",
+    "entradilla": "Seis equipos del campus expusieron sus ideas de negocio en una jornada de emprendimiento.",
+    "seccion": "estudiantil",
+    "autorId": "aut-02",
+    "fechaISO": "2026-08-28T16:30:00-06:00",
+    "imagenUrl": "https://picsum.photos/seed/notitec-est05/1280/860",
+    "imagenAlt": "Estudiante presentando su proyecto en un escenario",
+    "minutosLectura": 4,
+    "cuerpo": [
+      "Seis equipos de emprendedores estudiantiles del Campus Cuernavaca presentaron sus proyectos ante un panel de inversionistas y mentores en una jornada organizada por el ecosistema de emprendimiento del Tec.",
+      "Las ideas abarcaron desde soluciones tecnológicas hasta proyectos de impacto social, y cada equipo contó con unos minutos para exponer su propuesta y responder preguntas.",
+      "Los mentores ofrecieron retroalimentación y algunos equipos recibieron la invitación a continuar en programas de aceleración del campus.",
+      "Los organizadores destacaron el nivel de las propuestas y el compromiso de los estudiantes."
     ]
   },
   {
     "id": "cul-01",
-    "titulo": "La Feria del Libro abre sus puertas con más de 800 presentaciones y autores invitados",
-    "entradilla": "El encuentro literario más grande del país dedica su edición a la poesía en lenguas originarias.",
+    "titulo": "El festival cultural del campus llena de música y arte la explanada principal",
+    "entradilla": "Grupos estudiantiles de danza, música y teatro se presentaron durante toda la jornada.",
     "seccion": "cultura",
     "autorId": "aut-05",
-    "fechaISO": "2026-09-01T10:50:00-06:00",
+    "fechaISO": "2026-09-01T19:00:00-06:00",
     "imagenUrl": "https://picsum.photos/seed/notitec-cul01/1280/860",
-    "imagenAlt": "Visitantes recorriendo los pasillos de una feria del libro",
+    "imagenAlt": "Presentación de danza al aire libre en el campus",
     "minutosLectura": 4,
     "cuerpo": [
-      "La Feria del Libro más grande del país abrió sus puertas con un programa de más de 800 presentaciones, mesas de diálogo y firmas de autores nacionales e internacionales.",
-      "Esta edición está dedicada a la poesía en lenguas originarias, con un pabellón especial y traducciones simultáneas para acercar estas obras a nuevos lectores.",
-      "Los organizadores esperan superar el medio millón de visitantes a lo largo de los diez días que dura el encuentro.",
-      "Además de las presentaciones, habrá talleres para infancias, conciertos al aire libre y una sección dedicada a la ilustración y la novela gráfica."
+      "El festival cultural del Campus Cuernavaca llenó de música, danza y arte la explanada principal durante una jornada en la que participaron los grupos estudiantiles de expresión artística.",
+      "El público disfrutó de presentaciones de danza folklórica, ensambles musicales y una muestra de teatro, además de stands de arte y gastronomía preparados por los alumnos.",
+      "El evento, organizado por el área de vida estudiantil, busca dar espacio a los talentos de la comunidad y fortalecer la identidad del campus.",
+      "Los grupos culturales invitaron a los estudiantes de nuevo ingreso a sumarse a sus filas para las presentaciones del semestre."
     ]
   },
   {
     "id": "cul-02",
-    "titulo": "Restauran un mural olvidado durante décadas en el vestíbulo de un antiguo cine",
-    "entradilla": "La obra, de casi doce metros, fue recuperada por un equipo de especialistas tras hallarse bajo varias capas de pintura.",
+    "titulo": "Una exposición reúne obras de estudiantes de las carreras creativas",
+    "entradilla": "La muestra permanecerá abierta al público en la galería del campus durante dos semanas.",
     "seccion": "cultura",
     "autorId": "aut-05",
-    "fechaISO": "2026-08-31T16:40:00-06:00",
+    "fechaISO": "2026-08-31T17:30:00-06:00",
     "imagenUrl": "https://picsum.photos/seed/notitec-cul02/1280/860",
-    "imagenAlt": "Especialista restaurando un mural antiguo",
-    "minutosLectura": 5,
+    "imagenAlt": "Visitantes observando obras en una galería",
+    "minutosLectura": 4,
     "cuerpo": [
-      "Un mural que permaneció oculto durante décadas bajo varias capas de pintura fue recuperado en el vestíbulo de un antiguo cine del centro histórico.",
-      "La obra, de casi doce metros de largo, retrata escenas de la vida cotidiana de mediados del siglo pasado y se atribuye a un artista de la escuela muralista.",
-      "El proceso de restauración tomó ocho meses y requirió técnicas de limpieza milimétricas para no dañar los pigmentos originales.",
-      "El inmueble, que estuvo a punto de ser demolido, será reabierto como centro cultural con entrada libre para el público.",
-      "Especialistas destacaron el hallazgo como una oportunidad para revalorar el patrimonio artístico que se esconde en edificios en desuso."
+      "Una exposición reúne obras de estudiantes de las carreras creativas del Campus Cuernavaca, con trabajos de diseño, ilustración, fotografía y proyectos multimedia.",
+      "La muestra, montada en la galería del campus, es resultado de los proyectos desarrollados por los alumnos durante el periodo anterior.",
+      "Los estudiantes participantes acompañaron la inauguración y explicaron a los visitantes el proceso creativo detrás de sus piezas.",
+      "La exposición permanecerá abierta al público de la comunidad durante dos semanas."
     ]
   },
   {
     "id": "cul-03",
-    "titulo": "Una película mexicana gana el premio principal en un festival internacional",
-    "entradilla": "El largometraje, filmado en una comunidad de la sierra, fue reconocido por su retrato íntimo de la vida rural.",
+    "titulo": "El grupo de teatro del campus estrena una obra sobre la vida universitaria",
+    "entradilla": "El montaje, escrito y actuado por estudiantes, tuvo funciones con lleno total.",
     "seccion": "cultura",
     "autorId": "aut-05",
-    "fechaISO": "2026-08-30T20:10:00-06:00",
+    "fechaISO": "2026-08-30T20:15:00-06:00",
     "imagenUrl": "https://picsum.photos/seed/notitec-cul03/1280/860",
-    "imagenAlt": "Sala de cine durante una proyección",
-    "minutosLectura": 4,
+    "imagenAlt": "Estudiantes en escena durante una obra de teatro",
+    "minutosLectura": 3,
     "cuerpo": [
-      "Una película mexicana se alzó con el premio principal de un reconocido festival internacional de cine, un galardón que celebra tanto la crítica como la industria.",
-      "El largometraje, filmado íntegramente en una comunidad de la sierra y con actores no profesionales, fue reconocido por su retrato íntimo de la vida rural.",
-      "La directora dedicó el premio a las mujeres del pueblo donde se rodó la cinta y aseguró que el reconocimiento abre puertas para el cine hecho fuera de los grandes circuitos.",
-      "La película llegará a las salas comerciales del país en las próximas semanas antes de su estreno en plataformas."
+      "El grupo de teatro del Campus Cuernavaca estrenó una obra escrita y actuada por estudiantes que retrata, con humor, los altibajos de la vida universitaria.",
+      "El montaje tuvo funciones con lleno total en el auditorio del campus y fue muy bien recibido por la comunidad.",
+      "El grupo adelantó que llevará la obra a otros foros y que abrirá una convocatoria para nuevos integrantes durante el semestre."
     ]
   },
   {
     "id": "cul-04",
-    "titulo": "Museos de la capital estrenan recorridos nocturnos gratuitos los últimos viernes del mes",
-    "entradilla": "La iniciativa busca acercar el arte a públicos que no pueden visitar los recintos en horario habitual.",
+    "titulo": "El cineclub del campus proyecta un ciclo de cine mexicano contemporáneo",
+    "entradilla": "Las funciones son gratuitas y se acompañan de charlas con la comunidad.",
     "seccion": "cultura",
     "autorId": "aut-05",
-    "fechaISO": "2026-08-28T18:00:00-06:00",
+    "fechaISO": "2026-08-28T18:40:00-06:00",
     "imagenUrl": "https://picsum.photos/seed/notitec-cul04/1280/860",
-    "imagenAlt": "Visitantes en una sala de museo iluminada de noche",
+    "imagenAlt": "Sala con estudiantes viendo una proyección",
     "minutosLectura": 3,
     "cuerpo": [
-      "Una decena de museos de la capital estrenó recorridos nocturnos gratuitos que se realizarán los últimos viernes de cada mes.",
-      "La iniciativa busca acercar el arte a públicos que, por sus horarios de trabajo o estudio, no pueden visitar los recintos durante el día.",
-      "Además de las salas abiertas hasta la medianoche, habrá visitas guiadas, música en vivo y actividades para las familias que acudan con niñas y niños."
+      "El cineclub del Campus Cuernavaca abrió un ciclo dedicado al cine mexicano contemporáneo con funciones gratuitas para toda la comunidad.",
+      "Cada proyección se acompaña de una breve charla en la que los asistentes comentan la película y sus temas.",
+      "Los organizadores invitaron a los estudiantes a proponer títulos para las siguientes sesiones del semestre."
     ]
   },
   {
     "id": "dep-01",
-    "titulo": "El campeón defensor rescata un empate agónico en el último minuto",
-    "entradilla": "Un gol de cabeza en tiempo de compensación evitó la primera derrota del equipo en el torneo.",
+    "titulo": "Los Borregos CVA vencen en su debut de temporada como locales",
+    "entradilla": "El equipo de futbol americano se impuso ante su afición en el arranque de la campaña.",
     "seccion": "deportes",
     "autorId": "aut-04",
-    "fechaISO": "2026-09-01T22:15:00-06:00",
+    "fechaISO": "2026-09-01T22:10:00-06:00",
     "imagenUrl": "https://picsum.photos/seed/notitec-dep01/1280/860",
-    "imagenAlt": "Jugadores celebrando un gol en el estadio",
+    "imagenAlt": "Jugadores de futbol americano celebrando en el campo",
     "minutosLectura": 5,
     "cuerpo": [
-      "El campeón defensor rescató un empate agónico gracias a un gol de cabeza en el minuto 92, cuando el partido parecía perdido ante su afición.",
-      "El conjunto local se fue al frente en el marcador desde la primera media hora y aguantó la ventaja durante casi todo el encuentro.",
-      "El técnico del campeón reconoció que su equipo no jugó su mejor partido, pero destacó el carácter para no rendirse hasta el silbatazo final.",
-      "Con este resultado, el campeón mantiene su racha sin derrotas, aunque cede terreno frente a los punteros del torneo.",
-      "El próximo compromiso será de visita, en una cancha donde no gana desde hace tres temporadas."
+      "Los Borregos del Campus Cuernavaca comenzaron su temporada con una victoria como locales ante su afición, en un partido de futbol americano que mantuvo la emoción hasta el último cuarto.",
+      "La defensiva Borrega fue clave para frenar los avances del rival, mientras que la ofensiva concretó las jugadas decisivas en momentos claves del encuentro.",
+      "El entrenador destacó el trabajo de la pretemporada y el apoyo de la comunidad, que llenó las gradas del campus.",
+      "El equipo agradeció a los estudiantes que asistieron con la porra y adelantó que el próximo compromiso será de visita.",
+      "Con este resultado, los Borregos CVA arrancan con paso firme en la liga intercampus."
     ]
   },
   {
     "id": "dep-02",
-    "titulo": "La selección nacional anuncia su lista de convocados para la gira de preparación",
-    "entradilla": "El cuerpo técnico incluye a tres debutantes de cara a los amistosos del próximo mes.",
+    "titulo": "El representativo de futbol soccer del campus clasifica a la siguiente fase",
+    "entradilla": "El equipo aseguró su lugar tras una destacada actuación en la ronda de grupos.",
     "seccion": "deportes",
     "autorId": "aut-04",
-    "fechaISO": "2026-09-01T18:30:00-06:00",
+    "fechaISO": "2026-09-01T18:40:00-06:00",
     "imagenUrl": "https://picsum.photos/seed/notitec-dep02/1280/860",
-    "imagenAlt": "Entrenamiento de una selección de futbol",
+    "imagenAlt": "Partido de futbol soccer en una cancha del campus",
     "minutosLectura": 4,
     "cuerpo": [
-      "La selección nacional dio a conocer su lista de convocados para la gira de preparación que incluye dos partidos amistosos el próximo mes.",
-      "La principal novedad es el llamado de tres futbolistas que debutarían con el representativo, todos ellos con buen arranque de temporada en sus clubes.",
-      "El director técnico explicó que la gira servirá para probar variantes tácticas antes de los compromisos oficiales de fin de año.",
-      "Quedaron fuera de la lista dos jugadores habituales por decisión técnica, lo que abre el debate entre la afición."
+      "El representativo de futbol soccer del Campus Cuernavaca aseguró su clasificación a la siguiente fase de la liga intercampus tras una destacada actuación en la ronda de grupos.",
+      "El equipo mostró un juego ordenado y aprovechó las oportunidades frente a la portería para sumar los puntos necesarios.",
+      "El cuerpo técnico resaltó el compromiso de los jugadores, que combinan los entrenamientos con sus responsabilidades académicas.",
+      "La afición Borrega ya prepara el apoyo para los partidos de la fase final."
     ]
   },
   {
     "id": "dep-03",
-    "titulo": "Una velocista mexicana rompe el récord nacional de los 200 metros",
-    "entradilla": "La atleta firmó una marca histórica en una competencia internacional y apunta a los próximos juegos.",
+    "titulo": "Una nadadora del campus rompe su marca personal en un torneo intercampus",
+    "entradilla": "La estudiante subió al podio y buscará su lugar en la etapa nacional del deporte universitario.",
     "seccion": "deportes",
     "autorId": "aut-04",
-    "fechaISO": "2026-08-31T15:20:00-06:00",
+    "fechaISO": "2026-08-31T15:30:00-06:00",
     "imagenUrl": "https://picsum.photos/seed/notitec-dep03/1280/860",
-    "imagenAlt": "Atleta corriendo en una pista de tartán",
+    "imagenAlt": "Nadadora en una alberca durante una competencia",
     "minutosLectura": 4,
     "cuerpo": [
-      "Una velocista mexicana rompió el récord nacional de los 200 metros planos con una marca que la coloca entre las mejores del continente.",
-      "La atleta, de 23 años, mejoró en más de dos décimas la plusmarca que resistía desde hacía más de una década.",
-      "Tras la carrera, aseguró que el objetivo es clasificar a los próximos juegos y pelear por un lugar en la final.",
-      "Su entrenador destacó el trabajo de los últimos meses y adelantó que competirá en un par de citas más antes de cerrar la temporada."
+      "Una nadadora del Campus Cuernavaca rompió su marca personal en un torneo intercampus y subió al podio en su prueba, un resultado que la coloca entre las mejores de la categoría.",
+      "La estudiante, que combina el entrenamiento con sus clases, aseguró que el objetivo es clasificar a la etapa nacional del deporte universitario.",
+      "Su entrenador destacó la disciplina de la atleta y el trabajo del equipo de natación del campus.",
+      "Los Borregos participarán en las próximas fechas del calendario deportivo intercampus."
     ]
   },
   {
     "id": "dep-04",
-    "titulo": "El torneo de basquetbol estrena formato con más equipos y una fase final a visita",
-    "entradilla": "La liga anunció cambios para hacer más atractiva la recta decisiva de la temporada.",
+    "titulo": "El equipo de basquetbol femenil abre la temporada con un triunfo de visita",
+    "entradilla": "Las Borregas dominaron el último cuarto para llevarse el partido en su primera salida.",
     "seccion": "deportes",
     "autorId": "aut-04",
-    "fechaISO": "2026-08-30T14:00:00-06:00",
+    "fechaISO": "2026-08-30T14:20:00-06:00",
     "imagenUrl": "https://picsum.photos/seed/notitec-dep04/1280/860",
-    "imagenAlt": "Cancha de basquetbol durante un partido",
+    "imagenAlt": "Partido de basquetbol en un gimnasio",
     "minutosLectura": 3,
     "cuerpo": [
-      "La liga de basquetbol anunció un nuevo formato para la próxima temporada que suma dos equipos y modifica la fase final.",
-      "El cambio más relevante es que las series decisivas se jugarán a visita recíproca, lo que promete duelos más equilibrados.",
-      "Los directivos aseguran que el nuevo esquema busca hacer más atractiva la recta final y atraer a más aficionados a los estadios."
+      "El equipo de basquetbol femenil del Campus Cuernavaca abrió la temporada con un triunfo de visita, luego de un cierre dominante en el último cuarto.",
+      "Las Borregas mantuvieron la intensidad en la defensa y lograron los puntos necesarios para asegurar la victoria en su primera salida.",
+      "El cuerpo técnico se dijo satisfecho con el arranque y llamó a la comunidad a apoyar al equipo en sus partidos como local."
     ]
   },
   {
     "id": "dep-05",
-    "titulo": "Un joven pilotó mexicano firma su primer podio en la categoría de monoplazas",
-    "entradilla": "El piloto de 19 años terminó tercero en una carrera marcada por la lluvia y los abandonos.",
+    "titulo": "Arranca el torneo intramuros con la participación de decenas de equipos",
+    "entradilla": "Estudiantes de todas las carreras compiten en varias disciplinas dentro del campus.",
     "seccion": "deportes",
     "autorId": "aut-04",
-    "fechaISO": "2026-08-29T13:15:00-06:00",
+    "fechaISO": "2026-08-29T13:00:00-06:00",
     "imagenUrl": "https://picsum.photos/seed/notitec-dep05/1280/860",
-    "imagenAlt": "Monoplaza de carreras en la pista",
-    "minutosLectura": 4,
+    "imagenAlt": "Estudiantes jugando en una cancha del campus",
+    "minutosLectura": 3,
     "cuerpo": [
-      "Un joven piloto mexicano de 19 años firmó su primer podio en la categoría de monoplazas al terminar tercero en una carrera marcada por la lluvia y varios abandonos.",
-      "El piloto arrancó desde la séptima posición y fue escalando lugares a medida que la pista se complicaba por el mal clima.",
-      "Tras bajarse del auto, dedicó el resultado a su familia y al equipo que lo respalda desde las categorías inferiores.",
-      "Con este resultado se ubica en zona de puntos en la clasificación general, un hecho poco común para un debutante."
+      "El torneo intramuros del Campus Cuernavaca arrancó con la participación de decenas de equipos formados por estudiantes de todas las carreras.",
+      "Las competencias incluyen futbol, basquetbol y voleibol, entre otras disciplinas, y se juegan en las canchas del campus a lo largo del semestre.",
+      "El área de deportes destacó que el torneo es una forma de fomentar la activación física y la convivencia entre la comunidad estudiantil."
     ]
   }
 ]

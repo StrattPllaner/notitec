@@ -24,8 +24,9 @@ export function Footer() {
           </nav>
         </div>
         <p className="mt-8 text-xs text-neutral-400 dark:text-neutral-500">
-          © 2026 Notitec · Noticias de México y el mundo. Sitio de demostración con
-          contenido simulado.
+          © 2026 Notitec · Medio estudiantil del Tec de Monterrey, Campus Cuernavaca.
+          Sitio de demostración con contenido simulado; no es un medio oficial del
+          Tecnológico de Monterrey.
         </p>
       </div>
     </footer>

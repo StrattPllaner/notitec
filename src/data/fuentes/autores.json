@@ -2,43 +2,43 @@
   {
     "id": "aut-01",
     "nombre": "Mariana Robles",
-    "rol": "Corresponsal política en la CDMX",
+    "rol": "Reportera estudiantil · LCMD",
     "avatarUrl": "https://i.pravatar.cc/120?img=47"
   },
   {
     "id": "aut-02",
     "nombre": "Diego Alcántara",
-    "rol": "Editor de Economía",
+    "rol": "Editor de Notitec · IIT",
     "avatarUrl": "https://i.pravatar.cc/120?img=12"
   },
   {
     "id": "aut-03",
     "nombre": "Renata Vázquez",
-    "rol": "Reportera de Tecnología",
+    "rol": "Corresponsal académica · LDI",
     "avatarUrl": "https://i.pravatar.cc/120?img=32"
   },
   {
     "id": "aut-04",
     "nombre": "Emiliano Cárdenas",
-    "rol": "Cronista deportivo",
+    "rol": "Cronista deportivo · Borregos CVA",
     "avatarUrl": "https://i.pravatar.cc/120?img=15"
   },
   {
     "id": "aut-05",
     "nombre": "Ximena Fuentes",
-    "rol": "Editora de Cultura",
+    "rol": "Editora de Cultura · LC",
     "avatarUrl": "https://i.pravatar.cc/120?img=45"
   },
   {
     "id": "aut-06",
-    "nombre": "Andrés Beltrán",
-    "rol": "Reportero de temas nacionales",
+    "nombre": "Comunicación Campus Cuernavaca",
+    "rol": "Dirección de Comunicación · CVA",
     "avatarUrl": "https://i.pravatar.cc/120?img=68"
   },
   {
     "id": "aut-07",
     "nombre": "Lucía Montero",
-    "rol": "Analista de mercados",
+    "rol": "Reportera de vida estudiantil · LAF",
     "avatarUrl": "https://i.pravatar.cc/120?img=20"
   }
 ]

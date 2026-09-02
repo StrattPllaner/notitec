@@ -1,25 +1,25 @@
 [
   {
     "id": "par-01",
-    "competicion": "Liga Nacional · Jornada 8",
+    "competicion": "Liga Intercampus · Jornada 2",
     "estado": "en-vivo",
     "local": {
-      "id": "eq-halcones",
-      "nombre": "Halcones de Monterrey",
-      "abreviatura": "HAL",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=halcones"
+      "id": "eq-cva",
+      "nombre": "Borregos CVA",
+      "abreviatura": "CVA",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva"
     },
     "visitante": {
-      "id": "eq-canoneros",
-      "nombre": "Cañoneros del Puerto",
-      "abreviatura": "CAÑ",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=canoneros"
+      "id": "eq-qro",
+      "nombre": "Borregos Querétaro",
+      "abreviatura": "QRO",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosqro"
     },
     "marcadorLocal": 0,
     "marcadorVisitante": 0,
     "minuto": 0,
-    "inicioISO": "2026-09-01T21:00:00-06:00",
-    "sede": "Estadio del Norte",
+    "inicioISO": "2026-09-01T17:00:00-06:00",
+    "sede": "Estadio Borregos CVA",
     "alineacionLocal": [
       "R. Sandoval", "J. Medina", "C. Robles", "A. Fierro", "L. Guzmán",
       "P. Cervantes", "M. Tovar", "D. Escobar", "E. Nájera", "F. Salcedo", "O. Bravo"
@@ -36,41 +36,41 @@
       { "etiqueta": "Faltas", "local": 8, "visitante": 12 }
     ],
     "narracion": [
-      { "minuto": 0, "tipo": "inicio", "texto": "¡Rueda el balón en el Estadio del Norte! Arranca el partido." },
-      { "minuto": 8, "tipo": "ocasion", "texto": "Aviso de los Halcones: centro peligroso que despeja la defensa visitante." },
-      { "minuto": 12, "tipo": "gol", "equipo": "local", "texto": "¡Gooool de los Halcones! Salcedo remata de primera dentro del área tras un pase filtrado." },
-      { "minuto": 26, "tipo": "amarilla", "equipo": "visitante", "texto": "Tarjeta amarilla para Cordero por una entrada tardía a media cancha." },
-      { "minuto": 34, "tipo": "gol", "equipo": "visitante", "texto": "¡Empatan los Cañoneros! Ávila define cruzado tras un contragolpe letal." },
+      { "minuto": 0, "tipo": "inicio", "texto": "¡Rueda el balón en el Estadio Borregos CVA! Arranca el partido." },
+      { "minuto": 8, "tipo": "ocasion", "texto": "Aviso de CVA: centro peligroso que despeja la defensa de Querétaro." },
+      { "minuto": 12, "tipo": "gol", "equipo": "local", "texto": "¡Gooool de Borregos CVA! Salcedo remata de primera dentro del área tras un pase filtrado." },
+      { "minuto": 26, "tipo": "amarilla", "equipo": "visitante", "texto": "Tarjeta amarilla para Cordero (QRO) por una entrada tardía a media cancha." },
+      { "minuto": 34, "tipo": "gol", "equipo": "visitante", "texto": "¡Empata Querétaro! Ávila define cruzado tras un contragolpe." },
       { "minuto": 45, "tipo": "info", "texto": "Se agrega un minuto. Termina la primera mitad." },
       { "minuto": 46, "tipo": "inicio", "texto": "Comienza el segundo tiempo sin cambios en ninguno de los dos equipos." },
-      { "minuto": 58, "tipo": "gol", "equipo": "local", "texto": "¡Otra vez los Halcones! Nájera empuja el balón en el área chica tras un rebote." },
-      { "minuto": 63, "tipo": "cambio", "equipo": "local", "texto": "Doble cambio en los Halcones para refrescar el mediocampo." },
-      { "minuto": 77, "tipo": "gol", "equipo": "local", "texto": "¡Sentencia Bravo! Definición sutil ante la salida del portero para el tercero." },
-      { "minuto": 84, "tipo": "amarilla", "equipo": "local", "texto": "Amonestado Medina por detener un contragolpe con falta." },
-      { "minuto": 90, "tipo": "fin", "texto": "El árbitro señala el final. Victoria de los Halcones como locales." }
+      { "minuto": 58, "tipo": "gol", "equipo": "local", "texto": "¡Otra vez CVA! Nájera empuja el balón en el área chica tras un rebote." },
+      { "minuto": 63, "tipo": "cambio", "equipo": "local", "texto": "Doble cambio en Borregos CVA para refrescar el mediocampo." },
+      { "minuto": 77, "tipo": "gol", "equipo": "local", "texto": "¡Sentencia Bravo! Definición sutil ante la salida del portero para el tercero de CVA." },
+      { "minuto": 84, "tipo": "amarilla", "equipo": "local", "texto": "Amonestado Medina (CVA) por detener un contragolpe con falta." },
+      { "minuto": 90, "tipo": "fin", "texto": "El árbitro señala el final. Victoria de Borregos CVA como locales." }
     ]
   },
   {
     "id": "par-02",
-    "competicion": "Liga Nacional · Jornada 8",
+    "competicion": "Liga Intercampus · Jornada 2",
     "estado": "en-vivo",
     "local": {
-      "id": "eq-marea",
-      "nombre": "Marea Azul",
-      "abreviatura": "MAR",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=mareaazul"
+      "id": "eq-ccm",
+      "nombre": "Borregos CCM",
+      "abreviatura": "CCM",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosccm"
     },
     "visitante": {
-      "id": "eq-zorros",
-      "nombre": "Zorros del Bajío",
-      "abreviatura": "ZOR",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=zorrosbajio"
+      "id": "eq-tol",
+      "nombre": "Borregos Toluca",
+      "abreviatura": "TOL",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregostol"
     },
     "marcadorLocal": 0,
     "marcadorVisitante": 0,
     "minuto": 0,
-    "inicioISO": "2026-09-01T21:05:00-06:00",
-    "sede": "Estadio de la Bahía",
+    "inicioISO": "2026-09-01T17:05:00-06:00",
+    "sede": "Campo Borregos CCM",
     "alineacionLocal": [
       "A. Rueda", "M. Castañeda", "J. Ordaz", "L. Prieto", "C. Villaseñor",
       "E. Ponce", "D. Lara", "F. Quintero", "G. Márquez", "H. Solís", "I. Tapia"
@@ -87,38 +87,38 @@
       { "etiqueta": "Faltas", "local": 10, "visitante": 9 }
     ],
     "narracion": [
-      { "minuto": 0, "tipo": "inicio", "texto": "¡Comienza el duelo en el Estadio de la Bahía!" },
-      { "minuto": 14, "tipo": "ocasion", "texto": "La Marea Azul domina la posesión pero no encuentra el último pase." },
-      { "minuto": 22, "tipo": "gol", "equipo": "visitante", "texto": "¡Golpe de los Zorros! Serrano aprovecha un error en la salida y define solo frente al arco." },
-      { "minuto": 38, "tipo": "amarilla", "equipo": "local", "texto": "Amarilla para Lara tras una protesta al árbitro." },
+      { "minuto": 0, "tipo": "inicio", "texto": "¡Comienza el duelo en el Campo Borregos CCM!" },
+      { "minuto": 14, "tipo": "ocasion", "texto": "CCM domina la posesión pero no encuentra el último pase." },
+      { "minuto": 22, "tipo": "gol", "equipo": "visitante", "texto": "¡Golpe de Toluca! Serrano aprovecha un error en la salida y define solo frente al arco." },
+      { "minuto": 38, "tipo": "amarilla", "equipo": "local", "texto": "Amarilla para Lara (CCM) tras una protesta al árbitro." },
       { "minuto": 45, "tipo": "info", "texto": "Sin tiempo agregado, termina la primera parte." },
-      { "minuto": 46, "tipo": "inicio", "texto": "Arranca el complemento con un cambio en la Marea Azul." },
-      { "minuto": 66, "tipo": "gol", "equipo": "visitante", "texto": "¡Los Zorros amplían la ventaja! Contragolpe perfecto que termina Fonseca con potencia." },
-      { "minuto": 72, "tipo": "roja", "equipo": "local", "texto": "Expulsión de Ordaz por doble amonestación. La Marea Azul se queda con diez." },
-      { "minuto": 90, "tipo": "fin", "texto": "Final del encuentro. Los Zorros se llevan los tres puntos de visita." }
+      { "minuto": 46, "tipo": "inicio", "texto": "Arranca el complemento con un cambio en CCM." },
+      { "minuto": 66, "tipo": "gol", "equipo": "visitante", "texto": "¡Toluca amplía la ventaja! Contragolpe perfecto que termina Fonseca con potencia." },
+      { "minuto": 72, "tipo": "roja", "equipo": "local", "texto": "Expulsión de Ordaz (CCM) por doble amonestación. CCM se queda con diez." },
+      { "minuto": 90, "tipo": "fin", "texto": "Final del encuentro. Toluca se lleva los tres puntos de visita." }
     ]
   },
   {
     "id": "par-03",
-    "competicion": "Copa Regional · Cuartos",
+    "competicion": "Copa Borregos · Cuartos",
     "estado": "en-vivo",
     "local": {
-      "id": "eq-rayo",
-      "nombre": "Rayo del Norte",
-      "abreviatura": "RAY",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=rayonorte"
+      "id": "eq-pue",
+      "nombre": "Borregos Puebla",
+      "abreviatura": "PUE",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregospue"
     },
     "visitante": {
-      "id": "eq-costa",
-      "nombre": "Atlético Costa",
-      "abreviatura": "ATC",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=atleticocosta"
+      "id": "eq-gda",
+      "nombre": "Borregos Guadalajara",
+      "abreviatura": "GDA",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosgda"
     },
     "marcadorLocal": 0,
     "marcadorVisitante": 0,
     "minuto": 0,
-    "inicioISO": "2026-09-01T21:10:00-06:00",
-    "sede": "Estadio Sierra Madre",
+    "inicioISO": "2026-09-01T17:10:00-06:00",
+    "sede": "Estadio Borregos Puebla",
     "alineacionLocal": [
       "J. Escamilla", "P. Vega", "R. Duarte", "C. Montiel", "A. Lozano",
       "M. Herrera", "D. Cabrera", "E. Rincón", "F. Aguilera", "G. Padilla", "H. Nava"
@@ -135,38 +135,38 @@
       { "etiqueta": "Faltas", "local": 13, "visitante": 11 }
     ],
     "narracion": [
-      { "minuto": 0, "tipo": "inicio", "texto": "¡Rueda el balón en el Estadio Sierra Madre por los cuartos de final!" },
-      { "minuto": 8, "tipo": "gol", "equipo": "local", "texto": "¡Madrugador! Padilla adelanta al Rayo del Norte con un derechazo desde fuera del área." },
-      { "minuto": 30, "tipo": "amarilla", "equipo": "visitante", "texto": "Amonestado Mora por una falta sobre Aguilera." },
-      { "minuto": 41, "tipo": "gol", "equipo": "visitante", "texto": "¡Empata el Atlético Costa! Camarena cabecea a la perfección un tiro de esquina." },
+      { "minuto": 0, "tipo": "inicio", "texto": "¡Rueda el balón en el Estadio Borregos Puebla por los cuartos de final!" },
+      { "minuto": 8, "tipo": "gol", "equipo": "local", "texto": "¡Madrugador! Padilla adelanta a Puebla con un derechazo desde fuera del área." },
+      { "minuto": 30, "tipo": "amarilla", "equipo": "visitante", "texto": "Amonestado Mora (GDA) por una falta sobre Aguilera." },
+      { "minuto": 41, "tipo": "gol", "equipo": "visitante", "texto": "¡Empata Guadalajara! Camarena cabecea a la perfección un tiro de esquina." },
       { "minuto": 45, "tipo": "gol", "equipo": "visitante", "texto": "¡Vuelta increíble antes del descanso! Osorio remata de volea para el 1-2." },
-      { "minuto": 46, "tipo": "inicio", "texto": "Segundo tiempo en marcha; el Rayo necesita reaccionar." },
-      { "minuto": 70, "tipo": "ocasion", "texto": "Salva el poste al Atlético Costa tras un cabezazo de Duarte." },
-      { "minuto": 89, "tipo": "gol", "equipo": "local", "texto": "¡Empate agónico del Rayo! Nava empuja el balón tras un barullo en el área." },
+      { "minuto": 46, "tipo": "inicio", "texto": "Segundo tiempo en marcha; Puebla necesita reaccionar." },
+      { "minuto": 70, "tipo": "ocasion", "texto": "Salva el poste a Guadalajara tras un cabezazo de Duarte." },
+      { "minuto": 89, "tipo": "gol", "equipo": "local", "texto": "¡Empate agónico de Puebla! Nava empuja el balón tras un barullo en el área." },
       { "minuto": 90, "tipo": "fin", "texto": "Final dramático. El pase se definirá desde los once pasos." }
     ]
   },
   {
     "id": "par-04",
-    "competicion": "Liga Nacional · Jornada 9",
+    "competicion": "Liga Intercampus · Jornada 3",
     "estado": "programado",
     "local": {
-      "id": "eq-leones",
-      "nombre": "Leones del Centro",
-      "abreviatura": "LEO",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=leonescentro"
+      "id": "eq-mty",
+      "nombre": "Borregos Monterrey",
+      "abreviatura": "MTY",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosmty"
     },
     "visitante": {
-      "id": "eq-halcones",
-      "nombre": "Halcones de Monterrey",
-      "abreviatura": "HAL",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=halcones"
+      "id": "eq-cva",
+      "nombre": "Borregos CVA",
+      "abreviatura": "CVA",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva"
     },
     "marcadorLocal": 0,
     "marcadorVisitante": 0,
     "minuto": 0,
     "inicioISO": "2026-09-05T19:00:00-06:00",
-    "sede": "Estadio Metropolitano",
+    "sede": "Estadio Borregos Monterrey",
     "alineacionLocal": [],
     "alineacionVisitante": [],
     "estadisticas": [],
@@ -174,25 +174,25 @@
   },
   {
     "id": "par-05",
-    "competicion": "Liga Nacional · Jornada 9",
+    "competicion": "Liga Intercampus · Jornada 3",
     "estado": "programado",
     "local": {
-      "id": "eq-zorros",
-      "nombre": "Zorros del Bajío",
-      "abreviatura": "ZOR",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=zorrosbajio"
+      "id": "eq-qro",
+      "nombre": "Borregos Querétaro",
+      "abreviatura": "QRO",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosqro"
     },
     "visitante": {
-      "id": "eq-marea",
-      "nombre": "Marea Azul",
-      "abreviatura": "MAR",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=mareaazul"
+      "id": "eq-ccm",
+      "nombre": "Borregos CCM",
+      "abreviatura": "CCM",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosccm"
     },
     "marcadorLocal": 0,
     "marcadorVisitante": 0,
     "minuto": 0,
     "inicioISO": "2026-09-05T21:15:00-06:00",
-    "sede": "Estadio del Bajío",
+    "sede": "Campo Borregos Querétaro",
     "alineacionLocal": [],
     "alineacionVisitante": [],
     "estadisticas": [],
@@ -200,25 +200,25 @@
   },
   {
     "id": "par-06",
-    "competicion": "Copa Regional · Cuartos",
+    "competicion": "Copa Borregos · Cuartos",
     "estado": "programado",
     "local": {
-      "id": "eq-costa",
-      "nombre": "Atlético Costa",
-      "abreviatura": "ATC",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=atleticocosta"
+      "id": "eq-cva",
+      "nombre": "Borregos CVA",
+      "abreviatura": "CVA",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva"
     },
     "visitante": {
-      "id": "eq-rayo",
-      "nombre": "Rayo del Norte",
-      "abreviatura": "RAY",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=rayonorte"
+      "id": "eq-tol",
+      "nombre": "Borregos Toluca",
+      "abreviatura": "TOL",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregostol"
     },
     "marcadorLocal": 0,
     "marcadorVisitante": 0,
     "minuto": 0,
     "inicioISO": "2026-09-06T18:00:00-06:00",
-    "sede": "Estadio Costa del Sol",
+    "sede": "Estadio Borregos CVA",
     "alineacionLocal": [],
     "alineacionVisitante": [],
     "estadisticas": [],
@@ -226,25 +226,25 @@
   },
   {
     "id": "par-07",
-    "competicion": "Liga Nacional · Jornada 7",
+    "competicion": "Liga Intercampus · Jornada 1",
     "estado": "finalizado",
     "local": {
-      "id": "eq-leones",
-      "nombre": "Leones del Centro",
-      "abreviatura": "LEO",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=leonescentro"
+      "id": "eq-cva",
+      "nombre": "Borregos CVA",
+      "abreviatura": "CVA",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva"
     },
     "visitante": {
-      "id": "eq-zorros",
-      "nombre": "Zorros del Bajío",
-      "abreviatura": "ZOR",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=zorrosbajio"
+      "id": "eq-pue",
+      "nombre": "Borregos Puebla",
+      "abreviatura": "PUE",
+      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregospue"
     },
     "marcadorLocal": 2,
     "marcadorVisitante": 2,
     "minuto": 90,
     "inicioISO": "2026-08-29T19:00:00-06:00",
-    "sede": "Estadio Metropolitano",
+    "sede": "Estadio Borregos CVA",
     "alineacionLocal": [
       "A. Fuentes", "M. Larios", "J. Cano", "L. Bañuelos", "C. Ramos",
       "E. Delgado", "D. Casas", "F. Iñiguez", "G. Pérez", "H. Segura", "I. Valadez"
@@ -261,12 +261,12 @@
       { "etiqueta": "Faltas", "local": 11, "visitante": 13 }
     ],
     "narracion": [
-      { "minuto": 0, "tipo": "inicio", "texto": "Arranca el partido en el Estadio Metropolitano." },
-      { "minuto": 19, "tipo": "gol", "equipo": "local", "texto": "Gol de los Leones: Segura conecta un cabezazo tras un tiro de esquina." },
-      { "minuto": 44, "tipo": "gol", "equipo": "visitante", "texto": "Empatan los Zorros justo antes del descanso con un remate de Serrano." },
-      { "minuto": 61, "tipo": "gol", "equipo": "visitante", "texto": "Le dan la vuelta los Zorros: Fonseca define un mano a mano." },
-      { "minuto": 88, "tipo": "gol", "equipo": "local", "texto": "¡Empate de los Leones sobre el final! Pérez remata de zurda dentro del área." },
-      { "minuto": 90, "tipo": "fin", "texto": "Termina con reparto de puntos: 2-2 en el Metropolitano." }
+      { "minuto": 0, "tipo": "inicio", "texto": "Arranca el partido en el Estadio Borregos CVA." },
+      { "minuto": 19, "tipo": "gol", "equipo": "local", "texto": "Gol de CVA: Segura conecta un cabezazo tras un tiro de esquina." },
+      { "minuto": 44, "tipo": "gol", "equipo": "visitante", "texto": "Empata Puebla justo antes del descanso con un remate de Serrano." },
+      { "minuto": 61, "tipo": "gol", "equipo": "visitante", "texto": "Le da la vuelta Puebla: Fonseca define un mano a mano." },
+      { "minuto": 88, "tipo": "gol", "equipo": "local", "texto": "¡Empate de CVA sobre el final! Pérez remata de zurda dentro del área." },
+      { "minuto": 90, "tipo": "fin", "texto": "Termina con reparto de puntos: 2-2 en el Estadio Borregos CVA." }
     ]
   }
 ]

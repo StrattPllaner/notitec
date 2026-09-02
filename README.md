@@ -1,9 +1,13 @@
 # Notitec
 
-Sitio web de un medio de noticias digital en español para audiencia mexicana.
-Portada, secciones (Nacional, Economía, Tecnología, Cultura y Deportes),
-vista de artículo, marcadores deportivos en vivo con narración jugada por
-jugada, búsqueda y compartir. Modo claro/oscuro.
+Sitio web del medio de noticias estudiantil del **Tec de Monterrey, Campus
+Cuernavaca (CVA)**. Portada, secciones (Campus, Académico, Estudiantil, Cultura
+y Deportes), vista de artículo, marcadores de los Borregos en vivo con narración
+jugada por jugada, búsqueda y compartir. Modo claro/oscuro, identidad en blanco
+y negro.
+
+> Proyecto de demostración con contenido simulado; no es un medio oficial del
+> Tecnológico de Monterrey.
 
 Todos los datos son **simulados** y viven detrás de una capa de acceso en
 `src/data/`. La interfaz nunca lee el JSON directamente: siempre pasa por

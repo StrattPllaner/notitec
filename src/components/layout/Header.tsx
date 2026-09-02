@@ -27,7 +27,12 @@ export function Header() {
         {/* Marca */}
         <Link to="/" className="flex items-center gap-2" onClick={() => setMenuAbierto(false)}>
           <Logo size={32} />
-          <span className="font-serif text-xl font-bold tracking-tight">Notitec</span>
+          <span className="flex flex-col leading-none">
+            <span className="font-serif text-xl font-bold tracking-tight">Notitec</span>
+            <span className="hidden text-[0.6rem] font-medium uppercase tracking-widest text-neutral-500 dark:text-neutral-400 sm:block">
+              Tec · Campus Cuernavaca
+            </span>
+          </span>
         </Link>
 
         {/* Navegación de escritorio */}

@@ -51,9 +51,9 @@ function porFecha(a: Noticia, b: Noticia): number {
 
 /** Catálogo de secciones con su nombre legible, para navegación y encabezados. */
 export const SECCIONES: SeccionInfo[] = [
-  { slug: 'nacional', nombre: 'Nacional' },
-  { slug: 'economia', nombre: 'Economía' },
-  { slug: 'tecnologia', nombre: 'Tecnología' },
+  { slug: 'campus', nombre: 'Campus' },
+  { slug: 'academico', nombre: 'Académico' },
+  { slug: 'estudiantil', nombre: 'Estudiantil' },
   { slug: 'cultura', nombre: 'Cultura' },
   { slug: 'deportes', nombre: 'Deportes' },
 ]

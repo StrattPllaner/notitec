@@ -7,9 +7,9 @@ import type { Seccion } from '@/data/types'
 const TEXTO_MONO = 'text-neutral-700 dark:text-neutral-300'
 
 export const COLOR_SECCION: Record<Seccion, string> = {
-  nacional: TEXTO_MONO,
-  economia: TEXTO_MONO,
-  tecnologia: TEXTO_MONO,
+  campus: TEXTO_MONO,
+  academico: TEXTO_MONO,
+  estudiantil: TEXTO_MONO,
   cultura: TEXTO_MONO,
   deportes: TEXTO_MONO,
 }
@@ -18,9 +18,9 @@ export const COLOR_SECCION: Record<Seccion, string> = {
 const FONDO_MONO = 'bg-neutral-900/[0.06] text-neutral-700 dark:bg-white/10 dark:text-neutral-200'
 
 export const FONDO_SECCION: Record<Seccion, string> = {
-  nacional: FONDO_MONO,
-  economia: FONDO_MONO,
-  tecnologia: FONDO_MONO,
+  campus: FONDO_MONO,
+  academico: FONDO_MONO,
+  estudiantil: FONDO_MONO,
   cultura: FONDO_MONO,
   deportes: FONDO_MONO,
 }

@@ -22,6 +22,9 @@ export default function Deportes() {
         <h1 className="mt-1 font-serif text-3xl font-bold tracking-tight sm:text-4xl">
           Deportes
         </h1>
+        <p className="mt-2 text-neutral-500 dark:text-neutral-400">
+          Marcadores, calendario y crónicas de los Borregos del Campus Cuernavaca.
+        </p>
       </header>
 
       {/* Bloque 1: Marcadores en vivo */}
