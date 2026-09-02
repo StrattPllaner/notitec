@@ -1,27 +1,17 @@
-/**
- * Marca de Notitec: el "moño" del logo dentro de un contenedor redondeado.
- * Monocromo que invierte con el tema (negro con moño blanco en claro, blanco
- * con moño negro en oscuro).
- */
+// Marca de Notitec: la imagen del logo tal cual la entregó el usuario, sin
+// modificar. Solo se ajusta el tamaño de despliegue; el recorte circular
+// coincide con la forma propia del logo.
+const LOGO_URL = `${import.meta.env.BASE_URL}logo.png`
+
 export function Logo({ size = 32 }: { size?: number }) {
   return (
-    <span
-      className="flex items-center justify-center rounded-full bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
+    <img
+      src={LOGO_URL}
+      alt="Notitec"
+      width={size}
+      height={size}
+      className="rounded-full"
       style={{ width: size, height: size }}
-      aria-hidden="true"
-    >
-      <svg
-        width={size * 0.62}
-        height={size * 0.62}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinejoin="round"
-      >
-        <path d="M4 5 L4 19 L12 12 Z" />
-        <path d="M20 5 L20 19 L12 12 Z" />
-      </svg>
-    </span>
+    />
   )
 }
