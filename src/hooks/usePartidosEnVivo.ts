@@ -1,23 +1,26 @@
 import { useEffect, useState } from 'react'
 import type { Partido } from '@/data/types'
-import { getPartidosEnVivo } from '@/data/deportes'
+import { getPartidosEnVivo, type FiltroPartidos } from '@/data/deportes'
 
 const INTERVALO_MS = 15_000
 
 /**
  * Sondea los partidos en vivo cada 15 s desde la capa de datos, de modo que
- * marcadores y minutos se actualicen solos. Devuelve además el estado de la
- * carga inicial para mostrar skeletons.
+ * marcadores y minutos se actualicen solos. Acepta un filtro por deporte/torneo
+ * y re-sondea cuando este cambia.
  */
-export function usePartidosEnVivo() {
+export function usePartidosEnVivo(filtro?: FiltroPartidos) {
   const [partidos, setPartidos] = useState<Partido[]>([])
   const [cargando, setCargando] = useState(true)
+  const deporte = filtro?.deporte
+  const torneo = filtro?.torneo
 
   useEffect(() => {
     let vigente = true
+    setCargando(true)
 
     async function refrescar() {
-      const datos = await getPartidosEnVivo()
+      const datos = await getPartidosEnVivo({ deporte, torneo })
       if (!vigente) return
       setPartidos(datos)
       setCargando(false)
@@ -29,7 +32,7 @@ export function usePartidosEnVivo() {
       vigente = false
       window.clearInterval(id)
     }
-  }, [])
+  }, [deporte, torneo])
 
   return { partidos, cargando }
 }

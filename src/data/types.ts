@@ -61,6 +61,22 @@ export interface UltimaHora {
 
 // ------------------------------- Deportes ---------------------------------
 
+/** Deporte al que pertenece un partido. */
+export type Deporte = 'futbol' | 'basquetbol' | 'futbol-americano'
+
+/** Torneo dentro de un deporte. */
+export type Torneo = 'interno' | 'intramuros' | 'representativo'
+
+export interface DeporteInfo {
+  slug: Deporte
+  nombre: string
+}
+
+export interface TorneoInfo {
+  slug: Torneo
+  nombre: string
+}
+
 export interface Equipo {
   id: string
   nombre: string
@@ -93,6 +109,10 @@ export interface EstadisticaPartido {
 export interface Partido {
   id: string
   competicion: string
+  /** Deporte del partido (fútbol, basquetbol, etc.). */
+  deporte: Deporte
+  /** Torneo del partido (interno, intramuros, representativo). */
+  torneo: Torneo
   local: Equipo
   visitante: Equipo
   marcadorLocal: number

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import type { Partido } from '@/data/types'
+import { nombreDeporte, nombreTorneo } from '@/data/deportes'
 import { AnimatedCounter } from './AnimatedCounter'
 
 /** Texto de estado del partido para la esquina de la tarjeta. */
@@ -59,6 +60,12 @@ export function MarcadorEnVivoCard({ partido }: { partido: Partido }) {
       to={`/partido/${partido.id}`}
       className="group flex flex-col gap-3 rounded-xl border border-neutral-200 bg-white p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-acento-300 hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-acento-700"
     >
+      <div className="flex items-center gap-2">
+        <span className="shrink-0 rounded-full bg-neutral-900/[0.06] px-2 py-0.5 text-[0.65rem] font-semibold uppercase tracking-wide text-neutral-600 dark:bg-white/10 dark:text-neutral-300">
+          {nombreDeporte(partido.deporte)} · {nombreTorneo(partido.torneo)}
+        </span>
+      </div>
+
       <div className="flex items-center justify-between">
         <span className="truncate text-xs font-medium text-neutral-400 dark:text-neutral-500">
           {partido.competicion}

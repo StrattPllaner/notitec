@@ -2,32 +2,18 @@
   {
     "id": "par-01",
     "competicion": "Liga Intercampus · Jornada 2",
+    "deporte": "futbol",
+    "torneo": "representativo",
     "estado": "en-vivo",
-    "local": {
-      "id": "eq-cva",
-      "nombre": "Borregos CVA",
-      "abreviatura": "CVA",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva"
-    },
-    "visitante": {
-      "id": "eq-qro",
-      "nombre": "Borregos Querétaro",
-      "abreviatura": "QRO",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosqro"
-    },
+    "local": { "id": "eq-cva", "nombre": "Borregos CVA", "abreviatura": "CVA", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva" },
+    "visitante": { "id": "eq-qro", "nombre": "Borregos Querétaro", "abreviatura": "QRO", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosqro" },
     "marcadorLocal": 0,
     "marcadorVisitante": 0,
     "minuto": 0,
     "inicioISO": "2026-09-01T17:00:00-06:00",
     "sede": "Estadio Borregos CVA",
-    "alineacionLocal": [
-      "R. Sandoval", "J. Medina", "C. Robles", "A. Fierro", "L. Guzmán",
-      "P. Cervantes", "M. Tovar", "D. Escobar", "E. Nájera", "F. Salcedo", "O. Bravo"
-    ],
-    "alineacionVisitante": [
-      "G. Peralta", "H. Villalobos", "S. Cuevas", "N. Bermúdez", "T. Aguirre",
-      "V. Cordero", "I. Maldonado", "B. Rentería", "Q. Zamudio", "R. Ávila", "K. Domínguez"
-    ],
+    "alineacionLocal": ["R. Sandoval", "J. Medina", "C. Robles", "A. Fierro", "L. Guzmán", "P. Cervantes", "M. Tovar", "D. Escobar", "E. Nájera", "F. Salcedo", "O. Bravo"],
+    "alineacionVisitante": ["G. Peralta", "H. Villalobos", "S. Cuevas", "N. Bermúdez", "T. Aguirre", "V. Cordero", "I. Maldonado", "B. Rentería", "Q. Zamudio", "R. Ávila", "K. Domínguez"],
     "estadisticas": [
       { "etiqueta": "Posesión", "local": 54, "visitante": 46, "esPorcentaje": true },
       { "etiqueta": "Tiros", "local": 11, "visitante": 7 },
@@ -38,47 +24,33 @@
     "narracion": [
       { "minuto": 0, "tipo": "inicio", "texto": "¡Rueda el balón en el Estadio Borregos CVA! Arranca el partido." },
       { "minuto": 8, "tipo": "ocasion", "texto": "Aviso de CVA: centro peligroso que despeja la defensa de Querétaro." },
-      { "minuto": 12, "tipo": "gol", "equipo": "local", "texto": "¡Gooool de Borregos CVA! Salcedo remata de primera dentro del área tras un pase filtrado." },
-      { "minuto": 26, "tipo": "amarilla", "equipo": "visitante", "texto": "Tarjeta amarilla para Cordero (QRO) por una entrada tardía a media cancha." },
+      { "minuto": 12, "tipo": "gol", "equipo": "local", "texto": "¡Gooool de Borregos CVA! Salcedo remata de primera dentro del área." },
+      { "minuto": 26, "tipo": "amarilla", "equipo": "visitante", "texto": "Amarilla para Cordero (QRO) por una entrada tardía." },
       { "minuto": 34, "tipo": "gol", "equipo": "visitante", "texto": "¡Empata Querétaro! Ávila define cruzado tras un contragolpe." },
       { "minuto": 45, "tipo": "info", "texto": "Se agrega un minuto. Termina la primera mitad." },
-      { "minuto": 46, "tipo": "inicio", "texto": "Comienza el segundo tiempo sin cambios en ninguno de los dos equipos." },
-      { "minuto": 58, "tipo": "gol", "equipo": "local", "texto": "¡Otra vez CVA! Nájera empuja el balón en el área chica tras un rebote." },
+      { "minuto": 46, "tipo": "inicio", "texto": "Comienza el segundo tiempo sin cambios." },
+      { "minuto": 58, "tipo": "gol", "equipo": "local", "texto": "¡Otra vez CVA! Nájera empuja el balón en el área chica." },
       { "minuto": 63, "tipo": "cambio", "equipo": "local", "texto": "Doble cambio en Borregos CVA para refrescar el mediocampo." },
-      { "minuto": 77, "tipo": "gol", "equipo": "local", "texto": "¡Sentencia Bravo! Definición sutil ante la salida del portero para el tercero de CVA." },
-      { "minuto": 84, "tipo": "amarilla", "equipo": "local", "texto": "Amonestado Medina (CVA) por detener un contragolpe con falta." },
-      { "minuto": 90, "tipo": "fin", "texto": "El árbitro señala el final. Victoria de Borregos CVA como locales." }
+      { "minuto": 77, "tipo": "gol", "equipo": "local", "texto": "¡Sentencia Bravo! Definición sutil para el tercero de CVA." },
+      { "minuto": 84, "tipo": "amarilla", "equipo": "local", "texto": "Amonestado Medina (CVA) por detener un contragolpe." },
+      { "minuto": 90, "tipo": "fin", "texto": "El árbitro señala el final. Victoria de Borregos CVA." }
     ]
   },
   {
     "id": "par-02",
     "competicion": "Liga Intercampus · Jornada 2",
+    "deporte": "futbol",
+    "torneo": "representativo",
     "estado": "en-vivo",
-    "local": {
-      "id": "eq-ccm",
-      "nombre": "Borregos CCM",
-      "abreviatura": "CCM",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosccm"
-    },
-    "visitante": {
-      "id": "eq-tol",
-      "nombre": "Borregos Toluca",
-      "abreviatura": "TOL",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregostol"
-    },
+    "local": { "id": "eq-ccm", "nombre": "Borregos CCM", "abreviatura": "CCM", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosccm" },
+    "visitante": { "id": "eq-tol", "nombre": "Borregos Toluca", "abreviatura": "TOL", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregostol" },
     "marcadorLocal": 0,
     "marcadorVisitante": 0,
     "minuto": 0,
     "inicioISO": "2026-09-01T17:05:00-06:00",
     "sede": "Campo Borregos CCM",
-    "alineacionLocal": [
-      "A. Rueda", "M. Castañeda", "J. Ordaz", "L. Prieto", "C. Villaseñor",
-      "E. Ponce", "D. Lara", "F. Quintero", "G. Márquez", "H. Solís", "I. Tapia"
-    ],
-    "alineacionVisitante": [
-      "R. Barrios", "S. Delgadillo", "T. Ochoa", "V. Rangel", "B. Chávez",
-      "N. Ibarra", "O. Gallardo", "P. Mena", "Q. Rivas", "K. Serrano", "L. Fonseca"
-    ],
+    "alineacionLocal": ["A. Rueda", "M. Castañeda", "J. Ordaz", "L. Prieto", "C. Villaseñor", "E. Ponce", "D. Lara", "F. Quintero", "G. Márquez", "H. Solís", "I. Tapia"],
+    "alineacionVisitante": ["R. Barrios", "S. Delgadillo", "T. Ochoa", "V. Rangel", "B. Chávez", "N. Ibarra", "O. Gallardo", "P. Mena", "Q. Rivas", "K. Serrano", "L. Fonseca"],
     "estadisticas": [
       { "etiqueta": "Posesión", "local": 61, "visitante": 39, "esPorcentaje": true },
       { "etiqueta": "Tiros", "local": 9, "visitante": 6 },
@@ -89,44 +61,30 @@
     "narracion": [
       { "minuto": 0, "tipo": "inicio", "texto": "¡Comienza el duelo en el Campo Borregos CCM!" },
       { "minuto": 14, "tipo": "ocasion", "texto": "CCM domina la posesión pero no encuentra el último pase." },
-      { "minuto": 22, "tipo": "gol", "equipo": "visitante", "texto": "¡Golpe de Toluca! Serrano aprovecha un error en la salida y define solo frente al arco." },
-      { "minuto": 38, "tipo": "amarilla", "equipo": "local", "texto": "Amarilla para Lara (CCM) tras una protesta al árbitro." },
-      { "minuto": 45, "tipo": "info", "texto": "Sin tiempo agregado, termina la primera parte." },
+      { "minuto": 22, "tipo": "gol", "equipo": "visitante", "texto": "¡Golpe de Toluca! Serrano define solo frente al arco." },
+      { "minuto": 38, "tipo": "amarilla", "equipo": "local", "texto": "Amarilla para Lara (CCM) tras una protesta." },
+      { "minuto": 45, "tipo": "info", "texto": "Termina la primera parte." },
       { "minuto": 46, "tipo": "inicio", "texto": "Arranca el complemento con un cambio en CCM." },
-      { "minuto": 66, "tipo": "gol", "equipo": "visitante", "texto": "¡Toluca amplía la ventaja! Contragolpe perfecto que termina Fonseca con potencia." },
-      { "minuto": 72, "tipo": "roja", "equipo": "local", "texto": "Expulsión de Ordaz (CCM) por doble amonestación. CCM se queda con diez." },
-      { "minuto": 90, "tipo": "fin", "texto": "Final del encuentro. Toluca se lleva los tres puntos de visita." }
+      { "minuto": 66, "tipo": "gol", "equipo": "visitante", "texto": "¡Toluca amplía la ventaja! Fonseca remata con potencia." },
+      { "minuto": 72, "tipo": "roja", "equipo": "local", "texto": "Expulsión de Ordaz (CCM) por doble amonestación." },
+      { "minuto": 90, "tipo": "fin", "texto": "Final. Toluca se lleva los tres puntos." }
     ]
   },
   {
     "id": "par-03",
     "competicion": "Copa Borregos · Cuartos",
+    "deporte": "futbol",
+    "torneo": "representativo",
     "estado": "en-vivo",
-    "local": {
-      "id": "eq-pue",
-      "nombre": "Borregos Puebla",
-      "abreviatura": "PUE",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregospue"
-    },
-    "visitante": {
-      "id": "eq-gda",
-      "nombre": "Borregos Guadalajara",
-      "abreviatura": "GDA",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosgda"
-    },
+    "local": { "id": "eq-pue", "nombre": "Borregos Puebla", "abreviatura": "PUE", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregospue" },
+    "visitante": { "id": "eq-gda", "nombre": "Borregos Guadalajara", "abreviatura": "GDA", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosgda" },
     "marcadorLocal": 0,
     "marcadorVisitante": 0,
     "minuto": 0,
     "inicioISO": "2026-09-01T17:10:00-06:00",
     "sede": "Estadio Borregos Puebla",
-    "alineacionLocal": [
-      "J. Escamilla", "P. Vega", "R. Duarte", "C. Montiel", "A. Lozano",
-      "M. Herrera", "D. Cabrera", "E. Rincón", "F. Aguilera", "G. Padilla", "H. Nava"
-    ],
-    "alineacionVisitante": [
-      "S. Beltrán", "T. Cázares", "V. Espinoza", "B. Mora", "N. Galván",
-      "O. Rosales", "P. Trejo", "Q. Vela", "K. Arriaga", "L. Camarena", "R. Osorio"
-    ],
+    "alineacionLocal": ["J. Escamilla", "P. Vega", "R. Duarte", "C. Montiel", "A. Lozano", "M. Herrera", "D. Cabrera", "E. Rincón", "F. Aguilera", "G. Padilla", "H. Nava"],
+    "alineacionVisitante": ["S. Beltrán", "T. Cázares", "V. Espinoza", "B. Mora", "N. Galván", "O. Rosales", "P. Trejo", "Q. Vela", "K. Arriaga", "L. Camarena", "R. Osorio"],
     "estadisticas": [
       { "etiqueta": "Posesión", "local": 48, "visitante": 52, "esPorcentaje": true },
       { "etiqueta": "Tiros", "local": 8, "visitante": 10 },
@@ -135,124 +93,56 @@
       { "etiqueta": "Faltas", "local": 13, "visitante": 11 }
     ],
     "narracion": [
-      { "minuto": 0, "tipo": "inicio", "texto": "¡Rueda el balón en el Estadio Borregos Puebla por los cuartos de final!" },
-      { "minuto": 8, "tipo": "gol", "equipo": "local", "texto": "¡Madrugador! Padilla adelanta a Puebla con un derechazo desde fuera del área." },
-      { "minuto": 30, "tipo": "amarilla", "equipo": "visitante", "texto": "Amonestado Mora (GDA) por una falta sobre Aguilera." },
-      { "minuto": 41, "tipo": "gol", "equipo": "visitante", "texto": "¡Empata Guadalajara! Camarena cabecea a la perfección un tiro de esquina." },
-      { "minuto": 45, "tipo": "gol", "equipo": "visitante", "texto": "¡Vuelta increíble antes del descanso! Osorio remata de volea para el 1-2." },
-      { "minuto": 46, "tipo": "inicio", "texto": "Segundo tiempo en marcha; Puebla necesita reaccionar." },
+      { "minuto": 0, "tipo": "inicio", "texto": "¡Rueda el balón en Puebla por los cuartos de final!" },
+      { "minuto": 8, "tipo": "gol", "equipo": "local", "texto": "¡Madrugador! Padilla adelanta a Puebla desde fuera del área." },
+      { "minuto": 30, "tipo": "amarilla", "equipo": "visitante", "texto": "Amonestado Mora (GDA) por una falta." },
+      { "minuto": 41, "tipo": "gol", "equipo": "visitante", "texto": "¡Empata Guadalajara! Camarena cabecea un tiro de esquina." },
+      { "minuto": 45, "tipo": "gol", "equipo": "visitante", "texto": "¡Vuelta antes del descanso! Osorio remata de volea." },
+      { "minuto": 46, "tipo": "inicio", "texto": "Segundo tiempo; Puebla necesita reaccionar." },
       { "minuto": 70, "tipo": "ocasion", "texto": "Salva el poste a Guadalajara tras un cabezazo de Duarte." },
-      { "minuto": 89, "tipo": "gol", "equipo": "local", "texto": "¡Empate agónico de Puebla! Nava empuja el balón tras un barullo en el área." },
+      { "minuto": 89, "tipo": "gol", "equipo": "local", "texto": "¡Empate agónico de Puebla! Nava empuja el balón en el área." },
       { "minuto": 90, "tipo": "fin", "texto": "Final dramático. El pase se definirá desde los once pasos." }
     ]
   },
   {
     "id": "par-04",
     "competicion": "Liga Intercampus · Jornada 3",
+    "deporte": "futbol",
+    "torneo": "representativo",
     "estado": "programado",
-    "local": {
-      "id": "eq-mty",
-      "nombre": "Borregos Monterrey",
-      "abreviatura": "MTY",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosmty"
-    },
-    "visitante": {
-      "id": "eq-cva",
-      "nombre": "Borregos CVA",
-      "abreviatura": "CVA",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva"
-    },
-    "marcadorLocal": 0,
-    "marcadorVisitante": 0,
-    "minuto": 0,
+    "local": { "id": "eq-mty", "nombre": "Borregos Monterrey", "abreviatura": "MTY", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosmty" },
+    "visitante": { "id": "eq-cva", "nombre": "Borregos CVA", "abreviatura": "CVA", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva" },
+    "marcadorLocal": 0, "marcadorVisitante": 0, "minuto": 0,
     "inicioISO": "2026-09-05T19:00:00-06:00",
     "sede": "Estadio Borregos Monterrey",
-    "alineacionLocal": [],
-    "alineacionVisitante": [],
-    "estadisticas": [],
-    "narracion": []
-  },
-  {
-    "id": "par-05",
-    "competicion": "Liga Intercampus · Jornada 3",
-    "estado": "programado",
-    "local": {
-      "id": "eq-qro",
-      "nombre": "Borregos Querétaro",
-      "abreviatura": "QRO",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosqro"
-    },
-    "visitante": {
-      "id": "eq-ccm",
-      "nombre": "Borregos CCM",
-      "abreviatura": "CCM",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosccm"
-    },
-    "marcadorLocal": 0,
-    "marcadorVisitante": 0,
-    "minuto": 0,
-    "inicioISO": "2026-09-05T21:15:00-06:00",
-    "sede": "Campo Borregos Querétaro",
-    "alineacionLocal": [],
-    "alineacionVisitante": [],
-    "estadisticas": [],
-    "narracion": []
+    "alineacionLocal": [], "alineacionVisitante": [], "estadisticas": [], "narracion": []
   },
   {
     "id": "par-06",
     "competicion": "Copa Borregos · Cuartos",
+    "deporte": "futbol",
+    "torneo": "representativo",
     "estado": "programado",
-    "local": {
-      "id": "eq-cva",
-      "nombre": "Borregos CVA",
-      "abreviatura": "CVA",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva"
-    },
-    "visitante": {
-      "id": "eq-tol",
-      "nombre": "Borregos Toluca",
-      "abreviatura": "TOL",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregostol"
-    },
-    "marcadorLocal": 0,
-    "marcadorVisitante": 0,
-    "minuto": 0,
+    "local": { "id": "eq-cva", "nombre": "Borregos CVA", "abreviatura": "CVA", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva" },
+    "visitante": { "id": "eq-tol", "nombre": "Borregos Toluca", "abreviatura": "TOL", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregostol" },
+    "marcadorLocal": 0, "marcadorVisitante": 0, "minuto": 0,
     "inicioISO": "2026-09-06T18:00:00-06:00",
     "sede": "Estadio Borregos CVA",
-    "alineacionLocal": [],
-    "alineacionVisitante": [],
-    "estadisticas": [],
-    "narracion": []
+    "alineacionLocal": [], "alineacionVisitante": [], "estadisticas": [], "narracion": []
   },
   {
     "id": "par-07",
     "competicion": "Liga Intercampus · Jornada 1",
+    "deporte": "futbol",
+    "torneo": "representativo",
     "estado": "finalizado",
-    "local": {
-      "id": "eq-cva",
-      "nombre": "Borregos CVA",
-      "abreviatura": "CVA",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva"
-    },
-    "visitante": {
-      "id": "eq-pue",
-      "nombre": "Borregos Puebla",
-      "abreviatura": "PUE",
-      "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregospue"
-    },
-    "marcadorLocal": 2,
-    "marcadorVisitante": 2,
-    "minuto": 90,
+    "local": { "id": "eq-cva", "nombre": "Borregos CVA", "abreviatura": "CVA", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscva" },
+    "visitante": { "id": "eq-pue", "nombre": "Borregos Puebla", "abreviatura": "PUE", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregospue" },
+    "marcadorLocal": 2, "marcadorVisitante": 2, "minuto": 90,
     "inicioISO": "2026-08-29T19:00:00-06:00",
     "sede": "Estadio Borregos CVA",
-    "alineacionLocal": [
-      "A. Fuentes", "M. Larios", "J. Cano", "L. Bañuelos", "C. Ramos",
-      "E. Delgado", "D. Casas", "F. Iñiguez", "G. Pérez", "H. Segura", "I. Valadez"
-    ],
-    "alineacionVisitante": [
-      "R. Barrios", "S. Delgadillo", "T. Ochoa", "V. Rangel", "B. Chávez",
-      "N. Ibarra", "O. Gallardo", "P. Mena", "Q. Rivas", "K. Serrano", "L. Fonseca"
-    ],
+    "alineacionLocal": ["A. Fuentes", "M. Larios", "J. Cano", "L. Bañuelos", "C. Ramos", "E. Delgado", "D. Casas", "F. Iñiguez", "G. Pérez", "H. Segura", "I. Valadez"],
+    "alineacionVisitante": ["R. Barrios", "S. Delgadillo", "T. Ochoa", "V. Rangel", "B. Chávez", "N. Ibarra", "O. Gallardo", "P. Mena", "Q. Rivas", "K. Serrano", "L. Fonseca"],
     "estadisticas": [
       { "etiqueta": "Posesión", "local": 57, "visitante": 43, "esPorcentaje": true },
       { "etiqueta": "Tiros", "local": 14, "visitante": 9 },
@@ -265,8 +155,202 @@
       { "minuto": 19, "tipo": "gol", "equipo": "local", "texto": "Gol de CVA: Segura conecta un cabezazo tras un tiro de esquina." },
       { "minuto": 44, "tipo": "gol", "equipo": "visitante", "texto": "Empata Puebla justo antes del descanso con un remate de Serrano." },
       { "minuto": 61, "tipo": "gol", "equipo": "visitante", "texto": "Le da la vuelta Puebla: Fonseca define un mano a mano." },
-      { "minuto": 88, "tipo": "gol", "equipo": "local", "texto": "¡Empate de CVA sobre el final! Pérez remata de zurda dentro del área." },
-      { "minuto": 90, "tipo": "fin", "texto": "Termina con reparto de puntos: 2-2 en el Estadio Borregos CVA." }
+      { "minuto": 88, "tipo": "gol", "equipo": "local", "texto": "¡Empate de CVA sobre el final! Pérez remata de zurda." },
+      { "minuto": 90, "tipo": "fin", "texto": "Termina con reparto de puntos: 2-2." }
     ]
+  },
+  {
+    "id": "par-08",
+    "competicion": "Liga Intramuros · Fase de grupos",
+    "deporte": "futbol",
+    "torneo": "intramuros",
+    "estado": "en-vivo",
+    "local": { "id": "eq-ing", "nombre": "Ingeniería FC", "abreviatura": "ING", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=ingenieriafc" },
+    "visitante": { "id": "eq-neg", "nombre": "Negocios FC", "abreviatura": "NEG", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=negociosfc" },
+    "marcadorLocal": 0,
+    "marcadorVisitante": 0,
+    "minuto": 0,
+    "inicioISO": "2026-09-01T16:30:00-06:00",
+    "sede": "Canchas del campus · Cancha 1",
+    "alineacionLocal": ["A. Reyes", "B. Cano", "C. Díaz", "D. Muñoz", "E. Ríos", "F. Soto", "G. León", "H. Vera", "I. Cruz", "J. Mora", "K. Luna"],
+    "alineacionVisitante": ["L. Prado", "M. Gil", "N. Ortiz", "O. Rey", "P. Sosa", "Q. Ávila", "R. Nieto", "S. Campos", "T. Vela", "U. Frías", "V. Rangel"],
+    "estadisticas": [
+      { "etiqueta": "Posesión", "local": 52, "visitante": 48, "esPorcentaje": true },
+      { "etiqueta": "Tiros", "local": 7, "visitante": 6 },
+      { "etiqueta": "Tiros a gol", "local": 4, "visitante": 3 },
+      { "etiqueta": "Faltas", "local": 5, "visitante": 7 }
+    ],
+    "narracion": [
+      { "minuto": 0, "tipo": "inicio", "texto": "¡Arranca el clásico de carreras en la Cancha 1!" },
+      { "minuto": 9, "tipo": "gol", "equipo": "local", "texto": "¡Gol de Ingeniería! Cruz define tras una buena jugada colectiva." },
+      { "minuto": 21, "tipo": "gol", "equipo": "visitante", "texto": "¡Empata Negocios! Vela aprovecha un rebote." },
+      { "minuto": 40, "tipo": "amarilla", "equipo": "local", "texto": "Amarilla para Muñoz (ING)." },
+      { "minuto": 45, "tipo": "info", "texto": "Medio tiempo en la Cancha 1." },
+      { "minuto": 46, "tipo": "inicio", "texto": "Segundo tiempo en marcha." },
+      { "minuto": 62, "tipo": "gol", "equipo": "local", "texto": "¡Ingeniería al frente! León marca de larga distancia." },
+      { "minuto": 90, "tipo": "fin", "texto": "Final. Ingeniería FC se impone en el clásico." }
+    ]
+  },
+  {
+    "id": "par-09",
+    "competicion": "Liga Intramuros · Fase de grupos",
+    "deporte": "futbol",
+    "torneo": "intramuros",
+    "estado": "programado",
+    "local": { "id": "eq-arq", "nombre": "Arquitectura FC", "abreviatura": "ARQ", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=arquitecturafc" },
+    "visitante": { "id": "eq-sal", "nombre": "Salud FC", "abreviatura": "SAL", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=saludfc" },
+    "marcadorLocal": 0, "marcadorVisitante": 0, "minuto": 0,
+    "inicioISO": "2026-09-04T15:00:00-06:00",
+    "sede": "Canchas del campus · Cancha 2",
+    "alineacionLocal": [], "alineacionVisitante": [], "estadisticas": [], "narracion": []
+  },
+  {
+    "id": "par-10",
+    "competicion": "Liga Intramuros · Fase de grupos",
+    "deporte": "futbol",
+    "torneo": "intramuros",
+    "estado": "finalizado",
+    "local": { "id": "eq-ing", "nombre": "Ingeniería FC", "abreviatura": "ING", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=ingenieriafc" },
+    "visitante": { "id": "eq-bio", "nombre": "Bioingeniería FC", "abreviatura": "BIO", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=bioingenieriafc" },
+    "marcadorLocal": 3, "marcadorVisitante": 1, "minuto": 90,
+    "inicioISO": "2026-08-28T15:00:00-06:00",
+    "sede": "Canchas del campus · Cancha 1",
+    "alineacionLocal": ["A. Reyes", "B. Cano", "C. Díaz", "D. Muñoz", "E. Ríos", "F. Soto", "G. León", "H. Vera", "I. Cruz", "J. Mora", "K. Luna"],
+    "alineacionVisitante": ["W. Salas", "X. Peña", "Y. Rojas", "Z. Mata", "A. Cuen", "B. Toro", "C. Vidal", "D. Nava", "E. Puga", "F. Rico", "G. Silva"],
+    "estadisticas": [
+      { "etiqueta": "Posesión", "local": 60, "visitante": 40, "esPorcentaje": true },
+      { "etiqueta": "Tiros", "local": 12, "visitante": 5 },
+      { "etiqueta": "Tiros a gol", "local": 7, "visitante": 3 },
+      { "etiqueta": "Faltas", "local": 6, "visitante": 9 }
+    ],
+    "narracion": [
+      { "minuto": 0, "tipo": "inicio", "texto": "Arranca el partido en la Cancha 1." },
+      { "minuto": 15, "tipo": "gol", "equipo": "local", "texto": "Gol de Ingeniería: Cruz abre el marcador." },
+      { "minuto": 33, "tipo": "gol", "equipo": "local", "texto": "Segundo de Ingeniería con un tiro de Mora." },
+      { "minuto": 58, "tipo": "gol", "equipo": "visitante", "texto": "Descuenta Bioingeniería con un cabezazo de Puga." },
+      { "minuto": 80, "tipo": "gol", "equipo": "local", "texto": "Sentencia León para el 3-1 final." },
+      { "minuto": 90, "tipo": "fin", "texto": "Final: Ingeniería FC 3-1 Bioingeniería FC." }
+    ]
+  },
+  {
+    "id": "par-11",
+    "competicion": "Torneo Interno · Rol regular",
+    "deporte": "futbol",
+    "torneo": "interno",
+    "estado": "en-vivo",
+    "local": { "id": "eq-crk", "nombre": "Los Cracks", "abreviatura": "CRK", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=loscracks" },
+    "visitante": { "id": "eq-rxo", "nombre": "Real Xochi", "abreviatura": "RXO", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=realxochi" },
+    "marcadorLocal": 0,
+    "marcadorVisitante": 0,
+    "minuto": 0,
+    "inicioISO": "2026-09-01T16:45:00-06:00",
+    "sede": "Cancha rápida · Domo",
+    "alineacionLocal": ["A. Gómez", "B. Ruiz", "C. Mena", "D. Loza", "E. Cid", "F. Paz", "G. Tel"],
+    "alineacionVisitante": ["H. Roa", "I. Sada", "J. Vela", "K. Uribe", "L. Cano", "M. Prieto", "N. Solar"],
+    "estadisticas": [
+      { "etiqueta": "Tiros", "local": 5, "visitante": 4 },
+      { "etiqueta": "Tiros a gol", "local": 3, "visitante": 2 },
+      { "etiqueta": "Faltas", "local": 3, "visitante": 4 }
+    ],
+    "narracion": [
+      { "minuto": 0, "tipo": "inicio", "texto": "¡Arranca el partido de fútbol rápido en el domo!" },
+      { "minuto": 6, "tipo": "gol", "equipo": "visitante", "texto": "¡Gol de Real Xochi! Vela define de primera." },
+      { "minuto": 15, "tipo": "gol", "equipo": "local", "texto": "¡Empata Los Cracks! Paz remata cruzado." },
+      { "minuto": 28, "tipo": "gol", "equipo": "local", "texto": "¡Le da la vuelta Los Cracks! Cid marca el segundo." },
+      { "minuto": 40, "tipo": "fin", "texto": "Final del partido de fútbol rápido." }
+    ]
+  },
+  {
+    "id": "par-12",
+    "competicion": "Torneo Interno · Rol regular",
+    "deporte": "futbol",
+    "torneo": "interno",
+    "estado": "programado",
+    "local": { "id": "eq-a12", "nombre": "FC Aula 12", "abreviatura": "A12", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=fcaula12" },
+    "visitante": { "id": "eq-caf", "nombre": "Deportivo Cafetería", "abreviatura": "CAF", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=deportivocafeteria" },
+    "marcadorLocal": 0, "marcadorVisitante": 0, "minuto": 0,
+    "inicioISO": "2026-09-03T14:00:00-06:00",
+    "sede": "Cancha rápida · Domo",
+    "alineacionLocal": [], "alineacionVisitante": [], "estadisticas": [], "narracion": []
+  },
+  {
+    "id": "par-13",
+    "competicion": "Torneo Interno · Rol regular",
+    "deporte": "futbol",
+    "torneo": "interno",
+    "estado": "finalizado",
+    "local": { "id": "eq-crk", "nombre": "Los Cracks", "abreviatura": "CRK", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=loscracks" },
+    "visitante": { "id": "eq-a12", "nombre": "FC Aula 12", "abreviatura": "A12", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=fcaula12" },
+    "marcadorLocal": 2, "marcadorVisitante": 3, "minuto": 40,
+    "inicioISO": "2026-08-27T14:00:00-06:00",
+    "sede": "Cancha rápida · Domo",
+    "alineacionLocal": ["A. Gómez", "B. Ruiz", "C. Mena", "D. Loza", "E. Cid", "F. Paz", "G. Tel"],
+    "alineacionVisitante": ["O. Vidal", "P. Sanz", "Q. Nolla", "R. Bello", "S. Cano", "T. Rey", "U. Faro"],
+    "estadisticas": [
+      { "etiqueta": "Tiros", "local": 6, "visitante": 8 },
+      { "etiqueta": "Tiros a gol", "local": 3, "visitante": 5 },
+      { "etiqueta": "Faltas", "local": 4, "visitante": 2 }
+    ],
+    "narracion": [
+      { "minuto": 0, "tipo": "inicio", "texto": "Arranca el partido en el domo." },
+      { "minuto": 5, "tipo": "gol", "equipo": "visitante", "texto": "Gol de FC Aula 12: Rey abre el marcador." },
+      { "minuto": 12, "tipo": "gol", "equipo": "local", "texto": "Empata Los Cracks con un tiro de Cid." },
+      { "minuto": 20, "tipo": "gol", "equipo": "visitante", "texto": "FC Aula 12 se adelanta de nuevo con Bello." },
+      { "minuto": 30, "tipo": "gol", "equipo": "local", "texto": "Empata otra vez Los Cracks con Paz." },
+      { "minuto": 36, "tipo": "gol", "equipo": "visitante", "texto": "¡El 3-2 definitivo de FC Aula 12 con Sanz!" },
+      { "minuto": 40, "tipo": "fin", "texto": "Final: FC Aula 12 gana 3-2." }
+    ]
+  },
+  {
+    "id": "par-20",
+    "competicion": "Liga Intercampus de Basquetbol · J2",
+    "deporte": "basquetbol",
+    "torneo": "representativo",
+    "estado": "programado",
+    "local": { "id": "eq-cva-b", "nombre": "Borregos CVA", "abreviatura": "CVA", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscvabasket" },
+    "visitante": { "id": "eq-ccm-b", "nombre": "Borregos CCM", "abreviatura": "CCM", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregosccmbasket" },
+    "marcadorLocal": 0, "marcadorVisitante": 0, "minuto": 0,
+    "inicioISO": "2026-09-04T18:00:00-06:00",
+    "sede": "Gimnasio Borregos CVA",
+    "alineacionLocal": [], "alineacionVisitante": [], "estadisticas": [], "narracion": []
+  },
+  {
+    "id": "par-21",
+    "competicion": "Liga Intercampus de Basquetbol · J1",
+    "deporte": "basquetbol",
+    "torneo": "representativo",
+    "estado": "finalizado",
+    "local": { "id": "eq-cva-b", "nombre": "Borregos CVA", "abreviatura": "CVA", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregoscvabasket" },
+    "visitante": { "id": "eq-tol-b", "nombre": "Borregos Toluca", "abreviatura": "TOL", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=borregostolbasket" },
+    "marcadorLocal": 72, "marcadorVisitante": 68, "minuto": 40,
+    "inicioISO": "2026-08-28T18:00:00-06:00",
+    "sede": "Gimnasio Borregos CVA",
+    "alineacionLocal": ["A. Nieto", "B. Salas", "C. Rueda", "D. Mora", "E. Vidal"],
+    "alineacionVisitante": ["F. Cano", "G. Prieto", "H. Sosa", "I. Rangel", "J. Vela"],
+    "estadisticas": [
+      { "etiqueta": "Tiros de 2", "local": 22, "visitante": 20 },
+      { "etiqueta": "Tiros de 3", "local": 6, "visitante": 5 },
+      { "etiqueta": "Tiros libres", "local": 10, "visitante": 8 },
+      { "etiqueta": "Rebotes", "local": 34, "visitante": 30 }
+    ],
+    "narracion": [
+      { "minuto": 0, "tipo": "inicio", "texto": "Comienza el partido en el Gimnasio Borregos CVA." },
+      { "minuto": 10, "tipo": "info", "texto": "Fin del primer cuarto: CVA al frente por poco." },
+      { "minuto": 20, "tipo": "info", "texto": "Al medio tiempo, CVA domina el rebote." },
+      { "minuto": 40, "tipo": "fin", "texto": "Final: Borregos CVA 72-68 Borregos Toluca." }
+    ]
+  },
+  {
+    "id": "par-22",
+    "competicion": "Basquetbol Intramuros · Rol regular",
+    "deporte": "basquetbol",
+    "torneo": "intramuros",
+    "estado": "programado",
+    "local": { "id": "eq-ing-b", "nombre": "Ingeniería Basket", "abreviatura": "ING", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=ingenieriabasket" },
+    "visitante": { "id": "eq-neg-b", "nombre": "Negocios Basket", "abreviatura": "NEG", "escudoUrl": "https://api.dicebear.com/7.x/shapes/svg?seed=negociosbasket" },
+    "marcadorLocal": 0, "marcadorVisitante": 0, "minuto": 0,
+    "inicioISO": "2026-09-05T17:00:00-06:00",
+    "sede": "Gimnasio del campus",
+    "alineacionLocal": [], "alineacionVisitante": [], "estadisticas": [], "narracion": []
   }
 ]
