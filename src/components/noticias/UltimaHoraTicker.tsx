@@ -19,13 +19,13 @@ export function UltimaHoraTicker({ titulares }: { titulares: UltimaHora[] }) {
       </span>
 
       {reduce ? (
-        <div className="flex gap-8 overflow-x-auto whitespace-nowrap px-4 py-2.5">
+        <div className="flex min-w-0 flex-1 gap-8 overflow-x-auto whitespace-nowrap px-4 py-2.5">
           {titulares.map((t) => (
             <TituloTicker key={t.id} titular={t} />
           ))}
         </div>
       ) : (
-        <div className="group relative flex-1 overflow-hidden py-2.5">
+        <div className="group relative min-w-0 flex-1 overflow-hidden py-2.5">
           <div className="flex w-max animate-marquee gap-8 whitespace-nowrap px-4 group-hover:[animation-play-state:paused]">
             {/* Se duplica la lista para un bucle continuo y sin cortes. */}
             {[...titulares, ...titulares].map((t, i) => (

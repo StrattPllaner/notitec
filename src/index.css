@@ -14,11 +14,28 @@
     -webkit-text-size-adjust: 100%;
   }
 
+  html,
+  body {
+    /* Evita cualquier desplazamiento horizontal en móvil/tablet. */
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-white text-neutral-900 antialiased;
     @apply dark:bg-neutral-950 dark:text-neutral-100;
     font-feature-settings: 'kern';
     text-rendering: optimizeLegibility;
+    /* Sin flash gris al tocar en iOS/Android; el foco visible se conserva. */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Objetivos táctiles cómodos y sin selección accidental de texto en
+     controles interactivos con toques repetidos. */
+  button,
+  a[role='button'],
+  [type='button'] {
+    touch-action: manipulation;
   }
 
   ::selection {

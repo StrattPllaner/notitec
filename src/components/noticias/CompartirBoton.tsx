@@ -37,7 +37,7 @@ export function CompartirBoton({
     <button
       type="button"
       onClick={compartir}
-      className={`inline-flex items-center gap-2 rounded-full border border-neutral-300 px-4 py-1.5 text-sm font-medium text-neutral-700 transition-colors hover:border-acento-500 hover:text-acento-600 dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-acento-500 dark:hover:text-acento-400 ${className}`}
+      className={`inline-flex items-center gap-2 rounded-full border border-neutral-300 px-4 py-2.5 text-sm font-medium text-neutral-700 transition-colors hover:border-acento-500 hover:text-acento-600 dark:border-neutral-700 dark:text-neutral-200 dark:hover:border-acento-500 dark:hover:text-acento-400 ${className}`}
     >
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="18" cy="5" r="3" />

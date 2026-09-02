@@ -18,7 +18,7 @@ export function NavLinks({
       className={
         orientacion === 'horizontal'
           ? 'flex items-center gap-6'
-          : 'flex flex-col gap-1'
+          : 'flex flex-col'
       }
       aria-label="Secciones"
     >
@@ -29,8 +29,10 @@ export function NavLinks({
           onClick={onNavegar}
           className={({ isActive }) =>
             [
-              'group relative py-1 text-sm font-semibold transition-colors',
-              orientacion === 'vertical' ? 'text-base' : '',
+              'group relative font-semibold transition-colors',
+              orientacion === 'vertical'
+                ? 'flex items-center py-3 text-base'
+                : 'py-1 text-sm',
               isActive
                 ? 'text-neutral-900 dark:text-white'
                 : 'text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white',
