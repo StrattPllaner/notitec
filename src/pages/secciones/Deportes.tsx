@@ -16,7 +16,7 @@ export default function Deportes() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
       <header className="mb-8">
-        <p className="text-sm font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
+        <p className="text-sm font-semibold uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
           Sección
         </p>
         <h1 className="mt-1 font-serif text-3xl font-bold tracking-tight sm:text-4xl">

@@ -34,7 +34,7 @@ export function JugadaPorJugada({ jugadas }: { jugadas: Jugada[] }) {
             <span
               className={`absolute -left-[1.72rem] flex h-6 w-6 items-center justify-center rounded-full text-xs ${
                 esGol
-                  ? 'bg-acento-600 text-white'
+                  ? 'bg-neutral-900 text-white dark:bg-white dark:text-neutral-900'
                   : 'bg-neutral-100 dark:bg-neutral-800'
               }`}
               aria-hidden="true"

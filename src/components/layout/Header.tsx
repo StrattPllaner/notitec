@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { NavLinks } from './NavLinks'
 import { ThemeToggle } from './ThemeToggle'
 import { SearchBar } from './SearchBar'
+import { Logo } from './Logo'
 
 export function Header() {
   const [menuAbierto, setMenuAbierto] = useState(false)
@@ -25,9 +26,7 @@ export function Header() {
 
         {/* Marca */}
         <Link to="/" className="flex items-center gap-2" onClick={() => setMenuAbierto(false)}>
-          <span className="flex h-8 w-8 items-center justify-center rounded-md bg-acento-600 font-serif text-lg font-bold text-white">
-            N
-          </span>
+          <Logo size={32} />
           <span className="font-serif text-xl font-bold tracking-tight">Notitec</span>
         </Link>
 

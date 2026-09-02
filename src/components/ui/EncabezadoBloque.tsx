@@ -11,7 +11,7 @@ export function EncabezadoBloque({
   return (
     <div className="mb-6 flex items-end justify-between gap-4 border-b border-neutral-200 pb-3 dark:border-neutral-800">
       <h2 className="flex items-center gap-3 text-xl font-bold tracking-tight">
-        <span className="h-5 w-1.5 rounded-full bg-acento-600" aria-hidden="true" />
+        <span className="h-5 w-1.5 rounded-full bg-neutral-900 dark:bg-white" aria-hidden="true" />
         {titulo}
       </h2>
       {accion}

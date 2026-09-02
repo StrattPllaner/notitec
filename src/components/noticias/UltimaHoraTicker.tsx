@@ -13,8 +13,8 @@ export function UltimaHoraTicker({ titulares }: { titulares: UltimaHora[] }) {
 
   return (
     <div className="flex items-stretch overflow-hidden border-y border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900">
-      <span className="z-10 flex shrink-0 items-center gap-2 bg-acento-600 px-4 text-xs font-bold uppercase tracking-widest text-white">
-        <span className="h-2 w-2 animate-pulse rounded-full bg-white" aria-hidden="true" />
+      <span className="z-10 flex shrink-0 items-center gap-2 bg-neutral-900 px-4 text-xs font-bold uppercase tracking-widest text-white dark:bg-white dark:text-neutral-900">
+        <span className="h-2 w-2 animate-pulse rounded-full bg-white dark:bg-neutral-900" aria-hidden="true" />
         Última hora
       </span>
 

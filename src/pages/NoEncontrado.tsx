@@ -10,7 +10,7 @@ export default function NoEncontrado() {
       </p>
       <Link
         to="/"
-        className="mt-6 inline-block rounded-full bg-acento-600 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-acento-700"
+        className="mt-6 inline-block rounded-full bg-neutral-900 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-neutral-700 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
       >
         Ir a la portada
       </Link>

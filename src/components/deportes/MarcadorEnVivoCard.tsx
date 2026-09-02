@@ -72,7 +72,7 @@ export function MarcadorEnVivoCard({ partido }: { partido: Partido }) {
           ].join(' ')}
         >
           {enVivo && (
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-acento-500" aria-hidden="true" />
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-neutral-900 dark:bg-white" aria-hidden="true" />
           )}
           {estadoTexto(partido)}
         </span>

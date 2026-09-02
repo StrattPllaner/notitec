@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { SECCIONES } from '@/data/noticias'
+import { Logo } from './Logo'
 
 export function Footer() {
   return (
@@ -7,9 +8,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-10">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-md bg-acento-600 font-serif text-lg font-bold text-white">
-              N
-            </span>
+            <Logo size={32} />
             <span className="font-serif text-xl font-bold tracking-tight">Notitec</span>
           </Link>
           <nav className="flex flex-wrap gap-x-6 gap-y-2" aria-label="Secciones">

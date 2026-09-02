@@ -6,18 +6,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Color de acento de la marca (rojo periodístico sobrio) + neutros.
+        // Marca monocromática (blanco y negro). El acento es una rampa de
+        // grises: en modo claro se usan los tonos oscuros (~negro) y en modo
+        // oscuro los claros, vía las variantes dark: de cada componente.
         acento: {
-          50: '#fef2f2',
-          100: '#fee2e2',
-          200: '#fecaca',
-          300: '#fca5a5',
-          400: '#f87171',
-          500: '#e5322b',
-          600: '#c81e1e',
-          700: '#a41414',
-          800: '#871515',
-          900: '#701818',
+          50: '#f6f6f7',
+          100: '#ececee',
+          200: '#d9d9dd',
+          300: '#b8b8bf',
+          400: '#8a8a93',
+          500: '#5b5b63',
+          600: '#1b1b1e',
+          700: '#131316',
+          800: '#0b0b0d',
+          900: '#050506',
         },
       },
       fontFamily: {

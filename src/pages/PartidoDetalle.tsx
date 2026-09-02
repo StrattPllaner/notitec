@@ -38,7 +38,7 @@ function BarraEstadistica({ e }: { e: EstadisticaPartido }) {
       </div>
       <div className="flex h-2 overflow-hidden rounded-full bg-neutral-200 dark:bg-neutral-800">
         <div
-          className="h-full bg-acento-600 transition-all duration-300"
+          className="h-full bg-neutral-900 transition-all duration-300 dark:bg-white"
           style={{ width: `${pctLocal}%` }}
         />
         <div className="h-full flex-1 bg-neutral-400 dark:bg-neutral-600" />
@@ -131,7 +131,7 @@ export default function PartidoDetalle() {
               ].join(' ')}
             >
               {enVivo && (
-                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-acento-500" aria-hidden="true" />
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-neutral-900 dark:bg-white" aria-hidden="true" />
               )}
               {estadoTexto(partido)}
             </span>
