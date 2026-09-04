@@ -176,7 +176,7 @@ export default function PartidoDetalle() {
           {/* Narración jugada por jugada */}
           <section className="mt-10">
             <EncabezadoBloque titulo="Jugada por jugada" />
-            <JugadaPorJugada jugadas={partido.narracion} />
+            <JugadaPorJugada jugadas={[...partido.narracion].sort((a, b) => b.minuto - a.minuto)} />
           </section>
         </>
       )}

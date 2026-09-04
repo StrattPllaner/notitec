@@ -1,0 +1,21 @@
+rules_version = '2';
+
+// Reglas de Notitec:
+// - Lectura pública (el sitio muestra los datos a todos).
+// - Escritura SOLO para la cuenta administradora (edita marcadores/alineaciones).
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /partidos/{id} {
+      allow read: if true;
+      allow write: if request.auth != null
+        && request.auth.token.email == 'carretoleonardo2312@gmail.com';
+    }
+
+    // Todo lo demás: lectura pública, sin escritura desde el cliente.
+    match /{document=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

@@ -107,6 +107,27 @@ Concretamente:
 Mientras el tipo devuelto siga cumpliendo `src/data/types.ts`, ninguna página ni
 componente necesita modificarse.
 
+## Marcadores en tiempo real y panel de edición
+
+Los partidos viven en **Firestore** (proyecto `notitec-cva`). El sitio los lee
+en tiempo real con `onSnapshot`: cuando la cuenta administradora edita un
+marcador o una alineación desde `/admin`, el cambio aparece al instante en todos
+los dispositivos que estén viendo la página. Si Firestore no responde, el sitio
+cae al JSON local (`src/data/fuentes/partidos.json`) y sigue funcionando.
+
+- Configuración pública del cliente: `src/lib/firebase.ts`.
+- Suscripción en tiempo real: `src/data/partidosStore.ts`.
+- Reglas de seguridad: `firestore.rules` (lectura pública; escritura solo para
+  el correo administrador). Se despliegan con
+  `firebase deploy --only firestore:rules`.
+- Panel de edición: `src/pages/Admin.tsx`, ruta `/admin` (login con Firebase
+  Auth; edita marcador, minuto, estado, alineaciones y jugadas).
+
+**Paso manual pendiente (una vez):** en la consola de Firebase →
+Authentication → Comenzar → habilitar *Correo electrónico/contraseña*, y agregar
+`strattpllaner.github.io` a los dominios autorizados. Después, crear el usuario
+administrador con el correo definido en `ADMIN_EMAIL`.
+
 ## Alcance intencional
 
 Las únicas acciones del sitio son: navegar entre secciones, abrir una nota,

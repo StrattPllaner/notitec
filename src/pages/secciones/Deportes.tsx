@@ -1,19 +1,20 @@
 import { useEffect, useState } from 'react'
-import type { Deporte, Torneo } from '@/data/types'
+import type { Deporte, Partido, Torneo } from '@/data/types'
 import {
-  getCalendarioPartidos,
+  agruparProximos,
+  filtrarEnVivo,
+  filtrarResultados,
   getCronicasDeportivas,
   getDeportesDisponibles,
-  getResultados,
   getTorneosDisponibles,
 } from '@/data/deportes'
 import { useAsync } from '@/hooks/useAsync'
-import { usePartidosEnVivo } from '@/hooks/usePartidosEnVivo'
+import { usePartidos } from '@/hooks/usePartidos'
 import { MarcadorEnVivoCard } from '@/components/deportes/MarcadorEnVivoCard'
 import { CalendarioPartidos } from '@/components/deportes/CalendarioPartidos'
 import { NoticiaCard } from '@/components/noticias/NoticiaCard'
 import { EncabezadoBloque } from '@/components/ui/EncabezadoBloque'
-import { Skeleton, SkeletonTarjeta } from '@/components/ui/Skeleton'
+import { SkeletonTarjeta } from '@/components/ui/Skeleton'
 import { GrupoAparicion, ItemAparicion } from '@/components/ui/animaciones'
 
 /** Botón de pestaña (deporte o torneo). Área táctil cómoda. */
@@ -44,7 +45,7 @@ function Chip({
 }
 
 /** Rejilla de tarjetas de marcador (en vivo o resultados). */
-function GrillaMarcadores({ partidos }: { partidos: import('@/data/types').Partido[] }) {
+function GrillaMarcadores({ partidos }: { partidos: Partido[] }) {
   return (
     <GrupoAparicion className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {partidos.map((p) => (
@@ -57,23 +58,26 @@ function GrillaMarcadores({ partidos }: { partidos: import('@/data/types').Parti
 }
 
 export default function Deportes() {
-  const deportes = getDeportesDisponibles()
-  const [deporte, setDeporte] = useState<Deporte>(deportes[0]?.slug ?? 'futbol')
+  const partidos = usePartidos()
+  const deportes = getDeportesDisponibles(partidos)
 
-  const torneos = getTorneosDisponibles(deporte)
-  const [torneo, setTorneo] = useState<Torneo>(torneos[0]?.slug ?? 'representativo')
+  const [deporte, setDeporte] = useState<Deporte>('futbol')
+  const [torneo, setTorneo] = useState<Torneo>('representativo')
+
+  const torneos = getTorneosDisponibles(partidos, deporte)
 
   // Al cambiar de deporte, asegura que el torneo seleccionado exista.
   useEffect(() => {
-    const disponibles = getTorneosDisponibles(deporte)
-    if (!disponibles.some((t) => t.slug === torneo)) {
-      setTorneo(disponibles[0]?.slug ?? 'representativo')
+    const disponibles = getTorneosDisponibles(partidos, deporte)
+    if (disponibles.length > 0 && !disponibles.some((t) => t.slug === torneo)) {
+      setTorneo(disponibles[0].slug)
     }
-  }, [deporte, torneo])
+  }, [partidos, deporte, torneo])
 
-  const enVivo = usePartidosEnVivo({ deporte, torneo })
-  const calendario = useAsync(() => getCalendarioPartidos({ deporte, torneo }), [deporte, torneo])
-  const resultados = useAsync(() => getResultados({ deporte, torneo }), [deporte, torneo])
+  const filtro = { deporte, torneo }
+  const enVivo = filtrarEnVivo(partidos, filtro)
+  const proximos = agruparProximos(partidos, filtro)
+  const resultados = filtrarResultados(partidos, filtro)
   const cronicas = useAsync(() => getCronicasDeportivas(4), [])
 
   return (
@@ -110,39 +114,29 @@ export default function Deportes() {
         </div>
       )}
 
-      {/* En vivo (dentro del deporte/torneo seleccionado) */}
-      {!enVivo.cargando && enVivo.partidos.length > 0 && (
+      {/* En vivo */}
+      {enVivo.length > 0 && (
         <section className="mb-12" aria-label="Marcadores en vivo">
           <EncabezadoBloque titulo="En vivo" />
-          <GrillaMarcadores partidos={enVivo.partidos} />
+          <GrillaMarcadores partidos={enVivo} />
         </section>
       )}
 
       {/* Próximos partidos */}
       <section className="mb-12" aria-label="Próximos partidos">
         <EncabezadoBloque titulo="Próximos partidos" />
-        {calendario.cargando || !calendario.datos ? (
-          <Skeleton className="h-40 w-full rounded-xl" />
-        ) : (
-          <CalendarioPartidos grupos={calendario.datos} />
-        )}
+        <CalendarioPartidos grupos={proximos} />
       </section>
 
       {/* Resultados */}
       <section className="mb-12" aria-label="Resultados recientes">
         <EncabezadoBloque titulo="Resultados" />
-        {resultados.cargando || !resultados.datos ? (
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {Array.from({ length: 3 }).map((_, i) => (
-              <Skeleton key={i} className="h-40 w-full rounded-xl" />
-            ))}
-          </div>
-        ) : resultados.datos.length === 0 ? (
+        {resultados.length === 0 ? (
           <p className="text-sm text-neutral-500 dark:text-neutral-400">
             Aún no hay resultados en este torneo.
           </p>
         ) : (
-          <GrillaMarcadores partidos={resultados.datos} />
+          <GrillaMarcadores partidos={resultados} />
         )}
       </section>
 

@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import SiteLayout from './layouts/SiteLayout'
 import Portada from './pages/Portada'
@@ -8,9 +9,21 @@ import Articulo from './pages/Articulo'
 import Busqueda from './pages/Busqueda'
 import NoEncontrado from './pages/NoEncontrado'
 
+// El panel de edición se carga bajo demanda (mantiene ligeras las páginas públicas).
+const Admin = lazy(() => import('./pages/Admin'))
+
 export default function App() {
   return (
     <Routes>
+      {/* Panel de edición: fuera del layout de noticias. */}
+      <Route
+        path="/admin"
+        element={
+          <Suspense fallback={<div className="p-10 text-center text-neutral-500">Cargando…</div>}>
+            <Admin />
+          </Suspense>
+        }
+      />
       <Route element={<SiteLayout />}>
         <Route path="/" element={<Portada />} />
         <Route path="/seccion/deportes" element={<Deportes />} />
