@@ -15,15 +15,6 @@ const Admin = lazy(() => import('./pages/Admin'))
 export default function App() {
   return (
     <Routes>
-      {/* Panel de edición: fuera del layout de noticias. */}
-      <Route
-        path="/admin"
-        element={
-          <Suspense fallback={<div className="p-10 text-center text-neutral-500">Cargando…</div>}>
-            <Admin />
-          </Suspense>
-        }
-      />
       <Route element={<SiteLayout />}>
         <Route path="/" element={<Portada />} />
         <Route path="/seccion/deportes" element={<Deportes />} />
@@ -31,6 +22,14 @@ export default function App() {
         <Route path="/articulo/:id" element={<Articulo />} />
         <Route path="/partido/:id" element={<PartidoDetalle />} />
         <Route path="/buscar" element={<Busqueda />} />
+        <Route
+          path="/admin"
+          element={
+            <Suspense fallback={<div className="p-10 text-center text-neutral-500">Cargando…</div>}>
+              <Admin />
+            </Suspense>
+          }
+        />
         <Route path="*" element={<NoEncontrado />} />
       </Route>
     </Routes>

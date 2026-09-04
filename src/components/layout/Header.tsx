@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { NavLinks } from './NavLinks'
 import { ThemeToggle } from './ThemeToggle'
 import { SearchBar } from './SearchBar'
+import { AccountMenu } from './AccountMenu'
 import { Logo } from './Logo'
 
 export function Header() {
@@ -46,6 +47,7 @@ export function Header() {
           <div className="hidden md:block">
             <SearchBar />
           </div>
+          <AccountMenu />
           <ThemeToggle />
         </div>
       </div>

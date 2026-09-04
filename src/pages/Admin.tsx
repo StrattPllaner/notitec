@@ -1,86 +1,11 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import {
-  getAuth,
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-  signOut,
-  type User,
-} from 'firebase/auth'
 import { doc, updateDoc } from 'firebase/firestore'
-import { app, db, ADMIN_EMAIL } from '@/lib/firebase'
-
-const auth = getAuth(app)
+import { db } from '@/lib/firebase'
+import { useAuth } from '@/lib/auth'
 import type { EstadoPartido, Jugada, Partido } from '@/data/types'
 import { nombreDeporte, nombreTorneo } from '@/data/deportes'
 import { usePartidos } from '@/hooks/usePartidos'
 import { Logo } from '@/components/layout/Logo'
-
-// ---- Login ---------------------------------------------------------------
-
-function Login() {
-  const [email, setEmail] = useState(ADMIN_EMAIL)
-  const [pass, setPass] = useState('')
-  const [error, setError] = useState('')
-  const [cargando, setCargando] = useState(false)
-
-  async function entrar(e: React.FormEvent) {
-    e.preventDefault()
-    setError('')
-    setCargando(true)
-    try {
-      await signInWithEmailAndPassword(auth, email.trim(), pass)
-    } catch (err) {
-      const code = (err as { code?: string }).code ?? ''
-      setError(
-        code.includes('configuration-not-found')
-          ? 'Falta activar el inicio de sesión por Email/Password en la consola de Firebase.'
-          : 'Correo o contraseña incorrectos.',
-      )
-    } finally {
-      setCargando(false)
-    }
-  }
-
-  return (
-    <form onSubmit={entrar} className="mx-auto mt-16 flex max-w-sm flex-col gap-4">
-      <div className="flex items-center gap-2">
-        <Logo size={36} />
-        <div>
-          <p className="font-serif text-xl font-bold leading-none">Notitec</p>
-          <p className="text-xs uppercase tracking-widest text-neutral-500">Panel de edición</p>
-        </div>
-      </div>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Correo"
-        autoComplete="username"
-        className="h-11 rounded-lg border border-neutral-300 bg-transparent px-3 text-base outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white"
-      />
-      <input
-        type="password"
-        value={pass}
-        onChange={(e) => setPass(e.target.value)}
-        placeholder="Contraseña"
-        autoComplete="current-password"
-        className="h-11 rounded-lg border border-neutral-300 bg-transparent px-3 text-base outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white"
-      />
-      {error && <p className="text-sm text-acento-600 dark:text-acento-400">{error}</p>}
-      <button
-        type="submit"
-        disabled={cargando}
-        className="h-11 rounded-lg bg-neutral-900 font-semibold text-white disabled:opacity-60 dark:bg-white dark:text-neutral-900"
-      >
-        {cargando ? 'Entrando…' : 'Entrar'}
-      </button>
-      <Link to="/" className="text-center text-sm text-neutral-500 hover:text-neutral-900 dark:hover:text-white">
-        ← Volver al sitio
-      </Link>
-    </form>
-  )
-}
 
 // ---- Editor de un partido -------------------------------------------------
 
@@ -286,26 +211,28 @@ function EditorPartido({ partido }: { partido: Partido }) {
 // ---- Página ---------------------------------------------------------------
 
 export default function Admin() {
-  const [user, setUser] = useState<User | null>(null)
-  const [listoAuth, setListoAuth] = useState(false)
+  const { user, listo, esAdmin } = useAuth()
   const partidos = usePartidos()
   const [sel, setSel] = useState<string>('')
 
-  useEffect(() => {
-    return onAuthStateChanged(auth, (u) => {
-      setUser(u)
-      setListoAuth(true)
-    })
-  }, [])
+  if (!listo) return <div className="p-10 text-center text-neutral-500">Cargando…</div>
 
-  if (!listoAuth) return <div className="p-10 text-center text-neutral-500">Cargando…</div>
-  if (!user) return <Login />
-
-  if (user.email !== ADMIN_EMAIL) {
+  if (!user) {
     return (
-      <div className="mx-auto mt-16 max-w-sm text-center">
-        <p className="mb-4">La cuenta {user.email} no está autorizada para editar.</p>
-        <button onClick={() => signOut(auth)} className="rounded-lg border border-neutral-300 px-4 py-2 dark:border-neutral-700">Cerrar sesión</button>
+      <div className="mx-auto max-w-md px-4 py-16 text-center">
+        <Logo size={40} />
+        <h1 className="mt-4 font-serif text-2xl font-bold">Panel de edición</h1>
+        <p className="mt-2 text-neutral-500 dark:text-neutral-400">
+          Inicia sesión con el botón de cuenta (arriba a la derecha) para editar los partidos.
+        </p>
+      </div>
+    )
+  }
+
+  if (!esAdmin) {
+    return (
+      <div className="mx-auto max-w-md px-4 py-16 text-center">
+        <p>La cuenta {user.email} no está autorizada para editar.</p>
       </div>
     )
   }
@@ -314,14 +241,9 @@ export default function Admin() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
-      <div className="mb-6 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <Logo size={32} />
-          <h1 className="font-serif text-xl font-bold">Panel de edición</h1>
-        </div>
-        <button onClick={() => signOut(auth)} className="text-sm text-neutral-500 hover:text-neutral-900 dark:hover:text-white">
-          Cerrar sesión
-        </button>
+      <div className="mb-6 flex items-center gap-2">
+        <Logo size={32} />
+        <h1 className="font-serif text-xl font-bold">Panel de edición</h1>
       </div>
 
       <label className="mb-6 flex flex-col gap-1 text-sm font-medium">
