@@ -12,10 +12,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-neutral-200 bg-white/85 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/85">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-4 px-4">
-        {/* Botón de menú (solo móvil) */}
+        {/* Botón de menú (móvil y tablet) */}
         <button
           type="button"
-          className="-ml-2 flex h-11 w-11 items-center justify-center rounded-md text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800 md:hidden"
+          className="-ml-2 flex h-11 w-11 shrink-0 items-center justify-center rounded-md text-neutral-600 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-800 lg:hidden"
           aria-label={menuAbierto ? 'Cerrar menú' : 'Abrir menú'}
           aria-expanded={menuAbierto}
           onClick={() => setMenuAbierto((v) => !v)}
@@ -25,8 +25,8 @@ export function Header() {
           </svg>
         </button>
 
-        {/* Marca */}
-        <Link to="/" className="flex min-w-0 items-center gap-2" onClick={() => setMenuAbierto(false)}>
+        {/* Marca (no se encoge para no encimarse con la navegación) */}
+        <Link to="/" className="flex shrink-0 items-center gap-2" onClick={() => setMenuAbierto(false)}>
           <Logo size={32} />
           <span className="flex flex-col leading-none">
             <span className="font-serif text-xl font-bold tracking-tight">Notitec</span>
@@ -36,15 +36,15 @@ export function Header() {
           </span>
         </Link>
 
-        {/* Navegación de escritorio */}
-        <div className="ml-6 hidden md:block">
+        {/* Navegación en escritorio grande */}
+        <div className="ml-6 hidden lg:block">
           <NavLinks />
         </div>
 
         {/* Acciones a la derecha */}
         <div className="ml-auto flex items-center gap-1 sm:gap-2">
-          {/* Búsqueda compacta solo en escritorio; en móvil vive en el menú. */}
-          <div className="hidden md:block">
+          {/* Búsqueda compacta solo en escritorio grande; si no, vive en el menú. */}
+          <div className="hidden lg:block">
             <SearchBar />
           </div>
           <AccountMenu />
@@ -52,9 +52,9 @@ export function Header() {
         </div>
       </div>
 
-      {/* Panel de navegación móvil */}
+      {/* Panel de navegación (móvil y tablet) */}
       {menuAbierto && (
-        <div className="flex flex-col gap-4 border-t border-neutral-200 px-4 py-4 dark:border-neutral-800 md:hidden">
+        <div className="flex flex-col gap-4 border-t border-neutral-200 px-4 py-4 dark:border-neutral-800 lg:hidden">
           <SearchBar variant="full" onEnviar={() => setMenuAbierto(false)} />
           <NavLinks orientacion="vertical" onNavegar={() => setMenuAbierto(false)} />
         </div>

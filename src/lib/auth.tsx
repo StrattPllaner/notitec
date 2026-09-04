@@ -16,7 +16,8 @@ interface AuthCtx {
   listo: boolean
   /** true si el usuario es la cuenta administradora autorizada a editar. */
   esAdmin: boolean
-  login: (email: string, pass: string) => Promise<void>
+  /** Inicia sesión con Google (ventana emergente). */
+  loginGoogle: () => Promise<void>
   logout: () => Promise<void>
 }
 
@@ -55,13 +56,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [])
 
-  const login = useCallback(
-    async (email: string, pass: string) => {
-      const { getAuth, signInWithEmailAndPassword } = await import('firebase/auth')
-      await signInWithEmailAndPassword(auth ?? getAuth(app), email.trim(), pass)
-    },
-    [auth],
-  )
+  const loginGoogle = useCallback(async () => {
+    const { getAuth, GoogleAuthProvider, signInWithPopup } = await import('firebase/auth')
+    const provider = new GoogleAuthProvider()
+    provider.setCustomParameters({ prompt: 'select_account' })
+    await signInWithPopup(auth ?? getAuth(app), provider)
+  }, [auth])
 
   const logout = useCallback(async () => {
     const { getAuth, signOut } = await import('firebase/auth')
@@ -71,7 +71,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const esAdmin = !!user && user.email === ADMIN_EMAIL
 
   return (
-    <Ctx.Provider value={{ user, listo, esAdmin, login, logout }}>{children}</Ctx.Provider>
+    <Ctx.Provider value={{ user, listo, esAdmin, loginGoogle, logout }}>{children}</Ctx.Provider>
   )
 }
 

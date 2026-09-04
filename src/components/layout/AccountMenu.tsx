@@ -19,10 +19,8 @@ function IconoCuenta({ activo }: { activo: boolean }) {
  * el admin) acceso al panel de edición. No hay pantalla de login obligatoria.
  */
 export function AccountMenu() {
-  const { user, listo, esAdmin, login, logout } = useAuth()
+  const { user, listo, esAdmin, loginGoogle, logout } = useAuth()
   const [abierto, setAbierto] = useState(false)
-  const [email, setEmail] = useState('')
-  const [pass, setPass] = useState('')
   const [error, setError] = useState('')
   const [cargando, setCargando] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
@@ -36,21 +34,21 @@ export function AccountMenu() {
     return () => document.removeEventListener('mousedown', alClic)
   }, [abierto])
 
-  async function entrar(e: React.FormEvent) {
-    e.preventDefault()
+  async function entrarGoogle() {
     setError('')
     setCargando(true)
     try {
-      await login(email, pass)
-      setPass('')
+      await loginGoogle()
       setAbierto(false)
     } catch (err) {
       const code = (err as { code?: string }).code ?? ''
-      setError(
-        code.includes('configuration-not-found')
-          ? 'Falta activar Email/Password en la consola de Firebase.'
-          : 'Correo o contraseña incorrectos.',
-      )
+      if (code.includes('popup-closed') || code.includes('cancelled-popup')) {
+        // El usuario cerró la ventana: no es un error que mostrar.
+      } else if (code.includes('operation-not-allowed') || code.includes('configuration-not-found')) {
+        setError('Falta activar el proveedor de Google en la consola de Firebase.')
+      } else {
+        setError('No se pudo iniciar sesión con Google.')
+      }
     } finally {
       setCargando(false)
     }
@@ -105,33 +103,27 @@ export function AccountMenu() {
               </button>
             </div>
           ) : (
-            <form onSubmit={entrar} className="flex flex-col gap-2">
-              <p className="mb-1 text-sm font-semibold">Iniciar sesión</p>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Correo"
-                autoComplete="username"
-                className="h-10 rounded-lg border border-neutral-300 bg-transparent px-3 text-base outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white"
-              />
-              <input
-                type="password"
-                value={pass}
-                onChange={(e) => setPass(e.target.value)}
-                placeholder="Contraseña"
-                autoComplete="current-password"
-                className="h-10 rounded-lg border border-neutral-300 bg-transparent px-3 text-base outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white"
-              />
-              {error && <p className="text-xs text-acento-600 dark:text-acento-400">{error}</p>}
+            <div className="flex flex-col gap-3">
+              <p className="text-sm font-semibold">Iniciar sesión</p>
               <button
-                type="submit"
+                type="button"
+                onClick={entrarGoogle}
                 disabled={cargando}
-                className="h-10 rounded-lg bg-neutral-900 text-sm font-semibold text-white disabled:opacity-60 dark:bg-white dark:text-neutral-900"
+                className="flex h-11 items-center justify-center gap-3 rounded-lg border border-neutral-300 text-sm font-semibold text-neutral-800 transition-colors hover:bg-neutral-50 disabled:opacity-60 dark:border-neutral-600 dark:text-neutral-100 dark:hover:bg-neutral-800"
               >
-                {cargando ? 'Entrando…' : 'Entrar'}
+                <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+                  <path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.71-1.57 2.68-3.89 2.68-6.62z" />
+                  <path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z" />
+                  <path fill="#FBBC05" d="M3.97 10.72a5.4 5.4 0 0 1 0-3.44V4.95H.96a9 9 0 0 0 0 8.1l3.01-2.33z" />
+                  <path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58C13.47.89 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z" />
+                </svg>
+                {cargando ? 'Abriendo…' : 'Continuar con Google'}
               </button>
-            </form>
+              {error && <p className="text-xs text-acento-600 dark:text-acento-400">{error}</p>}
+              <p className="text-xs text-neutral-400">
+                Solo la cuenta autorizada puede editar; los demás pueden iniciar sesión sin permisos de edición.
+              </p>
+            </div>
           )}
         </div>
       )}
