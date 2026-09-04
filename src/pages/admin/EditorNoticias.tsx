@@ -3,6 +3,7 @@ import type { Noticia, Seccion } from '@/data/types'
 import { SECCIONES } from '@/data/noticias'
 import { useNoticias } from '@/hooks/useNoticias'
 import { eliminarNoticia, guardarNoticia, nuevoId } from '@/data/adminWrites'
+import { archivoADataUrl } from '@/lib/imagen'
 
 const INPUT =
   'h-10 w-full rounded-lg border border-neutral-300 bg-transparent px-3 text-base outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white'
@@ -48,7 +49,11 @@ export function EditorNoticias() {
     if (!draft.titulo.trim()) return
     setGuardando(true)
     try {
-      const n: Noticia = { ...draft, id: draft.id || nuevoId('nota') }
+      const n: Noticia = {
+        ...draft,
+        id: draft.id || nuevoId('nota'),
+        cuerpo: draft.cuerpo.map((s) => s.trim()).filter(Boolean),
+      }
       await guardarNoticia(n)
       setDraft(noticiaVacia())
     } catch (err) {
@@ -110,8 +115,20 @@ export function EditorNoticias() {
             <div className="h-14 w-20 rounded-lg bg-neutral-100 dark:bg-neutral-800" />
           )}
           <div className="flex-1">
-            <label className="text-xs font-medium">Imagen (URL)</label>
-            <input className={INPUT} value={draft.imagenUrl} onChange={(e) => set('imagenUrl', e.target.value)} placeholder="https://…" />
+            <label className="text-xs font-medium">Imagen (pega una URL o sube una foto)</label>
+            <input className={INPUT} value={draft.imagenUrl.startsWith('data:') ? '' : draft.imagenUrl} onChange={(e) => set('imagenUrl', e.target.value)} placeholder={draft.imagenUrl.startsWith('data:') ? 'Foto subida ✓' : 'https://…'} />
+            <label className="mt-1 inline-block cursor-pointer text-xs font-semibold text-neutral-600 underline dark:text-neutral-300">
+              Subir foto
+              <input
+                type="file"
+                accept="image/*"
+                className="hidden"
+                onChange={async (e) => {
+                  const f = e.target.files?.[0]
+                  if (f) set('imagenUrl', await archivoADataUrl(f, { maxAncho: 1280, mime: 'image/jpeg' }))
+                }}
+              />
+            </label>
           </div>
         </div>
         <label className="text-sm font-medium">
@@ -125,7 +142,7 @@ export function EditorNoticias() {
             className={AREA}
             rows={7}
             value={draft.cuerpo.join('\n')}
-            onChange={(e) => set('cuerpo', e.target.value.split('\n').map((s) => s.trim()).filter(Boolean))}
+            onChange={(e) => set('cuerpo', e.target.value.split('\n'))}
           />
         </label>
 

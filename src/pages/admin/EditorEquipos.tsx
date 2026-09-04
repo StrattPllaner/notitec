@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { Equipo } from '@/data/types'
 import { useEquipos } from '@/hooks/useEquipos'
 import { eliminarEquipo, guardarEquipo, nuevoId } from '@/data/adminWrites'
+import { archivoADataUrl } from '@/lib/imagen'
 
 const INPUT =
   'h-10 w-full rounded-lg border border-neutral-300 bg-transparent px-3 text-base outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white'
@@ -60,8 +61,22 @@ export function EditorEquipos() {
             <div className="h-14 w-14 rounded-full bg-neutral-100 dark:bg-neutral-800" />
           )}
           <div className="flex-1">
-            <label className="text-xs font-medium">Foto / escudo (URL)</label>
-            <input className={INPUT} value={draft.escudoUrl} onChange={(e) => setDraft({ ...draft, escudoUrl: e.target.value })} placeholder="https://…" />
+            <label className="text-xs font-medium">Foto / escudo (pega una URL o sube una imagen)</label>
+            <input className={INPUT} value={draft.escudoUrl.startsWith('data:') ? '' : draft.escudoUrl} onChange={(e) => setDraft({ ...draft, escudoUrl: e.target.value })} placeholder={draft.escudoUrl.startsWith('data:') ? 'Imagen subida ✓' : 'https://…'} />
+            <label className="mt-1 inline-block cursor-pointer text-xs font-semibold text-neutral-600 underline dark:text-neutral-300">
+              Subir imagen
+              <input
+                type="file"
+                accept="image/*"
+                className="hidden"
+                onChange={async (e) => {
+                  const f = e.target.files?.[0]
+                  if (!f) return
+                  const url = await archivoADataUrl(f, { maxAncho: 400, mime: 'image/png' })
+                  setDraft((d) => ({ ...d, escudoUrl: url }))
+                }}
+              />
+            </label>
           </div>
         </div>
         <label className="text-sm font-medium">

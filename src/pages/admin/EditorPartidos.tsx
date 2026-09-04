@@ -81,7 +81,13 @@ export function EditorPartidos() {
     setGuardando(true)
     setOk(false)
     try {
-      const p: Partido = { ...draft, id: draft.id || nuevoId('par') }
+      const limpiar = (a: string[]) => a.map((s) => s.trim()).filter(Boolean)
+      const p: Partido = {
+        ...draft,
+        id: draft.id || nuevoId('par'),
+        alineacionLocal: limpiar(draft.alineacionLocal),
+        alineacionVisitante: limpiar(draft.alineacionVisitante),
+      }
       await guardarPartido(p)
       setDraft(p)
       setOk(true)
@@ -208,7 +214,7 @@ export function EditorPartidos() {
               <textarea
                 rows={9}
                 value={draft[campo].join('\n')}
-                onChange={(e) => set(campo, e.target.value.split('\n').map((s) => s.trim()).filter(Boolean))}
+                onChange={(e) => set(campo, e.target.value.split('\n'))}
                 className="mt-1 w-full rounded-lg border border-neutral-300 bg-transparent p-2 text-sm outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white"
               />
             </label>
