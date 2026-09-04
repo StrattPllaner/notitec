@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import type { EstadisticaPartido, Partido } from '@/data/types'
 import { usePartido } from '@/hooks/usePartido'
 import { fechaLarga, horaCorta } from '@/data/utils/tiempoRelativo'
+import { urlEmbebible } from '@/data/utils/embed'
 import { AnimatedCounter } from '@/components/deportes/AnimatedCounter'
 import { JugadaPorJugada } from '@/components/deportes/JugadaPorJugada'
 import { EncabezadoBloque } from '@/components/ui/EncabezadoBloque'
@@ -92,6 +93,7 @@ export default function PartidoDetalle() {
   const enVivo = partido.estado === 'en-vivo' || partido.estado === 'medio-tiempo'
   const programado = partido.estado === 'programado'
   const tieneAlineacion = partido.alineacionLocal.length > 0
+  const embed = urlEmbebible(partido.transmisionUrl)
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
@@ -142,6 +144,24 @@ export default function PartidoDetalle() {
           </div>
         </div>
       </div>
+
+      {/* Transmisión en vivo */}
+      {embed && (
+        <section className="mt-8">
+          <EncabezadoBloque titulo="Transmisión en vivo" />
+          <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-black">
+            <iframe
+              src={embed}
+              title={`Transmisión: ${partido.local.nombre} vs ${partido.visitante.nombre}`}
+              className="absolute inset-0 h-full w-full"
+              allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
+          </div>
+        </section>
+      )}
 
       {programado ? (
         <p className="mt-8 text-center text-neutral-500 dark:text-neutral-400">

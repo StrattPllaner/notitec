@@ -129,4 +129,6 @@ export interface Partido {
   estadisticas: EstadisticaPartido[]
   /** Narración jugada por jugada, de más reciente a más antigua. */
   narracion: Jugada[]
+  /** Enlace de la transmisión en vivo (YouTube, Twitch, etc.). Opcional. */
+  transmisionUrl?: string
 }

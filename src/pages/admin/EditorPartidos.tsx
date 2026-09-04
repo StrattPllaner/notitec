@@ -87,6 +87,7 @@ export function EditorPartidos() {
         id: draft.id || nuevoId('par'),
         alineacionLocal: limpiar(draft.alineacionLocal),
         alineacionVisitante: limpiar(draft.alineacionVisitante),
+        transmisionUrl: (draft.transmisionUrl ?? '').trim(),
       }
       await guardarPartido(p)
       setDraft(p)
@@ -176,6 +177,15 @@ export function EditorPartidos() {
       <label className="text-sm font-medium">
         Fecha y hora
         <input type="datetime-local" className={INPUT} value={isoALocal(draft.inicioISO)} onChange={(e) => set('inicioISO', new Date(e.target.value).toISOString())} />
+      </label>
+      <label className="text-sm font-medium">
+        Transmisión en vivo (enlace de YouTube, Twitch, etc.) <span className="font-normal text-neutral-400">— opcional</span>
+        <input
+          className={INPUT}
+          value={draft.transmisionUrl ?? ''}
+          onChange={(e) => set('transmisionUrl', e.target.value)}
+          placeholder="https://www.youtube.com/watch?v=…"
+        />
       </label>
 
       {/* Equipos + marcador */}

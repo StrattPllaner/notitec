@@ -102,9 +102,19 @@ export function MarcadorEnVivoCard({ partido }: { partido: Partido }) {
         />
       </div>
 
-      <span className="mt-1 text-xs font-medium text-acento-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-acento-400">
-        Ver narración →
-      </span>
+      <div className="mt-1 flex items-center justify-between">
+        {partido.transmisionUrl ? (
+          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-neutral-700 dark:text-neutral-200">
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-acento-500" aria-hidden="true" />
+            Transmisión en vivo
+          </span>
+        ) : (
+          <span />
+        )}
+        <span className="text-xs font-medium text-acento-600 opacity-0 transition-opacity group-hover:opacity-100 dark:text-acento-400">
+          {partido.transmisionUrl ? 'Ver →' : 'Ver narración →'}
+        </span>
+      </div>
     </Link>
   )
 }
