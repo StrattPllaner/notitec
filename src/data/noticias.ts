@@ -1,48 +1,13 @@
 // ---------------------------------------------------------------------------
 // Capa de acceso a NOTICIAS.
 //
-// Es la ÚNICA puerta entre la UI y los datos de notas. Los componentes llaman a
-// estas funciones async y jamás importan el JSON directamente. Para conectar
-// una API real, basta reescribir el cuerpo de cada función (cambiar la lectura
-// del JSON local por `fetch(...)`) sin tocar componentes ni tipos.
+// Los datos vienen en tiempo real de Firestore vía `noticiasStore` (con
+// respaldo al JSON local). Aquí viven el catálogo de secciones, helpers puros
+// para consultar un arreglo de notas, y envolturas async que leen la caché.
 // ---------------------------------------------------------------------------
 
-import type { Autor, Noticia, Seccion, SeccionInfo } from './types'
-import { delay } from './utils/delay'
-import noticiasRaw from './fuentes/noticias.json'
-import autoresRaw from './fuentes/autores.json'
-
-/** Forma cruda de una noticia en el JSON: referencia al autor por id. */
-interface NoticiaRaw {
-  id: string
-  titulo: string
-  entradilla: string
-  seccion: Seccion
-  autorId: string
-  fechaISO: string
-  imagenUrl: string
-  imagenAlt: string
-  minutosLectura: number
-  cuerpo: string[]
-  destacada?: boolean
-}
-
-const autores = autoresRaw as Autor[]
-
-/** Resuelve la relación noticia→autor, como haría un `join` en una API real. */
-function hidratar(raw: NoticiaRaw): Noticia {
-  const autor =
-    autores.find((a) => a.id === raw.autorId) ?? {
-      id: 'desconocido',
-      nombre: 'Redacción Notitec',
-      rol: 'Redacción',
-      avatarUrl: 'https://i.pravatar.cc/120?img=1',
-    }
-  const { autorId, ...resto } = raw
-  return { ...resto, autor }
-}
-
-const noticias: Noticia[] = (noticiasRaw as NoticiaRaw[]).map(hidratar)
+import type { Noticia, Seccion, SeccionInfo } from './types'
+import { getCacheNoticias } from './noticiasStore'
 
 /** Ordena de más reciente a más antigua. */
 function porFecha(a: Noticia, b: Noticia): number {
@@ -62,44 +27,28 @@ export function nombreSeccion(slug: Seccion): string {
   return SECCIONES.find((s) => s.slug === slug)?.nombre ?? slug
 }
 
-/** Nota principal destacada de la portada. */
-export async function getNoticiaDestacada(): Promise<Noticia> {
-  await delay()
-  const destacada = noticias.find((n) => n.destacada)
-  // Si nadie está marcado como destacada, cae a la más reciente.
-  return destacada ?? [...noticias].sort(porFecha)[0]
+// ----------------------- Helpers puros (sobre un arreglo) ------------------
+
+export function destacadaDe(noticias: Noticia[]): Noticia | undefined {
+  return noticias.find((n) => n.destacada) ?? [...noticias].sort(porFecha)[0]
 }
 
-/**
- * Notas del día para la rejilla de la portada (excluye la destacada).
- * @param limite número máximo de notas a devolver.
- */
-export async function getNoticiasDelDia(limite = 8): Promise<Noticia[]> {
-  await delay()
+export function notasDelDia(noticias: Noticia[], limite = 8): Noticia[] {
   return noticias
     .filter((n) => !n.destacada)
     .sort(porFecha)
     .slice(0, limite)
 }
 
-/** Todas las notas de una sección, de más reciente a más antigua. */
-export async function getNoticiasPorSeccion(seccion: Seccion): Promise<Noticia[]> {
-  await delay()
+export function porSeccionDe(noticias: Noticia[], seccion: Seccion): Noticia[] {
   return noticias.filter((n) => n.seccion === seccion).sort(porFecha)
 }
 
-/** Una nota por id, o `null` si no existe. */
-export async function getArticulo(id: string): Promise<Noticia | null> {
-  await delay()
+export function articuloDe(noticias: Noticia[], id: string): Noticia | null {
   return noticias.find((n) => n.id === id) ?? null
 }
 
-/**
- * Notas relacionadas con un artículo: prioriza la misma sección y excluye
- * la propia nota. Devuelve como máximo `limite`.
- */
-export async function getRelacionadas(id: string, limite = 3): Promise<Noticia[]> {
-  await delay()
+export function relacionadasDe(noticias: Noticia[], id: string, limite = 3): Noticia[] {
   const base = noticias.find((n) => n.id === id)
   if (!base) return []
   const mismaSeccion = noticias
@@ -111,9 +60,7 @@ export async function getRelacionadas(id: string, limite = 3): Promise<Noticia[]
   return [...mismaSeccion, ...resto].slice(0, limite)
 }
 
-/** Búsqueda simple por texto en titular y entradilla. */
-export async function buscarNoticias(consulta: string): Promise<Noticia[]> {
-  await delay()
+export function buscarEn(noticias: Noticia[], consulta: string): Noticia[] {
   const q = consulta.trim().toLowerCase()
   if (!q) return []
   return noticias
@@ -124,4 +71,30 @@ export async function buscarNoticias(consulta: string): Promise<Noticia[]> {
         nombreSeccion(n.seccion).toLowerCase().includes(q),
     )
     .sort(porFecha)
+}
+
+// ----------------------- Envolturas async (leen la caché) ------------------
+
+export async function getNoticiaDestacada(): Promise<Noticia> {
+  return destacadaDe(getCacheNoticias()) as Noticia
+}
+
+export async function getNoticiasDelDia(limite = 8): Promise<Noticia[]> {
+  return notasDelDia(getCacheNoticias(), limite)
+}
+
+export async function getNoticiasPorSeccion(seccion: Seccion): Promise<Noticia[]> {
+  return porSeccionDe(getCacheNoticias(), seccion)
+}
+
+export async function getArticulo(id: string): Promise<Noticia | null> {
+  return articuloDe(getCacheNoticias(), id)
+}
+
+export async function getRelacionadas(id: string, limite = 3): Promise<Noticia[]> {
+  return relacionadasDe(getCacheNoticias(), id, limite)
+}
+
+export async function buscarNoticias(consulta: string): Promise<Noticia[]> {
+  return buscarEn(getCacheNoticias(), consulta)
 }

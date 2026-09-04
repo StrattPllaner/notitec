@@ -9,7 +9,7 @@ export function Footer() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
           <Link to="/" className="flex items-center gap-2">
             <Logo size={32} />
-            <span className="font-serif text-xl font-bold tracking-tight">Notitec</span>
+            <span className="font-serif text-xl font-bold tracking-tight">Daily-Tec</span>
           </Link>
           <nav className="flex flex-wrap gap-x-6 gap-y-2" aria-label="Secciones">
             {SECCIONES.map((s) => (
@@ -24,7 +24,7 @@ export function Footer() {
           </nav>
         </div>
         <p className="mt-8 text-xs text-neutral-400 dark:text-neutral-500">
-          © 2026 Notitec · Medio estudiantil del Tec de Monterrey, Campus Cuernavaca.
+          © 2026 Daily-Tec · Medio estudiantil del Tec de Monterrey, Campus Cuernavaca.
           Sitio de demostración con contenido simulado; no es un medio oficial del
           Tecnológico de Monterrey.
         </p>

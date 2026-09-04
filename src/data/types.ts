@@ -1,5 +1,5 @@
 // ---------------------------------------------------------------------------
-// Tipos de dominio de Notitec.
+// Tipos de dominio de Daily-Tec.
 //
 // Estos tipos describen la FORMA de los datos que consume la UI. La capa de
 // acceso (noticias.ts, deportes.ts, ultimaHora.ts) es la única que sabe de

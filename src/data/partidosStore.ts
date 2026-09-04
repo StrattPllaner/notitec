@@ -38,11 +38,11 @@ function iniciar() {
       },
       (err) => {
         // Error de permisos/red: se mantiene el respaldo local.
-        console.warn('Notitec · Firestore partidos no disponible:', err.message)
+        console.warn('Daily-Tec · Firestore partidos no disponible:', err.message)
       },
     )
   } catch (err) {
-    console.warn('Notitec · no se pudo iniciar Firestore:', err)
+    console.warn('Daily-Tec · no se pudo iniciar Firestore:', err)
   }
 }
 

@@ -4,17 +4,16 @@ import {
   agruparProximos,
   filtrarEnVivo,
   filtrarResultados,
-  getCronicasDeportivas,
   getDeportesDisponibles,
   getTorneosDisponibles,
 } from '@/data/deportes'
-import { useAsync } from '@/hooks/useAsync'
+import { porSeccionDe } from '@/data/noticias'
 import { usePartidos } from '@/hooks/usePartidos'
+import { useNoticias } from '@/hooks/useNoticias'
 import { MarcadorEnVivoCard } from '@/components/deportes/MarcadorEnVivoCard'
 import { CalendarioPartidos } from '@/components/deportes/CalendarioPartidos'
 import { NoticiaCard } from '@/components/noticias/NoticiaCard'
 import { EncabezadoBloque } from '@/components/ui/EncabezadoBloque'
-import { SkeletonTarjeta } from '@/components/ui/Skeleton'
 import { GrupoAparicion, ItemAparicion } from '@/components/ui/animaciones'
 
 /** Botón de pestaña (deporte o torneo). Área táctil cómoda. */
@@ -78,7 +77,7 @@ export default function Deportes() {
   const enVivo = filtrarEnVivo(partidos, filtro)
   const proximos = agruparProximos(partidos, filtro)
   const resultados = filtrarResultados(partidos, filtro)
-  const cronicas = useAsync(() => getCronicasDeportivas(4), [])
+  const cronicas = porSeccionDe(useNoticias(), 'deportes').slice(0, 4)
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -143,21 +142,13 @@ export default function Deportes() {
       {/* Últimas crónicas (general) */}
       <section aria-label="Últimas crónicas">
         <EncabezadoBloque titulo="Últimas crónicas" />
-        {cronicas.cargando || !cronicas.datos ? (
-          <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
-            {Array.from({ length: 4 }).map((_, i) => (
-              <SkeletonTarjeta key={i} />
-            ))}
-          </div>
-        ) : (
-          <GrupoAparicion className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
-            {cronicas.datos.map((n) => (
-              <ItemAparicion key={n.id}>
-                <NoticiaCard noticia={n} />
-              </ItemAparicion>
-            ))}
-          </GrupoAparicion>
-        )}
+        <GrupoAparicion className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+          {cronicas.map((n) => (
+            <ItemAparicion key={n.id}>
+              <NoticiaCard noticia={n} />
+            </ItemAparicion>
+          ))}
+        </GrupoAparicion>
       </section>
     </div>
   )

@@ -1,13 +1,13 @@
 import { useSearchParams } from 'react-router-dom'
-import { buscarNoticias } from '@/data/noticias'
-import { useAsync } from '@/hooks/useAsync'
+import { buscarEn } from '@/data/noticias'
+import { useNoticias } from '@/hooks/useNoticias'
 import { GrillaNoticias } from '@/components/noticias/GrillaNoticias'
-import { SkeletonGrilla } from '@/components/ui/Skeleton'
 
 export default function Busqueda() {
   const [params] = useSearchParams()
   const consulta = params.get('q') ?? ''
-  const { datos, cargando } = useAsync(() => buscarNoticias(consulta), [consulta])
+  const noticias = useNoticias()
+  const datos = buscarEn(noticias, consulta)
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -26,9 +26,7 @@ export default function Busqueda() {
         </h1>
       </header>
 
-      {!consulta ? null : cargando || !datos ? (
-        <SkeletonGrilla cantidad={6} />
-      ) : datos.length === 0 ? (
+      {!consulta ? null : datos.length === 0 ? (
         <p className="text-neutral-500 dark:text-neutral-400">
           No encontramos notas que coincidan con tu búsqueda. Intenta con otras
           palabras.

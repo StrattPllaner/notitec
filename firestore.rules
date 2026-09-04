@@ -6,10 +6,22 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
+    function esAdmin() {
+      return request.auth != null
+        && request.auth.token.email == 'carretoleonardo2312@gmail.com';
+    }
+
     match /partidos/{id} {
       allow read: if true;
-      allow write: if request.auth != null
-        && request.auth.token.email == 'carretoleonardo2312@gmail.com';
+      allow write: if esAdmin();
+    }
+    match /noticias/{id} {
+      allow read: if true;
+      allow write: if esAdmin();
+    }
+    match /equipos/{id} {
+      allow read: if true;
+      allow write: if esAdmin();
     }
 
     // Todo lo demás: lectura pública, sin escritura desde el cliente.

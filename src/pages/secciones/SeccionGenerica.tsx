@@ -1,9 +1,8 @@
 import { useParams } from 'react-router-dom'
 import type { Seccion } from '@/data/types'
-import { getNoticiasPorSeccion, nombreSeccion, SECCIONES } from '@/data/noticias'
-import { useAsync } from '@/hooks/useAsync'
+import { nombreSeccion, porSeccionDe, SECCIONES } from '@/data/noticias'
+import { useNoticias } from '@/hooks/useNoticias'
 import { GrillaNoticias } from '@/components/noticias/GrillaNoticias'
-import { SkeletonGrilla } from '@/components/ui/Skeleton'
 import { COLOR_SECCION } from '@/lib/constantes'
 import NoEncontrado from '@/pages/NoEncontrado'
 
@@ -20,13 +19,11 @@ export default function SeccionGenerica() {
   const { slug } = useParams<{ slug: string }>()
   const valida = esSeccionValida(slug)
   const seccion = slug as Seccion
-
-  const { datos, cargando } = useAsync(
-    () => (valida ? getNoticiasPorSeccion(seccion) : Promise.resolve([])),
-    [slug],
-  )
+  const noticias = useNoticias()
 
   if (!valida) return <NoEncontrado />
+
+  const datos = porSeccionDe(noticias, seccion)
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
@@ -39,9 +36,7 @@ export default function SeccionGenerica() {
         </h1>
       </header>
 
-      {cargando || !datos ? (
-        <SkeletonGrilla cantidad={6} />
-      ) : datos.length === 0 ? (
+      {datos.length === 0 ? (
         <p className="text-neutral-500 dark:text-neutral-400">
           No hay notas en esta sección por ahora.
         </p>

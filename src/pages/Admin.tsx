@@ -1,219 +1,21 @@
-import { useEffect, useState } from 'react'
-import { doc, updateDoc } from 'firebase/firestore'
-import { db } from '@/lib/firebase'
+import { useState } from 'react'
 import { useAuth } from '@/lib/auth'
-import type { EstadoPartido, Jugada, Partido } from '@/data/types'
-import { nombreDeporte, nombreTorneo } from '@/data/deportes'
-import { usePartidos } from '@/hooks/usePartidos'
 import { Logo } from '@/components/layout/Logo'
+import { EditorPartidos } from './admin/EditorPartidos'
+import { EditorNoticias } from './admin/EditorNoticias'
+import { EditorEquipos } from './admin/EditorEquipos'
 
-// ---- Editor de un partido -------------------------------------------------
+type Pestana = 'partidos' | 'noticias' | 'equipos'
 
-const TIPOS: Jugada['tipo'][] = ['gol', 'amarilla', 'roja', 'cambio', 'ocasion', 'inicio', 'fin', 'info']
-const ESTADOS: EstadoPartido[] = ['programado', 'en-vivo', 'medio-tiempo', 'finalizado']
-
-function EditorPartido({ partido }: { partido: Partido }) {
-  const [draft, setDraft] = useState<Partido>(partido)
-  const [guardando, setGuardando] = useState(false)
-  const [guardado, setGuardado] = useState(false)
-
-  // Reinicia el borrador cuando cambia el partido seleccionado.
-  useEffect(() => {
-    setDraft(partido)
-    setGuardado(false)
-  }, [partido.id]) // eslint-disable-line react-hooks/exhaustive-deps
-
-  function set<K extends keyof Partido>(k: K, v: Partido[K]) {
-    setDraft((d) => ({ ...d, [k]: v }))
-    setGuardado(false)
-  }
-
-  function registrarGol(equipo: 'local' | 'visitante') {
-    setDraft((d) => {
-      const jugada: Jugada = {
-        minuto: d.minuto,
-        tipo: 'gol',
-        equipo,
-        texto: `Gol de ${equipo === 'local' ? d.local.nombre : d.visitante.nombre}`,
-      }
-      return {
-        ...d,
-        marcadorLocal: d.marcadorLocal + (equipo === 'local' ? 1 : 0),
-        marcadorVisitante: d.marcadorVisitante + (equipo === 'visitante' ? 1 : 0),
-        narracion: [jugada, ...d.narracion],
-      }
-    })
-    setGuardado(false)
-  }
-
-  const [nueva, setNueva] = useState<Jugada>({ minuto: 0, tipo: 'info', texto: '' })
-
-  function agregarJugada() {
-    if (!nueva.texto.trim()) return
-    setDraft((d) => ({ ...d, narracion: [{ ...nueva }, ...d.narracion] }))
-    setNueva({ minuto: draft.minuto, tipo: 'info', texto: '' })
-    setGuardado(false)
-  }
-
-  async function guardar() {
-    setGuardando(true)
-    setGuardado(false)
-    try {
-      await updateDoc(doc(db, 'partidos', draft.id), {
-        estado: draft.estado,
-        minuto: draft.minuto,
-        marcadorLocal: draft.marcadorLocal,
-        marcadorVisitante: draft.marcadorVisitante,
-        alineacionLocal: draft.alineacionLocal,
-        alineacionVisitante: draft.alineacionVisitante,
-        narracion: draft.narracion,
-      })
-      setGuardado(true)
-    } catch (err) {
-      alert('No se pudo guardar: ' + (err as Error).message)
-    } finally {
-      setGuardando(false)
-    }
-  }
-
-  const inputCls =
-    'h-10 w-full rounded-lg border border-neutral-300 bg-transparent px-3 text-base outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white'
-
-  return (
-    <div className="flex flex-col gap-6">
-      <div>
-        <p className="text-xs uppercase tracking-widest text-neutral-500">
-          {nombreDeporte(draft.deporte)} · {nombreTorneo(draft.torneo)} · {draft.competicion}
-        </p>
-        <h2 className="mt-1 text-lg font-bold">
-          {draft.local.nombre} vs {draft.visitante.nombre}
-        </h2>
-      </div>
-
-      {/* Marcador */}
-      <div className="grid grid-cols-2 gap-4">
-        {(['local', 'visitante'] as const).map((lado) => {
-          const campo = lado === 'local' ? 'marcadorLocal' : 'marcadorVisitante'
-          const equipo = lado === 'local' ? draft.local : draft.visitante
-          const valor = draft[campo]
-          return (
-            <div key={lado} className="rounded-xl border border-neutral-200 p-4 dark:border-neutral-800">
-              <p className="mb-2 truncate text-sm font-semibold">{equipo.nombre}</p>
-              <div className="flex items-center gap-3">
-                <button type="button" onClick={() => set(campo, Math.max(0, valor - 1))} className="h-10 w-10 rounded-lg border border-neutral-300 text-xl dark:border-neutral-700">−</button>
-                <span className="w-8 text-center text-2xl font-bold tabular-nums">{valor}</span>
-                <button type="button" onClick={() => set(campo, valor + 1)} className="h-10 w-10 rounded-lg border border-neutral-300 text-xl dark:border-neutral-700">+</button>
-              </div>
-              <button
-                type="button"
-                onClick={() => registrarGol(lado)}
-                className="mt-3 w-full rounded-lg bg-neutral-900 py-2 text-sm font-semibold text-white dark:bg-white dark:text-neutral-900"
-              >
-                Registrar gol
-              </button>
-            </div>
-          )
-        })}
-      </div>
-
-      {/* Minuto y estado */}
-      <div className="grid grid-cols-2 gap-4">
-        <label className="flex flex-col gap-1 text-sm font-medium">
-          Minuto
-          <input
-            type="number"
-            value={draft.minuto}
-            onChange={(e) => set('minuto', Number(e.target.value))}
-            className={inputCls}
-          />
-        </label>
-        <label className="flex flex-col gap-1 text-sm font-medium">
-          Estado
-          <select value={draft.estado} onChange={(e) => set('estado', e.target.value as EstadoPartido)} className={inputCls}>
-            {ESTADOS.map((s) => (
-              <option key={s} value={s}>{s}</option>
-            ))}
-          </select>
-        </label>
-      </div>
-
-      {/* Alineaciones */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {(['local', 'visitante'] as const).map((lado) => {
-          const campo = lado === 'local' ? 'alineacionLocal' : 'alineacionVisitante'
-          const equipo = lado === 'local' ? draft.local : draft.visitante
-          return (
-            <label key={lado} className="flex flex-col gap-1 text-sm font-medium">
-              Alineación · {equipo.nombre} <span className="font-normal text-neutral-400">(uno por línea)</span>
-              <textarea
-                rows={11}
-                value={draft[campo].join('\n')}
-                onChange={(e) => set(campo, e.target.value.split('\n').map((s) => s.trim()).filter(Boolean))}
-                className="rounded-lg border border-neutral-300 bg-transparent p-3 text-sm outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white"
-              />
-            </label>
-          )
-        })}
-      </div>
-
-      {/* Narración */}
-      <div>
-        <p className="mb-2 text-sm font-semibold">Agregar jugada</p>
-        <div className="flex flex-wrap items-end gap-2">
-          <label className="flex flex-col gap-1 text-xs">
-            Min
-            <input type="number" value={nueva.minuto} onChange={(e) => setNueva({ ...nueva, minuto: Number(e.target.value) })} className="h-10 w-16 rounded-lg border border-neutral-300 bg-transparent px-2 dark:border-neutral-700" />
-          </label>
-          <label className="flex flex-col gap-1 text-xs">
-            Tipo
-            <select value={nueva.tipo} onChange={(e) => setNueva({ ...nueva, tipo: e.target.value as Jugada['tipo'] })} className="h-10 rounded-lg border border-neutral-300 bg-transparent px-2 dark:border-neutral-700">
-              {TIPOS.map((t) => <option key={t} value={t}>{t}</option>)}
-            </select>
-          </label>
-          <label className="flex flex-col gap-1 text-xs">
-            Equipo
-            <select value={nueva.equipo ?? ''} onChange={(e) => setNueva({ ...nueva, equipo: (e.target.value || undefined) as Jugada['equipo'] })} className="h-10 rounded-lg border border-neutral-300 bg-transparent px-2 dark:border-neutral-700">
-              <option value="">—</option>
-              <option value="local">Local</option>
-              <option value="visitante">Visitante</option>
-            </select>
-          </label>
-          <label className="flex flex-1 flex-col gap-1 text-xs">
-            Texto
-            <input value={nueva.texto} onChange={(e) => setNueva({ ...nueva, texto: e.target.value })} placeholder="Descripción de la jugada" className="h-10 w-full min-w-[10rem] rounded-lg border border-neutral-300 bg-transparent px-3 dark:border-neutral-700" />
-          </label>
-          <button type="button" onClick={agregarJugada} className="h-10 rounded-lg border border-neutral-300 px-4 text-sm font-semibold dark:border-neutral-700">Agregar</button>
-        </div>
-        <ul className="mt-3 max-h-40 overflow-y-auto text-sm text-neutral-600 dark:text-neutral-300">
-          {draft.narracion.map((j, i) => (
-            <li key={i} className="border-b border-neutral-100 py-1 dark:border-neutral-800">
-              <span className="font-bold tabular-nums">{j.minuto}&apos;</span> [{j.tipo}] {j.texto}
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="sticky bottom-4 flex items-center gap-3">
-        <button
-          type="button"
-          onClick={guardar}
-          disabled={guardando}
-          className="rounded-full bg-neutral-900 px-6 py-3 font-semibold text-white shadow-lg disabled:opacity-60 dark:bg-white dark:text-neutral-900"
-        >
-          {guardando ? 'Guardando…' : 'Guardar cambios'}
-        </button>
-        {guardado && <span className="text-sm font-medium text-neutral-600 dark:text-neutral-300">✓ Guardado — visible al instante</span>}
-      </div>
-    </div>
-  )
-}
-
-// ---- Página ---------------------------------------------------------------
+const PESTANAS: { id: Pestana; nombre: string }[] = [
+  { id: 'partidos', nombre: 'Partidos' },
+  { id: 'noticias', nombre: 'Noticias' },
+  { id: 'equipos', nombre: 'Equipos' },
+]
 
 export default function Admin() {
   const { user, listo, esAdmin } = useAuth()
-  const partidos = usePartidos()
-  const [sel, setSel] = useState<string>('')
+  const [tab, setTab] = useState<Pestana>('partidos')
 
   if (!listo) return <div className="p-10 text-center text-neutral-500">Cargando…</div>
 
@@ -223,7 +25,7 @@ export default function Admin() {
         <Logo size={40} />
         <h1 className="mt-4 font-serif text-2xl font-bold">Panel de edición</h1>
         <p className="mt-2 text-neutral-500 dark:text-neutral-400">
-          Inicia sesión con el botón de cuenta (arriba a la derecha) para editar los partidos.
+          Inicia sesión con el botón de cuenta (arriba a la derecha) para editar el sitio.
         </p>
       </div>
     )
@@ -237,8 +39,6 @@ export default function Admin() {
     )
   }
 
-  const seleccionado = partidos.find((p) => p.id === sel) ?? partidos[0]
-
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
       <div className="mb-6 flex items-center gap-2">
@@ -246,22 +46,27 @@ export default function Admin() {
         <h1 className="font-serif text-xl font-bold">Panel de edición</h1>
       </div>
 
-      <label className="mb-6 flex flex-col gap-1 text-sm font-medium">
-        Partido a editar
-        <select
-          value={seleccionado?.id ?? ''}
-          onChange={(e) => setSel(e.target.value)}
-          className="h-11 rounded-lg border border-neutral-300 bg-transparent px-3 text-base outline-none focus:border-neutral-900 dark:border-neutral-700 dark:focus:border-white"
-        >
-          {partidos.map((p) => (
-            <option key={p.id} value={p.id}>
-              [{nombreDeporte(p.deporte)}/{nombreTorneo(p.torneo)}] {p.local.nombre} vs {p.visitante.nombre} — {p.estado}
-            </option>
-          ))}
-        </select>
-      </label>
+      <div className="mb-8 flex gap-2 border-b border-neutral-200 dark:border-neutral-800">
+        {PESTANAS.map((p) => (
+          <button
+            key={p.id}
+            type="button"
+            onClick={() => setTab(p.id)}
+            className={[
+              '-mb-px border-b-2 px-4 py-2 text-sm font-semibold transition-colors',
+              tab === p.id
+                ? 'border-neutral-900 text-neutral-900 dark:border-white dark:text-white'
+                : 'border-transparent text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200',
+            ].join(' ')}
+          >
+            {p.nombre}
+          </button>
+        ))}
+      </div>
 
-      {seleccionado && <EditorPartido key={seleccionado.id} partido={seleccionado} />}
+      {tab === 'partidos' && <EditorPartidos />}
+      {tab === 'noticias' && <EditorNoticias />}
+      {tab === 'equipos' && <EditorEquipos />}
     </div>
   )
 }

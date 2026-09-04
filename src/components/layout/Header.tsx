@@ -29,7 +29,7 @@ export function Header() {
         <Link to="/" className="flex shrink-0 items-center gap-2" onClick={() => setMenuAbierto(false)}>
           <Logo size={32} />
           <span className="flex flex-col leading-none">
-            <span className="font-serif text-xl font-bold tracking-tight">Notitec</span>
+            <span className="font-serif text-xl font-bold tracking-tight">Daily-Tec</span>
             <span className="hidden whitespace-nowrap text-[0.6rem] font-medium uppercase tracking-widest text-neutral-500 dark:text-neutral-400 lg:block">
               Tec · Campus Cuernavaca
             </span>

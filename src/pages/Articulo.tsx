@@ -1,38 +1,20 @@
 import { Link, useParams } from 'react-router-dom'
-import { getArticulo, getRelacionadas, nombreSeccion } from '@/data/noticias'
-import { useAsync } from '@/hooks/useAsync'
+import { articuloDe, nombreSeccion, relacionadasDe } from '@/data/noticias'
+import { useNoticias } from '@/hooks/useNoticias'
 import { fechaLarga } from '@/data/utils/tiempoRelativo'
 import { EtiquetaSeccion } from '@/components/ui/EtiquetaSeccion'
 import { EncabezadoBloque } from '@/components/ui/EncabezadoBloque'
 import { CompartirBoton } from '@/components/noticias/CompartirBoton'
 import { NoticiasRelacionadas } from '@/components/noticias/NoticiasRelacionadas'
-import { Skeleton } from '@/components/ui/Skeleton'
 import NoEncontrado from '@/pages/NoEncontrado'
 
 export default function Articulo() {
   const { id } = useParams<{ id: string }>()
-  const articulo = useAsync(() => getArticulo(id ?? ''), [id])
-  const relacionadas = useAsync(() => getRelacionadas(id ?? '', 3), [id])
+  const noticias = useNoticias()
+  const n = articuloDe(noticias, id ?? '')
+  const relacionadas = id ? relacionadasDe(noticias, id, 3) : []
 
-  if (articulo.cargando) {
-    return (
-      <div className="mx-auto max-w-2xl px-4 py-8">
-        <Skeleton className="h-5 w-24" />
-        <Skeleton className="mt-4 h-10 w-full" />
-        <Skeleton className="mt-2 h-10 w-3/4" />
-        <Skeleton className="mt-6 aspect-[16/9] w-full rounded-xl" />
-        <div className="mt-6 flex flex-col gap-3">
-          {Array.from({ length: 6 }).map((_, i) => (
-            <Skeleton key={i} className="h-4 w-full" />
-          ))}
-        </div>
-      </div>
-    )
-  }
-
-  if (!articulo.datos) return <NoEncontrado />
-
-  const n = articulo.datos
+  if (!n) return <NoEncontrado />
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-8">
@@ -95,10 +77,10 @@ export default function Articulo() {
       </article>
 
       {/* Notas relacionadas */}
-      {relacionadas.datos && relacionadas.datos.length > 0 && (
+      {relacionadas.length > 0 && (
         <section className="mt-16">
           <EncabezadoBloque titulo="Notas relacionadas" />
-          <NoticiasRelacionadas noticias={relacionadas.datos} />
+          <NoticiasRelacionadas noticias={relacionadas} />
         </section>
       )}
     </div>

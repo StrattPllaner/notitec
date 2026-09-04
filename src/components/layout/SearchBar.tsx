@@ -60,7 +60,7 @@ export function SearchBar({
           value={valor}
           onChange={(e) => setValor(e.target.value)}
           onBlur={() => !esFull && !valor && setAbierta(false)}
-          placeholder="Buscar en Notitec…"
+          placeholder="Buscar en Daily-Tec…"
           className={[
             'h-11 bg-transparent pr-3 text-base outline-none placeholder:text-neutral-400 sm:text-sm',
             esFull || abierta ? 'w-full' : 'w-0 sm:w-full',
